@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from './Container';
 
 const Hero: React.FC = () => {
@@ -20,7 +21,7 @@ const Hero: React.FC = () => {
 
             <div className="space-y-8">
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
-                I'm a Designer Founder crafting inspiring, tech-powered tools that meet people where they are.
+                I&apos;m a Designer Founder crafting inspiring, tech-powered tools that meet people where they are.
                 Currently building <span className="text-red-600 font-medium">Daily Uplift</span> — an AI-powered emotional wellness app rooted in empathy, mood, and motivation.
               </p>
 
@@ -52,9 +53,11 @@ const Hero: React.FC = () => {
             {/* Daily Uplift Project */}
             <div className="mb-8">
               <div className="mb-4">
-                <img
+                <Image
                   src="/DU.svg"
                   alt="Daily Uplift Logo"
+                  width={200}
+                  height={64}
                   className="h-16 object-contain"
                 />
               </div>
@@ -72,9 +75,11 @@ const Hero: React.FC = () => {
             <div>
               <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">Candy Paint - AI Music Video</h3>
               <div className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-0 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 flex items-end">
-                <img
+                <Image
                   src="/candypaint.svg"
                   alt="Candy Paint"
+                  width={600}
+                  height={400}
                   className="w-full h-auto object-contain block"
                 />
               </div>
