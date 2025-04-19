@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
+import CareerTimeline from '../components/CareerTimeline';
 
 export default function Work() {
   return (
@@ -93,6 +94,8 @@ export default function Work() {
           </div>
         </Container>
       </main>
+
+      <CareerTimeline />
     </div>
   );
 }
