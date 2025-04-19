@@ -52,16 +52,16 @@ const Hero: React.FC = () => {
 
             {/* Daily Uplift Project */}
             <div className="mb-8">
-              <div className="mb-4">
-                <Image
-                  src="/DU.svg"
-                  alt="Daily Uplift Logo"
-                  width={200}
-                  height={64}
-                  className="h-16 object-contain"
-                />
-              </div>
               <div className="bg-[#FFFFFF] rounded-[14px] p-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+                <div className="mb-4">
+                  <Image
+                    src="/DU.svg"
+                    alt="Daily Uplift Logo"
+                    width={200}
+                    height={64}
+                    className="h-16 object-contain"
+                  />
+                </div>
                 <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
                   Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis et cras ullamcorper. Euismod felis non at integer.
                 </p>
