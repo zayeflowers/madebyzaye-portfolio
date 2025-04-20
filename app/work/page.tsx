@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+// Updated to fix build issue
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';

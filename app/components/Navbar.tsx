@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button - visible on mobile and tablet */}
-        <div className="lg:hidden">
+        {/* Mobile Menu Button - visible on mobile and tablet (including landscape) */}
+        <div className="xl:hidden">
           <button
             onClick={toggleMobileMenu}
             className="p-2 focus:outline-none transition-colors hover:bg-gray-100 rounded-md"
@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        {/* Desktop Navigation Links - only visible on large screens */}
-        <div className="hidden lg:flex flex-wrap items-center justify-end gap-2 sm:gap-3 md:gap-4 lg:gap-8 py-4 md:py-0 w-full md:w-auto md:h-[128px] md:items-center">
+        {/* Desktop Navigation Links - only visible on xl screens */}
+        <div className="hidden xl:flex flex-wrap items-center justify-end gap-6 py-4 md:py-0 w-full md:w-auto md:h-[128px] md:items-center">
           <NavLink href="/" label="HOME" />
           <NavLink href="/work" label="WORK" />
           <NavLink href="/ai-projects" label="AI PROJECTS" />
@@ -57,8 +57,8 @@ const Navbar: React.FC = () => {
         </div>
       </Container>
 
-      {/* Mobile Menu - visible on mobile and tablet */}
-      <div className={`lg:hidden bg-white w-full border-t border-gray-100 py-4 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+      {/* Mobile Menu - visible on mobile and tablet (including landscape) */}
+      <div className={`xl:hidden bg-white w-full border-t border-gray-100 py-4 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
         <Container>
           <div className="flex flex-col space-y-4 py-2">
             <MobileNavLink href="/" label="HOME" onClick={toggleMobileMenu} />
@@ -83,7 +83,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
   return (
     <Link
       href={href}
-      className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors"
+      className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors pr-[24px] last:pr-0"
     >
       {label}
     </Link>

@@ -45,8 +45,7 @@ const CareerTimeline: React.FC = () => {
         </h2>
 
         <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-          Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-          et cras ullamcorper. Euismod felis non at integer.
+          My professional journey spans design leadership roles across various industries, with a focus on creating impactful digital experiences that solve real problems for users.
         </p>
 
         <div className="w-full max-w-3xl -my-6">
