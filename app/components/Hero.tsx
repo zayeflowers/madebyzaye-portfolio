@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
           <div className="flex flex-col gap-4 md:gap-6 max-w-xl md:col-span-7">
             <PageHeading title="Creating what I wish existed." className="mb-0" />
 
-            <div className="space-y-8">
-              <p className="font-[family-name:var(--font-montserrat)]">
+            <div className="space-y-4">
+              <p className="font-[family-name:var(--font-montserrat)] -mt-[20px]">
                 I&apos;m a Lead Product Designer using AI to build tools that feel. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app powered by empathy, mood, and motivation. It&apos;s designed to meet people in their moment &mdash; with the right words, at the right time.
               </p>
 
