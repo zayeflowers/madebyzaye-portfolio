@@ -1,0 +1,9 @@
+These are placeholder files for the US Bank case study:
+- usbank-overview.jpg
+- usbank-design-system.jpg
+- usbank-dashboard.jpg
+- usbank-mobile.jpg
+- usbank-transfers.jpg
+- usbank-insights.jpg
+
+In a real implementation, these would be actual image files.
