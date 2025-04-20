@@ -76,7 +76,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                /* Image.jpg — US Bank Hero Section */
+                {/* Image.jpg — US Bank Hero Section */}
               </p>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function USBankProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🚩 The Challenge</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Small business owners were struggling to find the right digital tools to manage their business finances. Many used workarounds or third-party services that lacked the integrated support and trust offered by their primary bank. US Bank saw an opportunity to redefine what "business essentials" could look like — more intuitive, more centralized, and deeply user-focused.
+              Small business owners were struggling to find the right digital tools to manage their business finances. Many used workarounds or third-party services that lacked the integrated support and trust offered by their primary bank. US Bank saw an opportunity to redefine what &quot;business essentials&quot; could look like — more intuitive, more centralized, and deeply user-focused.
             </p>
           </div>
 
@@ -115,7 +115,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                /* Image.jpg — Business Tools Diagram */
+                {/* Image.jpg — Business Tools Diagram */}
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function USBankProject() {
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
               <li>Centralized homepage with integrated features</li>
-              <li>A "command center" layout for finances, tasks, and notifications</li>
+              <li>A &quot;command center&quot; layout for finances, tasks, and notifications</li>
               <li>Quick actions to streamline repetitive tasks</li>
               <li>Modular UI that could scale with business growth</li>
             </ul>
@@ -161,7 +161,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                /* Image.jpg — Wireframes and Prototypes */
+                {/* Image.jpg — Wireframes and Prototypes */}
               </p>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function USBankProject() {
               <li>A dynamic homepage tailored to business goals</li>
               <li>Smart alerts for overdue invoices or unusual transactions</li>
               <li>Visual dashboards to track goals and performance</li>
-              <li>Scalable UI system that aligned with US Bank's design language</li>
+              <li>Scalable UI system that aligned with US Bank&apos;s design language</li>
             </ul>
           </div>
 
@@ -219,7 +219,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                /* Image.jpg — Final UI Designs */
+                {/* Image.jpg — Final UI Designs */}
               </p>
             </div>
           </div>
@@ -262,7 +262,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                /* Image.jpg — US Bank Success Video */
+                {/* Image.jpg — US Bank Success Video */}
               </p>
             </div>
           </div>
