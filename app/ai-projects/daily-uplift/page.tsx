@@ -13,7 +13,7 @@ export default function DailyUplift() {
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <div className="mb-8">
-            <Link 
+            <Link
               href="/ai-projects"
               className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
             >
@@ -27,11 +27,11 @@ export default function DailyUplift() {
           <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 p-8">
             <div className="flex justify-center">
               <Image
-                src="/DU.svg"
-                alt="Daily Uplift Logo"
-                width={400}
-                height={128}
-                className="h-32 object-contain"
+                src="/dailyupliftapp.svg"
+                alt="Daily Uplift App"
+                width={600}
+                height={400}
+                className="w-full max-w-2xl h-auto object-contain"
               />
             </div>
           </div>
@@ -62,61 +62,61 @@ export default function DailyUplift() {
           <div className="max-w-4xl">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Project Overview</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
               et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
               facilisis et cras ullamcorper. Euismod felis non at integer.
             </p>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
               et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
               facilisis et cras ullamcorper. Euismod felis non at integer.
             </p>
-            
+
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">The Problem</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
               et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
               facilisis et cras ullamcorper. Euismod felis non at integer.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-3">Key Feature 1</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
                   et cras ullamcorper.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-3">Key Feature 2</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
                   et cras ullamcorper.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-3">Key Feature 3</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
                   et cras ullamcorper.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-3">Key Feature 4</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
                   et cras ullamcorper.
                 </p>
               </div>
             </div>
-            
+
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Coming Soon</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
               et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
               facilisis et cras ullamcorper. Euismod felis non at integer.
             </p>
-            
+
             <div className="mt-8 text-center">
               <Link
                 href="#"
