@@ -102,7 +102,7 @@ export default function DailyUplift() {
               <div className="bg-white rounded-lg p-6 shadow-md">
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-3">Customizable Categories</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  From "Emotional Support" to "Daily Mindset," categories evolve as we learn what users actually need — not just what&apos;s trendy.
+                  From &quot;Emotional Support&quot; to &quot;Daily Mindset,&quot; categories evolve as we learn what users actually need — not just what&apos;s trendy.
                 </p>
               </div>
             </div>
