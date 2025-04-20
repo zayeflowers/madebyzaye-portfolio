@@ -51,11 +51,16 @@ export default function CandyPaint() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Year</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">2023</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">2024</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Midjourney, Runway ML, Adobe Premiere Pro</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
+                <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Midjourney</a>,
+                <a href="https://runwayml.com" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Runway ML</a>,
+                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Davinci Resolve</a>,
+                <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Capcut</a>
+              </p>
             </div>
           </div>
 
@@ -67,7 +72,7 @@ export default function CandyPaint() {
 
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Process</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Using Midjourney for visual concepting and Runway ML for motion, I constructed a visual storyline that would feel cinematic but surreal. The character design, framing, and styling were all directed with an intentional nod to Afrofuturism, digital fashion, and the idea of &quot;digital armor.&quot; The edit was composed in Adobe Premiere Pro, allowing for tight control over pacing and mood.
+              Using Midjourney for visual concepting and Runway ML for motion, I constructed a visual storyline that would feel cinematic but surreal. The character design, framing, and styling were all directed with an intentional nod to Afrofuturism, digital fashion, and the idea of &quot;digital armor.&quot; The edit was mostly composed in Davinci Resolve, allowing for tight control over pacing and mood.
             </p>
 
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Outcome</h2>
