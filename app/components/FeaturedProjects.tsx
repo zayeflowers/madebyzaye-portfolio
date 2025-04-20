@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, href, imageSrc, bgColo
 
 const FeaturedProjects: React.FC = () => {
   return (
-    <section className="w-full bg-black text-white pt-[56px] pb-[56px] overflow-hidden">
+    <section className="w-full bg-black text-white pt-[56px] pb-[32px] overflow-hidden">
       <Container>
         <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight mb-[32px] [text-edge:cap] [leading-trim:both] tracking-tight">
           Featured Projects

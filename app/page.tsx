@@ -3,6 +3,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import FeaturedProjects from "./components/FeaturedProjects";
+import ToolsAndTechnologies from "./components/ToolsAndTechnologies";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar key="navbar-home-page" />
       <Hero key="hero-home-page" />
       <FeaturedProjects key="featured-projects-home-page" />
+      <ToolsAndTechnologies key="tools-technologies-home-page" />
     </div>
   );
 }
