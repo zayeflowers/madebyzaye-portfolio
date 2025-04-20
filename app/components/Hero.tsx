@@ -54,37 +54,61 @@ const Hero: React.FC = () => {
               </h2>
             </div>
 
+
+
             {/* Daily Uplift Project */}
             <div className="mb-8">
-              <div className="mb-4">
-                <Image
-                  src="/DU.svg"
-                  alt="Daily Uplift Logo"
-                  width={200}
-                  height={64}
-                  className="h-16 object-contain"
-                />
-              </div>
-              <div className="bg-[#FFFFFF] rounded-[14px] p-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                  AI-powered wellness made simple. Personalized messages to lift your mood and shift your mindset.
+              <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">Daily Uplift - AI Wellness App</h3>
+              <div className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+                <div className="mb-4">
+                  <Image
+                    src="/dailyupliftapp.svg"
+                    alt="Daily Uplift App"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-contain block"
+                  />
+                </div>
+                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                  An AI-powered wellness app that delivers mood-based affirmations and reflections.
                 </p>
-                <p className="mt-4"><span className="font-bold">Status:</span> Coming soon
-                </p>
+                <Link
+                  href="/ai-projects/daily-uplift"
+                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+                >
+                  View Project
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
 
             {/* Candy Paint Project */}
             <div>
               <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">Candy Paint - AI Music Video</h3>
-              <div className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-0 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 flex items-end">
-                <Image
-                  src="/candypaint.svg"
-                  alt="Candy Paint"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-contain block"
-                />
+              <div className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+                <div className="flex items-end mb-4">
+                  <Image
+                    src="/candypaint.svg"
+                    alt="Candy Paint"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-contain block"
+                  />
+                </div>
+                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                  A music video experiment that blends motion, style, and identity through generative AI tools.
+                </p>
+                <Link
+                  href="/ai-projects/candy-paint"
+                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+                >
+                  View Project
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>
