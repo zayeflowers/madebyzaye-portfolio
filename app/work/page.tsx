@@ -9,10 +9,10 @@ export default function Work() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
 
-      <main className="w-full bg-[#f6f0e9] text-black pt-16 pb-24 min-h-screen relative">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
-          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[72px] leading-tight tracking-[-0.04em] text-[#000000] mb-[32px] [text-edge:cap] [leading-trim:both]">
+          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[72px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
             Work
           </h1>
 

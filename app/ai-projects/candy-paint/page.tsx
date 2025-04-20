@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Script from 'next/script';
 import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
 
@@ -9,7 +10,7 @@ export default function CandyPaint() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
 
-      <main className="w-full bg-[#f6f0e9] text-black pt-16 pb-24 min-h-screen relative">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <div className="mb-8">
@@ -26,16 +27,16 @@ export default function CandyPaint() {
 
           <div className="overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 aspect-video">
             <iframe
-              className="w-full h-full"
+              width="100%"
+              height="100%"
               src="https://videopress.com/embed/6a6owULP"
               frameBorder="0"
               allowFullScreen
               allow="clipboard-write"
             ></iframe>
-            <script src="https://videopress.com/videopress-iframe.js"></script>
           </div>
 
-          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[56px] leading-tight tracking-[-0.04em] text-[#000000] mb-[24px] [text-edge:cap] [leading-trim:both]">
+          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[56px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
             Candy Paint
           </h1>
 
@@ -87,6 +88,7 @@ export default function CandyPaint() {
           </div>
         </Container>
       </main>
+      <Script src="https://videopress.com/videopress-iframe.js" strategy="afterInteractive" />
     </div>
   );
 }

@@ -9,7 +9,7 @@ export default function DailyUplift() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
 
-      <main className="w-full bg-[#f6f0e9] text-black pt-16 pb-24 min-h-screen relative">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <div className="mb-8">
@@ -36,7 +36,7 @@ export default function DailyUplift() {
             </div>
           </div>
 
-          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[56px] leading-tight tracking-[-0.04em] text-[#000000] mb-[24px] [text-edge:cap] [leading-trim:both]">
+          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[56px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
             Daily Uplift
           </h1>
 
