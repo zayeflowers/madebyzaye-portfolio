@@ -62,28 +62,17 @@ export default function CandyPaint() {
           <div className="max-w-4xl">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Project Overview</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-              et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
-              facilisis et cras ullamcorper. Euismod felis non at integer.
-            </p>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-              et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
-              facilisis et cras ullamcorper. Euismod felis non at integer.
+              Candy Paint explores how AI can be used as a creative collaborator — not just a tool. What began as a prompt experiment quickly evolved into a full visual narrative that blurs the line between reality and imagination. This project investigates digital identity, futurism, and the aesthetics of self-expression through synthetic visuals and stylized motion.
             </p>
 
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Process</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-              et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
-              facilisis et cras ullamcorper. Euismod felis non at integer.
+              Using Midjourney for visual concepting and Runway ML for motion, I constructed a visual storyline that would feel cinematic but surreal. The character design, framing, and styling were all directed with an intentional nod to Afrofuturism, digital fashion, and the idea of &quot;digital armor.&quot; The edit was composed in Adobe Premiere Pro, allowing for tight control over pacing and mood.
             </p>
 
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Outcome</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-              et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
-              facilisis et cras ullamcorper. Euismod felis non at integer.
+              The result is a high-style music visual that merges narrative with generative art. More than an experiment, Candy Paint is a proof-of-concept for how emerging tools can extend the creative voice of independent storytellers — blending tech and intention in unexpected ways.
             </p>
           </div>
         </Container>

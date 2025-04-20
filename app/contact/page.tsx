@@ -30,7 +30,7 @@ export default function Contact() {
 
                 <div>
                   <h3 className="font-bold text-lg mb-2">Based in</h3>
-                  <p>Atlanta, GA</p>
+                  <p>Washington D.C.</p>
                 </div>
 
                 <div>
