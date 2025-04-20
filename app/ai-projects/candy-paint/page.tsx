@@ -24,7 +24,7 @@ export default function CandyPaint() {
             </Link>
           </div>
 
-          <div className="rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 aspect-video">
+          <div className="overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 aspect-video">
             <iframe
               className="w-full h-full"
               src="https://videopress.com/embed/6a6owULP"
