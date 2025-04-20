@@ -17,7 +17,7 @@ export default function AIProjects() {
           </h1>
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis 
+            Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
             et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
             facilisis et cras ullamcorper. Euismod felis non at integer.
           </p>
@@ -41,7 +41,7 @@ export default function AIProjects() {
                 <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
                   Music video that infuses that latest generative A.I. creative art tools.
                 </p>
-                <Link 
+                <Link
                   href="/ai-projects/candy-paint"
                   className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
                 >
@@ -58,11 +58,11 @@ export default function AIProjects() {
               <div className="p-6">
                 <div className="mb-4">
                   <Image
-                    src="/DU.svg"
-                    alt="Daily Uplift Logo"
-                    width={200}
-                    height={64}
-                    className="h-16 object-contain"
+                    src="/dailyupliftapp.svg"
+                    alt="Daily Uplift App"
+                    width={300}
+                    height={200}
+                    className="w-full h-auto object-contain"
                   />
                 </div>
                 <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
@@ -74,7 +74,7 @@ export default function AIProjects() {
                 <p className="font-[family-name:var(--font-montserrat)] text-base mb-4">
                   <span className="font-bold">Status:</span> Coming soon
                 </p>
-                <Link 
+                <Link
                   href="/ai-projects/daily-uplift"
                   className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
                 >
