@@ -23,16 +23,15 @@ const Hero: React.FC = () => {
 
             <div className="space-y-8">
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
-                I&apos;m a Designer Founder crafting inspiring, tech-powered tools that meet people where they are.
-                Currently building <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an AI-powered emotional wellness app rooted in empathy, mood, and motivation.
+                I&apos;m a Lead Product Designer using AI to build tools that feel. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app powered by empathy, mood, and motivation. It&apos;s designed to meet people in their moment &mdash; with the right words, at the right time.
               </p>
 
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
-                Whether I&apos;m prototyping digital wellness tools, experimenting with AI visuals, or building immersive experiences, I approach design as both a craft and a catalyst.
+                My work blends thoughtful design, emerging tech, and real-world care. Whether I&apos;m prototyping wellness experiences, exploring generative AI, or writing the front-end myself &mdash; I lead with intention.
               </p>
 
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
-                As a Creative Technologist and Product Designer, I work at the edge of possibility &mdash; where design meets code, and ideas become products. I&apos;m driven by curiosity, guided by intention, and always exploring how technology can feel more human.
+                I believe in building products that aren&apos;t just smart, but supportive. That don&apos;t just work &mdash; they resonate. Because it&apos;s not just what I build. It&apos;s how it connects.
               </p>
             </div>
 

@@ -24,8 +24,11 @@ const ToolsAndTechnologies: React.FC = () => {
     "Tailwind CSS",
     "Firebase",
     "OpenAI API",
-    "Vercel",
-    "Figma"
+    "Netlify",
+    "GitHub",
+    "Figma",
+    "Cursor",
+    "Augment Code"
   ];
 
   return (
@@ -35,12 +38,12 @@ const ToolsAndTechnologies: React.FC = () => {
           Tools & Technologies
         </h2>
 
-        <div className="max-w-3xl">
+        <div className="max-w-5xl">
           <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] text-gray-300 mb-[24px]">
-            <span className="text-white font-medium">Made By Zaye</span> was built with the following technologies:
+            This portfolio site <span className="text-white font-medium">Made By Zaye</span> was built with the following technologies:
           </p>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 mb-[24px]">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 mb-[24px]">
             {technologies.map((tech, index) => (
               <TechItem
                 key={`tech-${index}`}
