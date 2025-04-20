@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Container from './components/Container';
+import PageHeading from './components/PageHeading';
 
 export default function Error({
   error,
@@ -23,9 +24,7 @@ export default function Error({
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <div className="flex flex-col items-center justify-center py-16">
-            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-              Something went wrong!
-            </h1>
+            <PageHeading title="Something went wrong!" className="text-center" />
             <p className="text-lg font-[family-name:var(--font-montserrat)] leading-[28px] mb-8 text-center max-w-2xl">
               An unexpected error has occurred. Please try again.
             </p>

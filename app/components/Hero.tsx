@@ -4,22 +4,21 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Container from './Container';
+import PageHeading from './PageHeading';
 
 const Hero: React.FC = () => {
   // Add a unique key to force re-render and avoid hydration issues
   const uniqueKey = "hero-component-v1";
   return (
-    <section key={uniqueKey} className="w-full bg-[#f6f0e9] text-black pt-0 pb-16 md:pb-20 lg:pb-24 relative">
+    <section key={uniqueKey} className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-16 md:pb-20 lg:pb-24 relative">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 pt-[56px] relative">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative">
           {/* Vertical divider between columns - positioned in the gap */}
-          <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[60px] bottom-0 border-l border-black/[0.38]"></div>
+          <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[80px] bottom-0 border-l border-black/[0.38]"></div>
           {/* Left column with heading and intro text */}
           <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
-            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] [text-edge:cap] [leading-trim:both]">
-              Creating what I wish existed.
-            </h1>
+            <PageHeading title="Creating what I wish existed." />
 
             <div className="space-y-8">
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">

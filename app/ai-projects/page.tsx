@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
+import PageHeading from '../components/PageHeading';
 
 export default function AIProjects() {
   return (
@@ -14,9 +15,7 @@ export default function AIProjects() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-ai-projects">
-          <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-            AI Projects
-          </h1>
+          <PageHeading title="AI Projects" />
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
             Exploring what happens when creativity meets computation. These projects combine storytelling, visual design, and generative AI to push boundaries — and spark new conversations about what technology can feel like.

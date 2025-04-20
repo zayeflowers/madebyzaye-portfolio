@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import Link from 'next/link';
+import PageHeading from '../components/PageHeading';
 
 export default function Projects() {
   return (
@@ -11,9 +12,7 @@ export default function Projects() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
-          <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-            Projects
-          </h1>
+          <PageHeading title="Projects" />
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
             Here are some of my featured case studies from my work with major brands.

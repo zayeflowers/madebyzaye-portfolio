@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Container from './components/Container';
+import PageHeading from './components/PageHeading';
 
 export default function NotFound() {
   return (
@@ -10,9 +11,7 @@ export default function NotFound() {
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <div className="flex flex-col items-center justify-center py-16">
-            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-              Page Not Found
-            </h1>
+            <PageHeading title="Page Not Found" className="text-center" />
             <p className="text-lg font-[family-name:var(--font-montserrat)] leading-[28px] mb-8 text-center max-w-2xl">
               Sorry, the page you are looking for does not exist.
             </p>
