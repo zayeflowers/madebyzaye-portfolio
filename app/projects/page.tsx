@@ -11,7 +11,7 @@ export default function Projects() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
-          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
+          <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
             Projects
           </h1>
 
@@ -25,13 +25,13 @@ export default function Projects() {
                 <h3 className="text-white font-[family-name:var(--font-montserrat)] font-medium text-xl">US Bank Case Study</h3>
               </div>
             </Link>
-            
+
             <Link href="/projects/cnn">
               <div className="bg-[#cc0000] rounded-[16px] h-[223px] w-full shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden relative flex items-end justify-start p-6">
                 <h3 className="text-white font-[family-name:var(--font-montserrat)] font-medium text-xl">CNN Case Study</h3>
               </div>
             </Link>
-            
+
             <Link href="/projects/ihg">
               <div className="bg-[#003366] rounded-[16px] h-[223px] w-full shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden relative flex items-end justify-start p-6">
                 <h3 className="text-white font-[family-name:var(--font-montserrat)] font-medium text-xl">IHG Case Study</h3>
