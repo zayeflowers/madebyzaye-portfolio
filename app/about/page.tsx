@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
@@ -7,11 +9,11 @@ import CareerTimeline from '../components/CareerTimeline';
 export default function About() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
+      <Navbar key="navbar-about" />
 
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container>
+        <Container key="container-about">
           <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
             About Me
           </h1>
@@ -85,17 +87,7 @@ export default function About() {
                 <div className="space-y-4 font-[family-name:var(--font-montserrat)] leading-[28px]">
                   <div>
                     <h3 className="font-bold">Location</h3>
-                    <p>Atlanta, GA</p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-bold">Education</h3>
-                    <p>BFA in Graphic Design, Savannah College of Art and Design</p>
-                  </div>
-
-                  <div>
-                    <h3 className="font-bold">Languages</h3>
-                    <p>English (Native), Spanish (Conversational)</p>
+                    <p>Washington D.C.</p>
                   </div>
 
                   <div>
@@ -109,7 +101,7 @@ export default function About() {
         </Container>
       </main>
 
-      <CareerTimeline />
+      <CareerTimeline key="career-timeline-about" />
     </div>
   );
 }
