@@ -1,11 +1,8 @@
-The US Bank case study now uses the following image:
-- /work/image1.png
+The US Bank case study now uses the following specific images:
+- usbank-overview.jpg (US Bank Hero Section)
+- usbank-business-tools.jpg (Business Tools Diagram)
+- usbank-wireframes.jpg (Wireframes and Prototypes)
+- usbank-final-ui.jpg (Final UI Designs)
+- usbank-success-video.jpg (US Bank Success Video)
 
-This image is used for all sections in the case study:
-- US Bank Hero Section
-- Business Tools Diagram
-- Wireframes and Prototypes
-- Final UI Designs
-- US Bank Success Video
-
-In the future, we can add more specific images for each section in the /work/usbank/ directory.
+These images are used in their respective sections of the case study to provide a more detailed and accurate representation of the project.

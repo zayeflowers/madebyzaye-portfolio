@@ -68,7 +68,7 @@ export default function USBankProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
             <div className="aspect-w-16">
               <Image
-                src="/work/image1.png"
+                src="/usbank-overview.jpg"
                 alt="US Bank Hero Section"
                 fill
                 className="object-cover"
@@ -107,7 +107,7 @@ export default function USBankProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="aspect-w-16">
               <Image
-                src="/work/image1.png"
+                src="/usbank-business-tools.jpg"
                 alt="Business Tools Diagram"
                 fill
                 className="object-cover"
@@ -153,7 +153,7 @@ export default function USBankProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="aspect-w-16">
               <Image
-                src="/work/image1.png"
+                src="/usbank-wireframes.jpg"
                 alt="Wireframes and Prototypes"
                 fill
                 className="object-cover"
@@ -211,7 +211,7 @@ export default function USBankProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="aspect-w-16">
               <Image
-                src="/work/image1.png"
+                src="/usbank-final-ui.jpg"
                 alt="Final UI Designs"
                 fill
                 className="object-cover"
@@ -254,7 +254,7 @@ export default function USBankProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="aspect-w-16">
               <Image
-                src="/work/image1.png"
+                src="/usbank-success-video.jpg"
                 alt="US Bank Success Video"
                 fill
                 className="object-cover"
