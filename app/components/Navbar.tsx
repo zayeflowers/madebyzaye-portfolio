@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Navigation Links - only visible on large screens */}
-        <div className="hidden lg:flex flex-wrap items-center justify-end gap-4 sm:gap-6 md:gap-10 py-4 md:py-0 w-full md:w-auto md:h-[128px] md:items-center">
+        <div className="hidden lg:flex flex-wrap items-center justify-end gap-2 sm:gap-3 md:gap-4 lg:gap-8 py-4 md:py-0 w-full md:w-auto md:h-[128px] md:items-center">
           <NavLink href="/" label="HOME" />
           <NavLink href="/work" label="WORK" />
           <NavLink href="/ai-projects" label="AI PROJECTS" />
@@ -83,7 +83,7 @@ const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
   return (
     <Link
       href={href}
-      className="font-[family-name:var(--font-lexend-exa)] text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors"
+      className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors"
     >
       {label}
     </Link>
@@ -99,7 +99,7 @@ const MobileNavLink: React.FC<MobileNavLinkProps> = ({ href, label, onClick }) =
   return (
     <Link
       href={href}
-      className="font-[family-name:var(--font-lexend-exa)] text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors block py-3 border-b border-gray-100 last:border-b-0"
+      className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors block py-3 border-b border-gray-100 last:border-b-0"
       onClick={onClick}
     >
       {label}
