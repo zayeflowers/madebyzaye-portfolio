@@ -26,3 +26,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Standard paragraph styling */
+p {
+  font-size: 16px;
+  line-height: 28px;
+}

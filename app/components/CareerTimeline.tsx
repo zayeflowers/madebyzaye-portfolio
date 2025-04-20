@@ -31,7 +31,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         </time>
         <div className="text-xl font-[family-name:var(--font-montserrat)] font-bold text-white">{title}</div>
       </div>
-      <div className="text-white/80 font-[family-name:var(--font-montserrat)] leading-[28px]">{description}</div>
+      <div className="text-white/80 font-[family-name:var(--font-montserrat)]">{description}</div>
     </div>
   );
 };
@@ -44,7 +44,7 @@ const CareerTimeline: React.FC = () => {
           Career Timeline
         </h2>
 
-        <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
+        <p className="max-w-3xl mb-[32px] font-[family-name:var(--font-montserrat)]">
           My professional journey spans design leadership roles across various industries, with a focus on creating impactful digital experiences that solve real problems for users.
         </p>
 

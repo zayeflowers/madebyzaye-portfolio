@@ -9,7 +9,7 @@ interface TechItemProps {
 
 const TechItem: React.FC<TechItemProps> = ({ name }) => {
   return (
-    <li className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] text-gray-300 mb-3 flex items-center">
+    <li className="font-[family-name:var(--font-montserrat)] text-gray-300 mb-3 flex items-center">
       <div className="w-2 h-2 bg-[#CC0101] rounded-full mr-3"></div>
       {name}
     </li>
@@ -39,7 +39,7 @@ const ToolsAndTechnologies: React.FC = () => {
         </h2>
 
         <div className="max-w-5xl">
-          <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] text-gray-300 mb-[24px]">
+          <p className="font-[family-name:var(--font-montserrat)] text-gray-300 mb-[24px]">
             This portfolio site <span className="text-white font-medium">Made By Zaye</span> was built with the following technologies:
           </p>
 
@@ -52,7 +52,7 @@ const ToolsAndTechnologies: React.FC = () => {
             ))}
           </ul>
 
-          <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] text-gray-300">
+          <p className="font-[family-name:var(--font-montserrat)] text-gray-300">
             I prioritize modern, maintainable code with a focus on performance and user experience. My approach combines technical expertise with design thinking to create solutions that are both functional and beautiful.
           </p>
         </div>

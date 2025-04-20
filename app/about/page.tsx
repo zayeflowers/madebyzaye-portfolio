@@ -25,15 +25,15 @@ export default function About() {
             <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
 
               <div className="space-y-8">
-                <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+                <p className="font-[family-name:var(--font-montserrat)]">
                   I&apos;m a Designer Founder with a passion for creating tech-powered tools that inspire and empower people. My journey in design and technology has been driven by a simple philosophy: create what I wish existed.
                 </p>
 
-                <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+                <p className="font-[family-name:var(--font-montserrat)]">
                   With over 8 years of experience working with brands like CNN, GEICO, and US Bank, I&apos;ve developed a deep understanding of how to create digital experiences that resonate with users and drive business results.
                 </p>
 
-                <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+                <p className="font-[family-name:var(--font-montserrat)]">
                   Currently, I&apos;m focused on building <span className="text-red-600 font-medium">Daily Uplift</span> — an AI-powered emotional wellness app that combines my passion for technology with my commitment to creating tools that make a positive impact on people&apos;s lives.
                 </p>
               </div>

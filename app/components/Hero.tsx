@@ -21,15 +21,15 @@ const Hero: React.FC = () => {
             <PageHeading title="Creating what I wish existed." className="mb-0" />
 
             <div className="space-y-8">
-              <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 I&apos;m a Lead Product Designer using AI to build tools that feel. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app powered by empathy, mood, and motivation. It&apos;s designed to meet people in their moment &mdash; with the right words, at the right time.
               </p>
 
-              <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 My work blends thoughtful design, emerging tech, and real-world care. Whether I&apos;m prototyping wellness experiences, exploring generative AI, or writing the front-end myself &mdash; I lead with intention.
               </p>
 
-              <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 I believe in building products that aren&apos;t just smart, but supportive. That don&apos;t just work &mdash; they resonate. Because it&apos;s not just what I build. It&apos;s how it connects.
               </p>
             </div>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
                     className="w-full h-auto object-contain block"
                   />
                 </div>
-                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
                   An AI-powered wellness app that delivers mood-based affirmations and reflections.
                 </p>
                 <Link
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
                     className="w-full h-auto object-contain block"
                   />
                 </div>
-                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
                   A music video experiment that blends motion, style, and identity through generative AI tools.
                 </p>
                 <Link

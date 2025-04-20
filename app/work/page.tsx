@@ -37,7 +37,7 @@ export default function Work() {
                   className="object-contain h-full"
                 />
               </div>
-              <p className="text-base md:text-lg font-[family-name:var(--font-montserrat)] leading-[28px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 Redesigning critical insurance workflows across mobile and desktop. I lead Injury Intake usability testing, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function Work() {
                   className="object-contain h-full"
                 />
               </div>
-              <p className="text-base md:text-lg font-[family-name:var(--font-montserrat)] leading-[28px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 Mentored 10+ aspiring designers through portfolio reviews, mock interviews, and job search prep. Helped 85% land roles while building confidence, clarity, and design craft in a fast-moving remote learning environment.
               </p>
             </div>
@@ -69,7 +69,7 @@ export default function Work() {
                   className="object-contain h-full"
                 />
               </div>
-              <p className="text-base md:text-lg font-[family-name:var(--font-montserrat)] leading-[28px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 Contributed to digital transformation work for clients like U.S. Bank, Goldman Sachs, and Comcast. Focused on small business tools and early AI features, bringing a user-first lens to highly regulated, data-driven environments.
               </p>
             </div>
@@ -85,7 +85,7 @@ export default function Work() {
                   className="object-contain h-full"
                 />
               </div>
-              <p className="text-base md:text-lg font-[family-name:var(--font-montserrat)] leading-[28px]">
+              <p className="font-[family-name:var(--font-montserrat)]">
                 Launched CNN&apos;s &quot;My Election&quot; feature during the 2020 cycle, driving 186K new users and a 45% revenue increase. Led accessibility improvements across internal tools, helping CNN rank #1 in desktop/mobile visibility with over 4.6M+ user interactions.
               </p>
             </div>

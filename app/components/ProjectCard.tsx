@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         <div className="text-black">
           <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-2 [text-edge:cap] [leading-trim:both]">{title}</h3>
-          <p className="font-[family-name:var(--font-montserrat)] text-base leading-relaxed">
+          <p className="font-[family-name:var(--font-montserrat)]">
             {description}
           </p>
           {status && (

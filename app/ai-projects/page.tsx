@@ -17,7 +17,7 @@ export default function AIProjects() {
         <Container key="container-ai-projects">
           <PageHeading title="AI Projects" />
 
-          <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
+          <p className="max-w-3xl mb-[48px] font-[family-name:var(--font-montserrat)]">
             Exploring what happens when creativity meets computation. These projects combine storytelling, visual design, and generative AI to push boundaries — and spark new conversations about what technology can feel like.
           </p>
 
@@ -37,7 +37,7 @@ export default function AIProjects() {
                 <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
                   Candy Paint
                 </h2>
-                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
                   A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
                 </p>
                 <Link
@@ -67,10 +67,10 @@ export default function AIProjects() {
                 <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
                   Daily Uplift
                 </h2>
-                <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
                   An AI-powered wellness app that delivers mood-based affirmations and reflections. Rooted in empathy and built for everyday use, it merges emotional design with intelligent content to support users right when they need it.
                 </p>
-                <p className="font-[family-name:var(--font-montserrat)] text-base mb-4">
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
                   <span className="font-bold">Status:</span> Coming soon
                 </p>
                 <Link
