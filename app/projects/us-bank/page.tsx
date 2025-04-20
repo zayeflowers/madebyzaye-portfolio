@@ -41,18 +41,18 @@ export default function USBankProject() {
           </div>
 
           <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-            US Bank Case Study
+            Redefining Banking Essentials with US Bank
           </h1>
 
           <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
-            Redesigning digital banking experiences for enhanced customer engagement
+            Client: US Bank x Publicis Sapient
           </p>
 
           {/* Project Details */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Role</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Lead UX Designer</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Sr. UX Designer</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Timeline</h2>
@@ -60,242 +60,214 @@ export default function USBankProject() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Figma, Sketch, Adobe XD, InVision</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Figma, Sketch, InVision</p>
             </div>
           </div>
 
-          {/* Widescreen Image - Project Overview */}
+          {/* Widescreen Image - US Bank Hero Section */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
             <div className="aspect-w-16">
               <Image
                 src="/usbank-overview.jpg"
-                alt="US Bank Digital Banking Overview"
+                alt="US Bank Hero Section"
                 fill
                 className="object-cover"
               />
             </div>
-          </div>
-
-          {/* Project Overview Section */}
-          <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Project Overview</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              As part of a strategic initiative to modernize US Bank's digital presence, I led the UX design efforts to reimagine their online banking platform. The project focused on creating a more intuitive, accessible, and engaging experience for customers across all digital touchpoints.
-            </p>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Working closely with stakeholders, developers, and the product team, we developed a comprehensive design system and user-centered workflows that significantly improved customer satisfaction and digital engagement metrics.
-            </p>
-          </div>
-
-          {/* The Challenge Section */}
-          <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">The Challenge</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              US Bank faced several challenges with their existing digital platform:
-            </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
-              <li>An aging interface that didn't meet modern accessibility standards</li>
-              <li>Fragmented user journeys across different banking services</li>
-              <li>Low mobile adoption rates compared to industry benchmarks</li>
-              <li>Customer feedback indicating confusion with navigation and feature discovery</li>
-              <li>Technical limitations preventing rapid iteration and feature deployment</li>
-            </ul>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Our goal was to address these challenges while creating a cohesive, future-proof digital experience that would position US Bank as a leader in digital banking innovation.
-            </p>
-          </div>
-
-          {/* Research Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">User Research</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-4">
-                  We conducted extensive user research including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  <li>12 stakeholder interviews</li>
-                  <li>24 customer interviews across different demographics</li>
-                  <li>Analysis of 1,500+ customer feedback submissions</li>
-                  <li>Competitive analysis of 8 leading banking platforms</li>
-                  <li>Usability testing with 18 participants</li>
-                </ul>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">Key Insights</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-4">
-                  Our research revealed several critical insights:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  <li>Users prioritized quick access to account balances and recent transactions</li>
-                  <li>Mobile users struggled with complex tasks like transfers and bill payments</li>
-                  <li>Personalization features were highly valued but underutilized</li>
-                  <li>Security concerns were a major barrier to digital adoption for older demographics</li>
-                  <li>Customers wanted clearer visualization of spending patterns and financial goals</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Design Process Section */}
-          <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Design Process</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Our design process followed a user-centered approach with multiple iterations and validation checkpoints:
-            </p>
-          </div>
-
-          {/* Design Process Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">1. Discovery & Definition</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  We began by mapping the current user journeys, identifying pain points, and defining success metrics. This phase included stakeholder workshops, competitive analysis, and initial user research to establish a solid foundation for the redesign.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">2. Ideation & Prototyping</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  We created user flows, wireframes, and interactive prototypes for key journeys. Multiple design directions were explored through collaborative design studios with stakeholders and rapid prototyping sessions to test concepts early.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">3. Testing & Refinement</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Iterative usability testing with diverse user groups helped refine our designs. We conducted A/B testing on key interactions and gathered feedback from internal stakeholders to ensure the designs met both user needs and business requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Widescreen Image - Design System */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-design-system.jpg"
-                alt="US Bank Design System Components"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
+            <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Design system components created for consistent implementation across all digital touchpoints
+                /* Image.jpg — US Bank Hero Section */
               </p>
             </div>
           </div>
 
+          {/* The Challenge Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🚩 The Challenge</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              Small business owners were struggling to find the right digital tools to manage their business finances. Many used workarounds or third-party services that lacked the integrated support and trust offered by their primary bank. US Bank saw an opportunity to redefine what "business essentials" could look like — more intuitive, more centralized, and deeply user-focused.
+            </p>
+          </div>
+
+          {/* My Role Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💼 My Role</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              As a Senior UX Designer, I partnered closely with strategy, research, and product teams to:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Audit existing business tools</li>
+              <li>Facilitate workshops to align on opportunity areas</li>
+              <li>Build user flows and prototypes</li>
+              <li>Lead usability testing and synthesize insights into product recommendations</li>
+            </ul>
+          </div>
+
+          {/* Business Tools Diagram */}
+          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
+            <div className="aspect-w-16">
+              <Image
+                src="/usbank-business-tools.jpg"
+                alt="Business Tools Diagram"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
+                /* Image.jpg — Business Tools Diagram */
+              </p>
+            </div>
+          </div>
+
+          {/* Discovery & Research Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Discovery & Research</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              We uncovered that small business owners want more than just transactional banking — they needed tools that could help with:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Invoicing</li>
+              <li>Cash flow visualization</li>
+              <li>Document management</li>
+              <li>Tax preparation</li>
+              <li>Business credit tracking</li>
+            </ul>
+          </div>
+
+          {/* Ideation Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💡 Ideation</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              We explored new experiences across the business dashboard:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Centralized homepage with integrated features</li>
+              <li>A "command center" layout for finances, tasks, and notifications</li>
+              <li>Quick actions to streamline repetitive tasks</li>
+              <li>Modular UI that could scale with business growth</li>
+            </ul>
+          </div>
+
+          {/* Wireframes and Prototypes Image */}
+          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
+            <div className="aspect-w-16">
+              <Image
+                src="/usbank-wireframes.jpg"
+                alt="Wireframes and Prototypes"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
+                /* Image.jpg — Wireframes and Prototypes */
+              </p>
+            </div>
+          </div>
+
+          {/* Usability Testing Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🧪 Usability Testing</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              We tested with 8 participants across 3 target segments:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Solo entrepreneurs</li>
+              <li>Growing small businesses</li>
+              <li>Tech-savvy financial admins</li>
+            </ul>
+
+            <p className="font-[family-name:var(--font-montserrat)] font-medium text-lg mb-4">Objectives:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Validate relevance of new business banking concepts</li>
+              <li>Test task flows for invoicing, document uploads, and transaction tracking</li>
+              <li>Evaluate visual clarity and feature prioritization</li>
+            </ul>
+
+            <p className="font-[family-name:var(--font-montserrat)] font-medium text-lg mb-4">Key Findings:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+              <li>Users appreciated clear entry points into invoicing and cash flow tools</li>
+              <li>Information hierarchy needed refinement for quicker navigation</li>
+              <li>Users wanted smart insights vs. passive data dumps</li>
+            </ul>
+          </div>
+
           {/* Solution Section */}
           <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">The Solution</h2>
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔧️ Solutions</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Our solution addressed the key challenges through several innovative features and improvements:
-            </p>
-          </div>
-
-          {/* Solution Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="relative h-[200px]">
-                <Image
-                  src="/usbank-dashboard.jpg"
-                  alt="Redesigned Dashboard"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">Personalized Dashboard</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  A customizable dashboard that provides at-a-glance information about accounts, recent transactions, and financial insights. Users can configure widgets based on their preferences and banking habits.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="relative h-[200px]">
-                <Image
-                  src="/usbank-mobile.jpg"
-                  alt="Mobile Banking Experience"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">Streamlined Mobile Experience</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  A completely redesigned mobile experience with simplified navigation, touch-optimized interactions, and quick access to frequently used features. The mobile app was rebuilt from the ground up with performance and accessibility as core principles.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="relative h-[200px]">
-                <Image
-                  src="/usbank-transfers.jpg"
-                  alt="Simplified Transfers"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">Simplified Transfers & Payments</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Redesigned money movement workflows that reduced the steps required to complete transfers and bill payments. Intelligent defaults and contextual suggestions help users complete these tasks more efficiently.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="relative h-[200px]">
-                <Image
-                  src="/usbank-insights.jpg"
-                  alt="Financial Insights"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-4">Enhanced Financial Insights</h3>
-                <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  Data visualization tools that help users understand their spending patterns, track progress toward financial goals, and receive personalized recommendations for improving their financial health.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Results Section */}
-          <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Results & Impact</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              The redesigned digital banking experience delivered significant improvements across key metrics:
+              We shipped core design concepts that focused on clarity, simplicity, and support:
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
-              <li><span className="font-bold">32% increase</span> in mobile banking adoption</li>
-              <li><span className="font-bold">28% reduction</span> in customer support calls related to digital banking</li>
-              <li><span className="font-bold">41% improvement</span> in task completion rates for key journeys</li>
-              <li><span className="font-bold">User satisfaction scores</span> improved from 3.6/5 to 4.5/5</li>
-              <li><span className="font-bold">18% increase</span> in digital engagement metrics</li>
+              <li>A dynamic homepage tailored to business goals</li>
+              <li>Smart alerts for overdue invoices or unusual transactions</li>
+              <li>Visual dashboards to track goals and performance</li>
+              <li>Scalable UI system that aligned with US Bank's design language</li>
             </ul>
           </div>
 
-          {/* Lessons Learned Section */}
+          {/* Final UI Designs Image */}
+          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
+            <div className="aspect-w-16">
+              <Image
+                src="/usbank-final-ui.jpg"
+                alt="Final UI Designs"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
+                /* Image.jpg — Final UI Designs */
+              </p>
+            </div>
+          </div>
+
+          {/* Impact Section */}
           <div className="max-w-4xl mb-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Lessons Learned</h2>
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">📈 Impact</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              This project provided valuable insights that have shaped my approach to designing financial products:
+              The new dashboard designs improved early usability testing scores and user satisfaction. Stakeholders noted improved perception of US Bank as a small business ally.
             </p>
+          </div>
+
+          {/* Reflections & Takeaways Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🤔 Reflections & Takeaways</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
-              <li><span className="font-bold">Balance simplicity with functionality</span> - Financial applications require comprehensive features, but they must be presented in an intuitive way that doesn't overwhelm users.</li>
-              <li><span className="font-bold">Design for trust</span> - In financial services, building user confidence through transparent design patterns and clear communication is essential.</li>
-              <li><span className="font-bold">Accessibility is non-negotiable</span> - Ensuring all users can access financial services regardless of ability is both a legal requirement and ethical imperative.</li>
-              <li><span className="font-bold">Cross-functional collaboration</span> - Working closely with developers, product managers, and compliance teams from the start leads to more feasible and successful outcomes.</li>
+              <li>Designing for small businesses means balancing simplicity with sophistication</li>
+              <li>Deep collaboration across strategy, UX, and engineering was key to execution</li>
+              <li>Fast iteration and validation cycles helped us move with confidence</li>
             </ul>
           </div>
+
+          {/* Success Snapshot Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🏆 Success Snapshot</h2>
+            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              US Bank moved forward with this initiative as part of their broader Business Essentials roadmap. The concepts we delivered influenced how the bank continues to serve its small business audience with empathy and modern tools.
+            </p>
+          </div>
+
+          {/* Success Video Image */}
+          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
+            <div className="aspect-w-16">
+              <Image
+                src="/usbank-success-video.jpg"
+                alt="US Bank Success Video"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-4">
+              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
+                /* Image.jpg — US Bank Success Video */
+              </p>
+            </div>
+          </div>
+
+
 
           {/* Next Project Link */}
           <div className="border-t border-gray-300 pt-12 mt-16">

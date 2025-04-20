@@ -1,9 +1,8 @@
 These are placeholder files for the US Bank case study:
-- usbank-overview.jpg
-- usbank-design-system.jpg
-- usbank-dashboard.jpg
-- usbank-mobile.jpg
-- usbank-transfers.jpg
-- usbank-insights.jpg
+- usbank-overview.jpg (US Bank Hero Section)
+- usbank-business-tools.jpg (Business Tools Diagram)
+- usbank-wireframes.jpg (Wireframes and Prototypes)
+- usbank-final-ui.jpg (Final UI Designs)
+- usbank-success-video.jpg (US Bank Success Video)
 
-In a real implementation, these would be actual image files.
+In a real implementation, these would be actual image files with the appropriate content as indicated in the case study.
