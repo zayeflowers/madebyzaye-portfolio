@@ -271,7 +271,7 @@ export default function USBankProject() {
 
           {/* Next Project Link */}
           <div className="border-t border-gray-300 pt-12 mt-16">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Next Project:</h2>
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Next Project</h2>
             <Link href="/projects/cnn" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
               CNN Case Study
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
