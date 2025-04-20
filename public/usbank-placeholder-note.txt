@@ -1,8 +1,11 @@
-These are placeholder files for the US Bank case study:
-- usbank-overview.jpg (US Bank Hero Section)
-- usbank-business-tools.jpg (Business Tools Diagram)
-- usbank-wireframes.jpg (Wireframes and Prototypes)
-- usbank-final-ui.jpg (Final UI Designs)
-- usbank-success-video.jpg (US Bank Success Video)
+The US Bank case study now uses the following image:
+- /work/image1.png
 
-In a real implementation, these would be actual image files with the appropriate content as indicated in the case study.
+This image is used for all sections in the case study:
+- US Bank Hero Section
+- Business Tools Diagram
+- Wireframes and Prototypes
+- Final UI Designs
+- US Bank Success Video
+
+In the future, we can add more specific images for each section in the /work/usbank/ directory.
