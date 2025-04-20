@@ -12,15 +12,16 @@ export default function About() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative">
-            {/* Vertical divider between columns - positioned in the gap */}
-            <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[60px] bottom-0 border-l border-black/[0.38]"></div>
+          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
+            About Me
+          </h1>
 
-            {/* Left column with heading and bio text */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative mt-4">
+            {/* Vertical divider between columns - positioned in the gap */}
+            <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[20px] bottom-0 border-l border-black/[0.38]"></div>
+
+            {/* Left column with bio text */}
             <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
-              <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] [text-edge:cap] [leading-trim:both] mb-[16px]">
-                About Me
-              </h1>
 
               <div className="space-y-8">
                 <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
