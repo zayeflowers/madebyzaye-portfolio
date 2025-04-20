@@ -19,7 +19,7 @@ export default function Work() {
           </h1>
 
           <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            I've designed for scale, speed, and soul — leading product design initiatives across finance, insurance, hospitality, and media. Whether refining form flows or mentoring designers, I approach each challenge with empathy, experimentation, and strategic focus.
+            I&apos;ve designed for scale, speed, and soul — leading product design initiatives across finance, insurance, hospitality, and media. Whether refining form flows or mentoring designers, I approach each challenge with empathy, experimentation, and strategic focus.
           </p>
           <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
             From launching AI-powered features to transforming claims workflows used by millions, I build experiences that move with people — not against them.
@@ -86,7 +86,7 @@ export default function Work() {
                 />
               </div>
               <p className="text-base md:text-lg font-[family-name:var(--font-montserrat)] leading-[28px]">
-                Launched CNN's "My Election" feature during the 2020 cycle, driving 186K new users and a 45% revenue increase. Led accessibility improvements across internal tools, helping CNN rank #1 in desktop/mobile visibility with over 4.6M+ user interactions.
+                Launched CNN&apos;s &quot;My Election&quot; feature during the 2020 cycle, driving 186K new users and a 45% revenue increase. Led accessibility improvements across internal tools, helping CNN rank #1 in desktop/mobile visibility with over 4.6M+ user interactions.
               </p>
             </div>
           </div>

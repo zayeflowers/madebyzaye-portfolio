@@ -43,7 +43,7 @@ export default function DailyUplift() {
           </h1>
 
           <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
-            An AI-powered emotional wellness app rooted in empathy, mood, and motivation
+            An AI-powered wellness app that delivers mood-based affirmations and reflections
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
@@ -7,11 +9,11 @@ import Container from '../../components/Container';
 export default function CandyPaint() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
+      <Navbar key="navbar-candy-paint" />
 
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container>
+        <Container key="container-candy-paint">
           <div className="mb-8">
             <Link
               href="/ai-projects"
@@ -39,7 +41,7 @@ export default function CandyPaint() {
           </h1>
 
           <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
-            Music video that infuses that latest generative A.I. creative art tools
+            A music video experiment that blends motion, style, and identity through generative AI tools
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
