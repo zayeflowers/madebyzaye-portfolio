@@ -6,34 +6,40 @@ import Image from 'next/image';
 import Container from './Container';
 
 const Hero: React.FC = () => {
+  // Add a unique key to force re-render and avoid hydration issues
+  const uniqueKey = "hero-component-v1";
   return (
-    <section className="w-full bg-[#f6f0e9] text-black pt-0 pb-16 md:pb-20 lg:pb-24 relative">
+    <section key={uniqueKey} className="w-full bg-[#f6f0e9] text-black pt-0 pb-16 md:pb-20 lg:pb-24 relative">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 pt-[24px] relative">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 pt-[56px] relative">
           {/* Vertical divider between columns - positioned in the gap */}
           <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[60px] bottom-0 border-l border-black/[0.38]"></div>
           {/* Left column with heading and intro text */}
           <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
-            <h1 className="text-5xl md:text-6xl lg:text-[64px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] tracking-[-0.04em] [text-edge:cap] [leading-trim:both]">
+            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] [text-edge:cap] [leading-trim:both]">
               Creating what I wish existed.
             </h1>
 
             <div className="space-y-8">
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
                 I&apos;m a Designer Founder crafting inspiring, tech-powered tools that meet people where they are.
-                Currently building <span className="text-red-600 font-medium">Daily Uplift</span> — an AI-powered emotional wellness app rooted in empathy, mood, and motivation.
+                Currently building <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an AI-powered emotional wellness app rooted in empathy, mood, and motivation.
               </p>
 
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
-                Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi facilisis et cras ullamcorper. Euismod felis non at integer.
+                Whether I&apos;m prototyping digital wellness tools, experimenting with AI visuals, or building immersive experiences, I approach design as both a craft and a catalyst.
+              </p>
+
+              <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
+                As a Creative Technologist and Product Designer, I work at the edge of possibility &mdash; where design meets code, and ideas become products. I&apos;m driven by curiosity, guided by intention, and always exploring how technology can feel more human.
               </p>
             </div>
 
-            <div className="pt-[4px]">
+            <div className="pt-[24px]">
               <Link
                 href="/work"
-                className="relative inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
+                className="relative inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#000000] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-black/80 transition-colors"
               >
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">
                   Explore my work
@@ -52,21 +58,20 @@ const Hero: React.FC = () => {
 
             {/* Daily Uplift Project */}
             <div className="mb-8">
+              <div className="mb-4">
+                <Image
+                  src="/DU.svg"
+                  alt="Daily Uplift Logo"
+                  width={200}
+                  height={64}
+                  className="h-16 object-contain"
+                />
+              </div>
               <div className="bg-[#FFFFFF] rounded-[14px] p-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-                <div className="mb-4">
-                  <Image
-                    src="/DU.svg"
-                    alt="Daily Uplift Logo"
-                    width={200}
-                    height={64}
-                    className="h-16 object-contain"
-                  />
-                </div>
                 <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                  Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis et cras ullamcorper. Euismod felis non at integer.
+                  AI-powered wellness made simple. Personalized messages to lift your mood and shift your mindset.
                 </p>
-                <p className="mt-4">
-                  <span className="font-bold">Status:</span> Coming soon
+                <p className="mt-4"><span className="font-bold">Status:</span> Coming soon
                 </p>
               </div>
             </div>
