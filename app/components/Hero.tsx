@@ -17,8 +17,8 @@ const Hero: React.FC = () => {
           {/* Vertical divider between columns - positioned in the gap */}
           <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[80px] bottom-0 border-l border-black/[0.38]"></div>
           {/* Left column with heading and intro text */}
-          <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
-            <PageHeading title="Creating what I wish existed." />
+          <div className="flex flex-col gap-4 md:gap-6 max-w-xl md:col-span-7">
+            <PageHeading title="Creating what I wish existed." className="mb-0" />
 
             <div className="space-y-8">
               <p className="text-lg md:text-xl font-[family-name:var(--font-montserrat)] leading-[28px] text-[20px]">
