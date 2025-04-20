@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             <div className="pt-[24px]">
               <Link
                 href="/work"
-                className="relative inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#000000] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-black/80 transition-colors"
+                className="relative inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
               >
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">
                   Explore my work

@@ -18,8 +18,8 @@ export default function About() {
           <PageHeading title="About Me" />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative mt-4">
-            {/* Vertical divider between columns - positioned in the gap */}
-            <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[40px] bottom-0 border-l border-black/[0.38]"></div>
+            {/* Vertical divider between columns - positioned in the gap with additional left margin */}
+            <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px)] top-[80px] bottom-0 border-l border-black/[0.38]"></div>
 
             {/* Left column with bio text */}
             <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">

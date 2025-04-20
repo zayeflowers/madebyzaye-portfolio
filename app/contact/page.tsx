@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Container from '../components/Container';
@@ -6,11 +8,11 @@ import PageHeading from '../components/PageHeading';
 export default function Contact() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
+      <Navbar key="navbar-contact" />
 
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container>
+        <Container key="container-contact">
           <PageHeading title="Contact" />
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
@@ -57,7 +59,7 @@ export default function Contact() {
               </p>
 
               <a
-                href="mailto:hello@madebyzaye.com?subject=Work Inquiry"
+                href="mailto:hello@madebyzaye.com?subject=Work%20Inquiry"
                 className="inline-flex items-center justify-center box-border w-full md:w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
               >
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">
