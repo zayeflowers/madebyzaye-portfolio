@@ -18,7 +18,7 @@ export default function About() {
 
             {/* Left column with heading and bio text */}
             <div className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
-              <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[72px] leading-tight tracking-[-0.04em] text-[#000000] [text-edge:cap] [leading-trim:both] mb-[16px]">
+              <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-5xl md:text-6xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] [text-edge:cap] [leading-trim:both] mb-[16px]">
                 About Me
               </h1>
 
