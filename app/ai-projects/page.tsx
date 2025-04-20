@@ -19,9 +19,7 @@ export default function AIProjects() {
           </h1>
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            Lorem ipsum dolor sit amet consectetur. Eu nec turpis condimentum mi facilisis
-            et cras ullamcorper. Euismod felis non at integer. Eu nec turpis condimentum mi
-            facilisis et cras ullamcorper. Euismod felis non at integer.
+            Exploring what happens when creativity meets computation. These projects combine storytelling, visual design, and generative AI to push boundaries — and spark new conversations about what technology can feel like.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
@@ -41,7 +39,7 @@ export default function AIProjects() {
                   Candy Paint
                 </h2>
                 <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
-                  Music video that infuses that latest generative A.I. creative art tools.
+                  A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
                 </p>
                 <Link
                   href="/ai-projects/candy-paint"
@@ -71,7 +69,7 @@ export default function AIProjects() {
                   Daily Uplift
                 </h2>
                 <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">
-                  An AI-powered emotional wellness app rooted in empathy, mood, and motivation.
+                  An AI-powered wellness app that delivers mood-based affirmations and reflections. Rooted in empathy and built for everyday use, it merges emotional design with intelligent content to support users right when they need it.
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] text-base mb-4">
                   <span className="font-bold">Status:</span> Coming soon
