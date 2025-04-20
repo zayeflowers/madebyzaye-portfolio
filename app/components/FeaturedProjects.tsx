@@ -15,7 +15,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, href, imageSrc, bgColor = '#f0f0f0' }) => {
   return (
     <Link href={href}>
-      <div className="bg-white rounded-[16px] h-[223px] w-full max-w-[373px] mx-auto shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden relative">
+      <div className="bg-white rounded-[16px] h-[223px] w-full md:max-w-[373px] mx-auto shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden relative">
         {imageSrc && (
           <div className="relative h-full w-full">
             <Image
@@ -47,7 +47,7 @@ const FeaturedProjects: React.FC = () => {
           Featured Projects
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[16px] max-w-full overflow-x-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[16px] w-full overflow-x-auto">
           <ProjectCard
             title="US Bank Case Study"
             href="/projects/us-bank"

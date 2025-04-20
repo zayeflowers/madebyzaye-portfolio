@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
             <Image
               src="/madebyzayelogo.svg"
               alt="MadebyZaye Logo"
-              width={377}
-              height={93}
-              className="w-[180px] sm:w-[250px] md:w-[300px] h-auto"
+              width={471}
+              height={116}
+              className="w-[225px] sm:w-[312px] md:w-[375px] h-auto"
               priority
             />
           </Link>
