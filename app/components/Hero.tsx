@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative">
-          {/* Vertical divider between columns - positioned in the gap */}
-          <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px-16px)] top-[80px] bottom-0 border-l border-black/[0.38]"></div>
+          {/* Vertical divider between columns - positioned in the gap with additional 16px left margin */}
+          <div className="hidden md:block absolute left-[calc(58.33%+0.75rem-24px)] top-[80px] bottom-0 border-l border-black/[0.38]"></div>
           {/* Left column with heading and intro text */}
           <div className="flex flex-col gap-4 md:gap-6 max-w-xl md:col-span-7">
             <PageHeading title="Creating what I wish existed." className="mb-0" />
