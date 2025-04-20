@@ -15,7 +15,7 @@ export default function Contact() {
           </h1>
 
           <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl">
@@ -54,7 +54,7 @@ export default function Contact() {
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Work Inquiries</h2>
 
               <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-6">
-                Interested in working together? Let's discuss your project. Please provide some details about what you're looking for.
+                Interested in working together? Let&apos;s discuss your project. Please provide some details about what you&apos;re looking for.
               </p>
 
               <a
