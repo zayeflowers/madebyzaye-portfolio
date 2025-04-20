@@ -33,7 +33,7 @@ p {
   line-height: 28px;
 }
 
-/* Aspect ratio utilities */
+/* Aspect ratio utilities for widescreen images */
 .aspect-w-16 {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
