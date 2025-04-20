@@ -1,0 +1,23 @@
+# Block all crawlers
+User-agent: *
+Disallow: /
+
+# Block GPTBot specifically (OpenAI's crawler)
+User-agent: GPTBot
+Disallow: /
+
+# Block Google-Extended (Bard/Gemini)
+User-agent: Google-Extended
+Disallow: /
+
+# Block CCBot (Common Crawl)
+User-agent: CCBot
+Disallow: /
+
+# Block Anthropic's Claude
+User-agent: Claude-Web
+Disallow: /
+
+# Block Perplexity AI
+User-agent: PerplexityBot
+Disallow: /

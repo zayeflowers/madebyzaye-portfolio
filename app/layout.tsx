@@ -27,6 +27,16 @@ const lexendExa = Lexend_Exa({
 export const metadata: Metadata = {
   title: "Made By Zaye",
   description: "Portfolio website for MadebyZaye",
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },

@@ -1,0 +1,15 @@
+# Prevent directory browsing
+Options -Indexes
+
+# Prevent access to specific file types
+<FilesMatch ".(json|config|env|md|yml|yaml|lock)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Block bad bots
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_USER_AGENT} ^.*(bot|spider|crawler|scraper|parser|extractor).*$ [NC]
+  RewriteRule .* - [F,L]
+</IfModule>
