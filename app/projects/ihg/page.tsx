@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
@@ -6,11 +8,11 @@ import Container from '../../components/Container';
 export default function IHGProject() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
+      <Navbar key="navbar-ihg" />
 
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container>
+        <Container key="container-ihg">
           <div className="mb-8">
             <Link
               href="/projects"
@@ -71,6 +73,17 @@ export default function IHGProject() {
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
               This case study is currently being developed. Check back soon for the full details.
             </p>
+          </div>
+
+          {/* Previous Project Link */}
+          <div className="border-t border-gray-300 pt-12 mt-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Previous Project</h2>
+            <Link href="/projects/cnn" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
+              <svg className="mr-2 w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+              CNN Case Study
+            </Link>
           </div>
         </Container>
       </main>
