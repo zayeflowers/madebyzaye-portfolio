@@ -120,7 +120,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Discovery & Research</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              Our users had critical questions: Who are my elected officials? What changed since 2016? Which states are in play? What's a caucus? We synthesized feedback from research sessions and stakeholder interviews to inform our design priorities.
+              Our users had critical questions: Who are my elected officials? What changed since 2016? Which states are in play? What&apos;s a caucus? We synthesized feedback from research sessions and stakeholder interviews to inform our design priorities.
             </p>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">Primary goals:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
@@ -188,7 +188,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🛠️ Constraints</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-              <li><strong>Time:</strong> The election wasn't going to wait. We delivered on a fixed timeline.</li>
+              <li><strong>Time:</strong> The election wasn&apos;t going to wait. We delivered on a fixed timeline.</li>
               <li><strong>Technical feasibility:</strong> Not all ideas could be supported by legacy systems and external APIs.</li>
               <li><strong>Ad pressure:</strong> Design decisions had to balance storytelling with space for advertising — a constant tension with editorial needs.</li>
             </ul>
@@ -222,7 +222,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🤔 Reflections & Takeaways</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-              <li>Designing for democracy is layered — it's political, emotional, and data-driven</li>
+              <li>Designing for democracy is layered — it&apos;s political, emotional, and data-driven</li>
               <li>Fast feedback cycles are crucial — we lost time chasing approvals</li>
               <li>Partnership with editorial and engineering was essential to ship thoughtful, scalable experiences</li>
             </ul>
@@ -232,7 +232,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🏆 Final Thought</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              This work taught me that impact isn't always about perfection — it's about designing under real constraints to help people understand the world. That's what makes product design powerful.
+              This work taught me that impact isn&apos;t always about perfection — it&apos;s about designing under real constraints to help people understand the world. That&apos;s what makes product design powerful.
             </p>
           </div>
 
