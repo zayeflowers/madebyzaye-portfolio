@@ -284,7 +284,7 @@ export default function USBankProject() {
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                US Bank Success Video
+                US Bank Success Video Demo
               </p>
             </div>
           </div>
