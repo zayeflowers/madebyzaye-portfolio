@@ -96,10 +96,10 @@ export default function USBankProject() {
           {/* My Role Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💼 My Role</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               As a Senior UX Designer, I partnered closely with strategy, research, and product teams to:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Audit existing business tools</li>
               <li>Facilitate workshops to align on opportunity areas</li>
               <li>Build user flows and prototypes</li>
@@ -131,10 +131,10 @@ export default function USBankProject() {
           {/* Discovery & Research Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Discovery & Research</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               We uncovered that small business owners want more than just transactional banking — they needed tools that could help with:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Invoicing</li>
               <li>Cash flow visualization</li>
               <li>Document management</li>
@@ -146,10 +146,10 @@ export default function USBankProject() {
           {/* Ideation Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💡 Ideation</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               We explored new experiences across the business dashboard:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Centralized homepage with integrated features</li>
               <li>A &quot;command center&quot; layout for finances, tasks, and notifications</li>
               <li>Quick actions to streamline repetitive tasks</li>
@@ -181,24 +181,24 @@ export default function USBankProject() {
           {/* Usability Testing Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🧪 Usability Testing</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               We tested with 8 participants across 3 target segments:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Solo entrepreneurs</li>
               <li>Growing small businesses</li>
               <li>Tech-savvy financial admins</li>
             </ul>
 
-            <p className="font-[family-name:var(--font-montserrat)] font-medium text-lg mb-4">Objectives:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <p className="font-[family-name:var(--font-montserrat)] font-medium text-base mb-4">Objectives:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Validate relevance of new business banking concepts</li>
               <li>Test task flows for invoicing, document uploads, and transaction tracking</li>
               <li>Evaluate visual clarity and feature prioritization</li>
             </ul>
 
-            <p className="font-[family-name:var(--font-montserrat)] font-medium text-lg mb-4">Key Findings:</p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <p className="font-[family-name:var(--font-montserrat)] font-medium text-base mb-4">Key Findings:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Users appreciated clear entry points into invoicing and cash flow tools</li>
               <li>Information hierarchy needed refinement for quicker navigation</li>
               <li>Users wanted smart insights vs. passive data dumps</li>
@@ -208,10 +208,10 @@ export default function USBankProject() {
           {/* Solution Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔧️ Solutions</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               We shipped core design concepts that focused on clarity, simplicity, and support:
             </p>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>A dynamic homepage tailored to business goals</li>
               <li>Smart alerts for overdue invoices or unusual transactions</li>
               <li>Visual dashboards to track goals and performance</li>
@@ -243,7 +243,7 @@ export default function USBankProject() {
           {/* Impact Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">📈 Impact</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               The new dashboard designs improved early usability testing scores and user satisfaction. Stakeholders noted improved perception of US Bank as a small business ally.
             </p>
           </div>
@@ -251,7 +251,7 @@ export default function USBankProject() {
           {/* Reflections & Takeaways Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🤔 Reflections & Takeaways</h2>
-            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-lg leading-[28px]">
+            <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Designing for small businesses means balancing simplicity with sophistication</li>
               <li>Deep collaboration across strategy, UX, and engineering was key to execution</li>
               <li>Fast iteration and validation cycles helped us move with confidence</li>
@@ -261,7 +261,7 @@ export default function USBankProject() {
           {/* Success Snapshot Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🏆 Success Snapshot</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+            <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               US Bank moved forward with this initiative as part of their broader Business Essentials roadmap. The concepts we delivered influenced how the bank continues to serve its small business audience with empathy and modern tools.
             </p>
           </div>
