@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Candy Paint Project */}
+            {/* Candy Paint Project - Commented out temporarily
             <div>
               <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">Candy Paint - AI Music Video</h3>
               <div className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
@@ -111,6 +111,7 @@ const Hero: React.FC = () => {
                 </Link>
               </div>
             </div>
+            */}
           </div>
         </div>
       </Container>

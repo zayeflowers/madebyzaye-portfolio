@@ -51,17 +51,17 @@ const FeaturedProjects: React.FC = () => {
           <ProjectCard
             title="US Bank Case Study"
             href="/projects/us-bank"
-            bgColor="#1a365d"
+            imageSrc="/casestudy1.jpg"
           />
           <ProjectCard
             title="CNN Case Study"
             href="/projects/cnn"
-            bgColor="#cc0000"
+            imageSrc="/casestudy2.jpg"
           />
           <ProjectCard
             title="IHG Case Study"
             href="/projects/ihg"
-            bgColor="#003366"
+            imageSrc="/casestudy3.jpg"
           />
         </div>
       </Container>
