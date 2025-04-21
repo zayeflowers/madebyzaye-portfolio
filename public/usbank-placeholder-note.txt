@@ -1,8 +1,8 @@
-The US Bank case study now uses the following specific images:
+The US Bank case study now uses the following specific images and video:
 - usbank-overview.jpg (US Bank Hero Section)
 - usbank-business-tools.jpg (Business Tools Diagram)
 - usbank-wireframes.jpg (Wireframes and Prototypes)
 - usbank-final-ui.jpg (Final UI Designs)
-- usbank-success-video.jpg (US Bank Success Video)
+- video.mov (US Bank Success Video with usbank-success-video.jpg as poster image)
 
-These images are used in their respective sections of the case study to provide a more detailed and accurate representation of the project.
+These media assets are used in their respective sections of the case study to provide a more detailed and accurate representation of the project. The video is displayed with consistent padding and styling to match the image cards.

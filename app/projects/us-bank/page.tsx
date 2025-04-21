@@ -66,17 +66,21 @@ export default function USBankProject() {
 
           {/* Widescreen Image - US Bank Hero Section */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-overview.jpg"
-                alt="US Bank Hero Section"
-                fill
-                className="object-cover"
-              />
+            <div className="p-6">
+              <div className="relative">
+                <Image
+                  src="/usbank-overview.jpg"
+                  alt="US Bank Hero Section"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                {/* Image.jpg — US Bank Hero Section */}
+                US Bank Overview
               </p>
             </div>
           </div>
@@ -105,17 +109,21 @@ export default function USBankProject() {
 
           {/* Business Tools Diagram */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-business-tools.jpg"
-                alt="Business Tools Diagram"
-                fill
-                className="object-cover"
-              />
+            <div className="p-6">
+              <div className="relative">
+                <Image
+                  src="/usbank-business-tools.jpg"
+                  alt="Business Tools Diagram"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                {/* Image.jpg — Business Tools Diagram */}
+                Business Tools Diagram
               </p>
             </div>
           </div>
@@ -151,17 +159,21 @@ export default function USBankProject() {
 
           {/* Wireframes and Prototypes Image */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-wireframes.jpg"
-                alt="Wireframes and Prototypes"
-                fill
-                className="object-cover"
-              />
+            <div className="p-6">
+              <div className="relative">
+                <Image
+                  src="/usbank-wireframes.jpg"
+                  alt="Wireframes and Prototypes"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                {/* Image.jpg — Wireframes and Prototypes */}
+                Wireframes and Prototypes
               </p>
             </div>
           </div>
@@ -209,17 +221,21 @@ export default function USBankProject() {
 
           {/* Final UI Designs Image */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-final-ui.jpg"
-                alt="Final UI Designs"
-                fill
-                className="object-cover"
-              />
+            <div className="p-6">
+              <div className="relative">
+                <Image
+                  src="/usbank-final-ui.jpg"
+                  alt="Final UI Designs"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                {/* Image.jpg — Final UI Designs */}
+                Final UI Designs
               </p>
             </div>
           </div>
@@ -250,19 +266,25 @@ export default function USBankProject() {
             </p>
           </div>
 
-          {/* Success Video Image */}
+          {/* Success Video */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="aspect-w-16">
-              <Image
-                src="/usbank-success-video.jpg"
-                alt="US Bank Success Video"
-                fill
-                className="object-cover"
-              />
+            <div className="p-6">
+              <div className="relative">
+                <video
+                  src="/video.mov"
+                  controls
+                  className="w-full h-auto rounded-md"
+                  poster="/usbank-success-video.jpg"
+                  preload="metadata"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                {/* Image.jpg — US Bank Success Video */}
+                US Bank Success Video
               </p>
             </div>
           </div>
