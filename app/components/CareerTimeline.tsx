@@ -50,7 +50,7 @@ const CareerTimeline: React.FC = () => {
 
         <div className="w-full max-w-3xl -my-6">
           <TimelineItem
-            date="2023"
+            date="2025"
             title="Founder & CEO at Daily Uplift"
             description="Leading the development of an AI-powered emotional wellness app rooted in empathy, mood, and motivation."
             dateColor="text-red-600"
@@ -58,32 +58,32 @@ const CareerTimeline: React.FC = () => {
           />
 
           <TimelineItem
-            date="2022"
-            title="Senior Product Designer at CNN"
-            description="Led design initiatives for CNN's digital platforms, focusing on user experience and engagement metrics."
-            dateColor="text-blue-600"
-            dateBgColor="bg-blue-100"
-          />
-
-          <TimelineItem
-            date="2020-2022"
-            title="UX Designer at US Bank"
-            description="Designed and implemented user-centered solutions for banking applications and services."
-            dateColor="text-purple-600"
-            dateBgColor="bg-purple-100"
-          />
-
-          <TimelineItem
-            date="2018-2020"
-            title="UI/UX Designer at GEICO"
+            date="2024"
+            title="UX/Product Lead at GEICO"
             description="Created intuitive interfaces for insurance products and services, improving customer satisfaction and conversion rates."
             dateColor="text-green-600"
             dateBgColor="bg-green-100"
           />
 
           <TimelineItem
-            date="2016-2018"
-            title="Junior Designer at Publicis Sapient"
+            date="2019-2021"
+            title="Senior Product Designer at CNN"
+            description="Led design initiatives for CNN&apos;s digital platforms, focusing on user experience and engagement metrics."
+            dateColor="text-blue-600"
+            dateBgColor="bg-blue-100"
+          />
+
+          <TimelineItem
+            date="2019-2023"
+            title="Product Design Mentor at Thinkful"
+            description="Mentored 10+ aspiring designers through portfolio reviews, mock interviews, and job search prep."
+            dateColor="text-purple-600"
+            dateBgColor="bg-purple-100"
+          />
+
+          <TimelineItem
+            date="2018-2019"
+            title="Senior UX Designer at IHG"
             description="Collaborated on digital transformation projects for major brands, focusing on responsive design and accessibility."
             dateColor="text-yellow-600"
             dateBgColor="bg-yellow-100"
