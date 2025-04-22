@@ -40,7 +40,7 @@ const ToolsAndTechnologies: React.FC = () => {
 
         <div className="max-w-5xl">
           <p className="font-[family-name:var(--font-montserrat)] text-gray-300 mb-[24px]">
-            This portfolio site <span className="text-white font-medium">Made By Zaye</span> was built with the following technologies:
+            <span className="text-white font-medium">Made By Zaye</span> was built with the following technologies:
           </p>
 
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3 mb-[24px]">

@@ -44,7 +44,7 @@ const FeaturedProjects: React.FC = () => {
     <section className="w-full bg-black text-white pt-[56px] pb-[32px] overflow-hidden">
       <Container>
         <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight mb-[32px] [text-edge:cap] [leading-trim:both] tracking-tight">
-          Featured Projects
+          Featured Work
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[16px] w-full overflow-x-auto">
@@ -59,9 +59,9 @@ const FeaturedProjects: React.FC = () => {
             imageSrc="/casestudy2.jpg"
           />
           <ProjectCard
-            title="IHG Case Study"
-            href="/projects/ihg"
-            imageSrc="/casestudy3.jpg"
+            title="Read my Thinkful Interview"
+            href="/interview"
+            imageSrc="/thinkful1.png"
           />
         </div>
       </Container>
