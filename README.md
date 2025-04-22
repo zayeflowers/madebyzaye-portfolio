@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Madebyzaye.com
+
+The personal portfolio of Zaye Flowers — Lead Product Designer, builder, and creative technologist.
+
+---
+
+## Overview
+
+**Madebyzaye.com** is a handcrafted portfolio site built using Next.js, Tailwind CSS, and React. It showcases a hybrid approach to design and development — featuring real case studies, AI-driven app projects, and experiments that live at the intersection of design, code, and creativity.
+
+---
+
+## Features
+
+- ✨ Custom Next.js & React architecture
+- 🎨 Tailwind-powered responsive design
+- 💼 Case study templates for product design work
+- 🤖 Sections for AI experiments, app builds, and creative tools
+- 🌐 Fully deployed and version-controlled using GitHub and Netlify
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **Version Control:** Git + GitHub
+- **Hosting:** Netlify
+- **Dev Tools:** Cursor AI, Augment Code
+
+---
+
+## Project Structure
+
+```
+madebyzaye-portfolio/
+├── app/                  # Next.js app directory
+│   ├── about/            # About page
+│   ├── ai-projects/      # AI projects section
+│   ├── components/       # Reusable React components
+│   ├── contact/          # Contact page
+│   ├── projects/         # Case studies and project pages
+│   ├── work/             # Work experience page
+│   ├── globals.css       # Global styles
+│   ├── layout.tsx        # Root layout component
+│   └── page.tsx          # Homepage
+├── public/               # Static assets
+│   ├── fonts/            # Custom fonts
+│   ├── images/           # Image assets
+│   └── favicon files     # Various favicon formats
+├── .gitignore            # Git ignore file
+├── next.config.js        # Next.js configuration
+├── package.json          # Project dependencies
+├── postcss.config.js     # PostCSS configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── tsconfig.json         # TypeScript configuration
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18.x or higher
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/madebyzaye-portfolio.git
+   cd madebyzaye-portfolio
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Learn More
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Design System
 
-## Deploy on Vercel
+The site uses a consistent design system with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Typography:**
+  - Montserrat for body text and headings
+  - Lexend Exa for navigation elements
+  - Geist Sans for UI elements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Colors:**
+  - Primary: #CC0101 (red)
+  - Background: #F6F0E9 (beige)
+  - Text: #000000 (black)
+  - White: #FFFFFF
+
+- **Components:**
+  - Custom animations using Framer Motion
+  - Responsive layout with mobile-first approach
+  - Consistent spacing and proportions
+
+---
+
+## Deployment
+
+The site is deployed on Netlify with continuous deployment from the main branch.
+
+---
+
+## License
+
+All rights reserved. This code is not open-source.
+
+---
+
+## Contact
+
+For any inquiries, please reach out to hello@madebyzaye.com
