@@ -1,35 +1,12 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../../components/Container';
 import PageLayout from '../../components/PageLayout';
 
 export default function USBankProject() {
-  useEffect(() => {
-    const video = document.getElementById('usbank-video') as HTMLVideoElement;
-    const videoWrapper = document.getElementById('video-wrapper');
-    const posterWrapper = document.getElementById('poster-wrapper');
-
-    if (video && videoWrapper && posterWrapper) {
-      // Show poster when video ends
-      const handleEnded = () => {
-        videoWrapper.style.display = 'none';
-        posterWrapper.style.display = 'block';
-      };
-
-      video.addEventListener('ended', handleEnded);
-
-      return () => {
-        // Clean up event listeners
-        if (video) {
-          video.removeEventListener('ended', handleEnded);
-        }
-      };
-    }
-  }, []); // Empty dependency array means this effect runs once on mount
-
   return (
     <PageLayout navbarKey="navbar-usbank">
       <main className="w-full text-black pt-[16px] pb-0 relative">
@@ -292,52 +269,15 @@ export default function USBankProject() {
             <div className="p-6">
               <div className="relative">
                 {/* Video Player with Poster Image */}
-                <div className="relative w-full">
-                  {/* Video Element - Hidden initially */}
-                  <div id="video-wrapper" className="w-full" style={{ display: 'none' }}>
-                    <video
-                      id="usbank-video"
-                      src="/video.mov"
-                      className="w-full h-auto rounded-md"
-                      controls
-                      playsInline
-                    >
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-
-                  {/* Poster Image - Shown initially */}
-                  <div
-                    id="poster-wrapper"
-                    className="w-full relative"
-                  >
-                    <img
-                      src="/casestudy1.jpg"
-                      alt="US Bank Case Study"
-                      className="w-full h-auto rounded-md"
-                    />
-                    <button
-                      onClick={() => {
-                        const videoWrapper = document.getElementById('video-wrapper');
-                        const posterWrapper = document.getElementById('poster-wrapper');
-                        const video = document.getElementById('usbank-video') as HTMLVideoElement;
-
-                        if (videoWrapper && posterWrapper && video) {
-                          // Show video, hide poster
-                          videoWrapper.style.display = 'block';
-                          posterWrapper.style.display = 'none';
-
-                          // Play the video
-                          video.play();
-                        }
-                      }}
-                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#CC0101] bg-opacity-80 hover:bg-opacity-100 text-white rounded-full w-20 h-20 flex items-center justify-center transition-all duration-300 cursor-pointer"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
+                <div className="relative w-full aspect-video">
+                  {/* Embed video using iframe for better cross-browser compatibility */}
+                  <iframe
+                    src="https://player.vimeo.com/video/76979871?h=8272103f6e"
+                    className="w-full h-full rounded-md border-0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    title="US Bank Demo Video"
+                  ></iframe>
                 </div>
               </div>
             </div>
