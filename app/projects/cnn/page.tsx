@@ -56,7 +56,7 @@ export default function CNNProject() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Figma, Fullstory, GA</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Figma, Fullstory</p>
             </div>
           </div>
 
@@ -64,9 +64,14 @@ export default function CNNProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#cc0000] flex items-center justify-center text-white">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl">CNN Election Hero Image</p>
-                </div>
+                <Image
+                  src="/cnn1.png"
+                  alt="CNN Election Center Hero"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
               </div>
             </div>
             <div className="p-4">
@@ -92,7 +97,7 @@ export default function CNNProject() {
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Visual design, wireframing, and content strategy</li>
-              <li>Quantitative & qualitative analysis using tools like Fullstory and GA</li>
+              <li>Quantitative & qualitative analysis using tools like Fullstory</li>
               <li>Cross-functional collaboration with editorial, product, and engineering</li>
               <li>Stakeholder reviews with high-visibility contributors (legal, Wolf Blitzer, etc.)</li>
             </ul>
@@ -102,9 +107,14 @@ export default function CNNProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Miro Collaboration Board</p>
-                </div>
+                <Image
+                  src="/cnn2.png"
+                  alt="CNN Collaboration and Wireframing Process"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
               </div>
             </div>
             <div className="p-4">
@@ -132,9 +142,14 @@ export default function CNNProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Demographic Map Visualization</p>
-                </div>
+                <Image
+                  src="/cnn3.png"
+                  alt="CNN Demographic Map Visualization"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
               </div>
             </div>
             <div className="p-4">
@@ -162,9 +177,14 @@ export default function CNNProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Polling Visualization Mockups</p>
-                </div>
+                <Image
+                  src="/cnn4.png"
+                  alt="CNN Polling Visualization Mockups"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
               </div>
             </div>
             <div className="p-4">
@@ -196,9 +216,14 @@ export default function CNNProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Final UI Screens</p>
-                </div>
+                <Image
+                  src="/cnn5.png"
+                  alt="CNN Final UI Screens"
+                  width={1200}
+                  height={675}
+                  style={{ width: '100%', height: 'auto' }}
+                  className="object-contain"
+                />
               </div>
             </div>
             <div className="p-4">
