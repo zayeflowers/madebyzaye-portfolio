@@ -19,7 +19,7 @@ export default function AIProjects() {
             Exploring what happens when creativity meets computation. These projects combine storytelling, visual design, and generative AI to push boundaries — and spark new conversations about what technology can feel like.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mb-40 md:mb-0">
             {/* Candy Paint Project */}
             <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <div className="relative">
