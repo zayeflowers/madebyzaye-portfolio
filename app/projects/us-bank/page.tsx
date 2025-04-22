@@ -3,15 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
+import PageLayout from '../../components/PageLayout';
 
 export default function USBankProject() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-usbank" />
-
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+    <PageLayout navbarKey="navbar-usbank">
+      <main className="w-full text-black pt-[16px] pb-0 relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-usbank">
           {/* Back button */}
@@ -292,7 +290,7 @@ export default function USBankProject() {
 
 
           {/* Next Project Link */}
-          <div className="border-t border-gray-300 pt-12 mt-16">
+          <div className="border-t border-gray-300 pt-12 mt-16 mb-40">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Next Project</h2>
             <Link href="/projects/cnn" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
               CNN Case Study
@@ -303,6 +301,6 @@ export default function USBankProject() {
           </div>
         </Container>
       </main>
-    </div>
+    </PageLayout>
   );
 }

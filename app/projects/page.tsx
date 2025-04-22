@@ -1,15 +1,13 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import Link from 'next/link';
 import PageHeading from '../components/PageHeading';
+import PageLayout from '../components/PageLayout';
 
 export default function Projects() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
-
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+    <PageLayout navbarKey="navbar-projects">
+      <main className="w-full text-black pt-[16px] pb-0 relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container>
           <PageHeading title="Projects" />
@@ -39,6 +37,6 @@ export default function Projects() {
           </div>
         </Container>
       </main>
-    </div>
+    </PageLayout>
   );
 }

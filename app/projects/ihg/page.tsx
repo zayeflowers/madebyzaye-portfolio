@@ -2,15 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
+import PageLayout from '../../components/PageLayout';
 
 export default function IHGProject() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-ihg" />
-
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+    <PageLayout navbarKey="navbar-ihg">
+      <main className="w-full text-black pt-[16px] pb-0 relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-ihg">
           <div className="mb-8">
@@ -208,7 +206,7 @@ export default function IHGProject() {
           </div>
 
           {/* Previous Project Link */}
-          <div className="border-t border-gray-300 pt-12 mt-16">
+          <div className="border-t border-gray-300 pt-12 mt-16 mb-40">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Previous Project</h2>
             <Link href="/projects/cnn" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
               <svg className="mr-2 w-5 h-5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -219,6 +217,6 @@ export default function IHGProject() {
           </div>
         </Container>
       </main>
-    </div>
+    </PageLayout>
   );
 }
