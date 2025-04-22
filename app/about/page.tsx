@@ -2,27 +2,23 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import CareerTimeline from '../components/CareerTimeline';
 import PageHeading from '../components/PageHeading';
-import PageWrapper from '../components/PageWrapper';
+import PageLayout from '../components/PageLayout';
 import { FadeIn, StaggerContainer, StaggerItem } from '../components/animations';
 
 export default function About() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-about" />
+    <PageLayout navbarKey="navbar-about">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
+        <Container key="container-about">
+          <FadeIn>
+            <PageHeading title="About Me" />
+          </FadeIn>
 
-      <PageWrapper>
-        <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-          <Container key="container-about">
-            <FadeIn>
-              <PageHeading title="About Me" />
-            </FadeIn>
-
-            <StaggerContainer className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative mt-4">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative mt-4">
               {/* Left column with bio text */}
               <StaggerItem className="flex flex-col gap-8 md:gap-10 max-w-xl md:col-span-7">
 
@@ -100,14 +96,13 @@ export default function About() {
               </StaggerItem>
             </StaggerContainer>
           </Container>
-        </main>
+      </main>
 
-        <div className="h-[100px] bg-[#f6f0e9]"></div>
+      <div className="h-[100px] bg-[#f6f0e9]"></div>
 
-        <FadeIn delay={0.3}>
-          <CareerTimeline key="career-timeline-about" />
-        </FadeIn>
-      </PageWrapper>
-    </div>
+      <FadeIn delay={0.3}>
+        <CareerTimeline key="career-timeline-about" />
+      </FadeIn>
+    </PageLayout>
   );
 }

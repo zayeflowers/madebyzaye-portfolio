@@ -3,14 +3,12 @@
 import React from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
-import Navbar from '../../components/Navbar';
 import Container from '../../components/Container';
+import PageLayout from '../../components/PageLayout';
 
 export default function CandyPaint() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-candy-paint" />
-
+    <PageLayout navbarKey="navbar-candy-paint">
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-candy-paint">
@@ -83,6 +81,6 @@ export default function CandyPaint() {
         </Container>
       </main>
       <Script src="https://videopress.com/videopress-iframe.js" strategy="afterInteractive" />
-    </div>
+    </PageLayout>
   );
 }

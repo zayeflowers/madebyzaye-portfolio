@@ -3,15 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import PageHeading from '../components/PageHeading';
+import PageLayout from '../components/PageLayout';
 
 export default function AIProjects() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-ai-projects" />
-
+    <PageLayout navbarKey="navbar-ai-projects">
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-ai-projects">
@@ -87,6 +85,6 @@ export default function AIProjects() {
           </div>
         </Container>
       </main>
-    </div>
+    </PageLayout>
   );
 }

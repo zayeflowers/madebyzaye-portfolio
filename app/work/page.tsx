@@ -3,22 +3,18 @@
 import React from 'react';
 // Updated to fix build issue
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import CareerTimeline from '../components/CareerTimeline';
 import PageHeading from '../components/PageHeading';
-import PageWrapper from '../components/PageWrapper';
+import PageLayout from '../components/PageLayout';
 import { FadeIn, StaggerContainer, StaggerItem } from '../components/animations';
 
 export default function Work() {
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar key="navbar-work" />
-
-      <PageWrapper>
-        <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
-          <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-          <Container key="container-work">
+    <PageLayout navbarKey="navbar-work">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
+        <Container key="container-work">
             <FadeIn>
               <PageHeading title="Work" />
             </FadeIn>
@@ -107,7 +103,6 @@ export default function Work() {
       <FadeIn delay={0.3}>
         <CareerTimeline key="career-timeline-work" />
       </FadeIn>
-    </PageWrapper>
-  </div>
+    </PageLayout>
   );
 }
