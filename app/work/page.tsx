@@ -7,27 +7,36 @@ import Navbar from '../components/Navbar';
 import Container from '../components/Container';
 import CareerTimeline from '../components/CareerTimeline';
 import PageHeading from '../components/PageHeading';
+import PageWrapper from '../components/PageWrapper';
+import { FadeIn, StaggerContainer, StaggerItem } from '../components/animations';
 
 export default function Work() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar key="navbar-work" />
 
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container key="container-work">
-          <PageHeading title="Work" />
+      <PageWrapper>
+        <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+          <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
+          <Container key="container-work">
+            <FadeIn>
+              <PageHeading title="Work" />
+            </FadeIn>
 
-          <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            I&apos;ve designed for scale, speed, and soul — leading product design initiatives across finance, insurance, hospitality, and media. Whether refining form flows or mentoring designers, I approach each challenge with empathy, experimentation, and strategic focus.
-          </p>
-          <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            From launching AI-powered features to transforming claims workflows used by millions, I build experiences that move with people — not against them.
-          </p>
+            <FadeIn delay={0.1}>
+              <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
+                I&apos;ve designed for scale, speed, and soul — leading product design initiatives across finance, insurance, hospitality, and media. Whether refining form flows or mentoring designers, I approach each challenge with empathy, experimentation, and strategic focus.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
+                From launching AI-powered features to transforming claims workflows used by millions, I build experiences that move with people — not against them.
+              </p>
+            </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[46px] gap-x-6 md:gap-x-[93px] max-w-6xl">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-y-[46px] gap-x-6 md:gap-x-[93px] max-w-6xl" delayChildren={0.3} staggerChildren={0.1}>
             {/* GEICO */}
-            <div className="flex flex-col">
+            <StaggerItem className="flex flex-col hover-lift">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/geico.svg"
@@ -40,10 +49,10 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Redesigning critical insurance workflows across mobile and desktop. I lead Injury Intake usability testing, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.
               </p>
-            </div>
+            </StaggerItem>
 
             {/* Thinkful */}
-            <div className="flex flex-col">
+            <StaggerItem className="flex flex-col hover-lift">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/thinkful.png"
@@ -56,10 +65,10 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Mentored 10+ aspiring designers through portfolio reviews, mock interviews, and job search prep. Helped 85% land roles while building confidence, clarity, and design craft in a fast-moving remote learning environment.
               </p>
-            </div>
+            </StaggerItem>
 
             {/* Publicis Sapient */}
-            <div className="flex flex-col">
+            <StaggerItem className="flex flex-col hover-lift">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/publicissapient.svg"
@@ -72,10 +81,10 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Contributed to digital transformation work for clients like U.S. Bank, Goldman Sachs, and Comcast. Focused on small business tools and early AI features, bringing a user-first lens to highly regulated, data-driven environments.
               </p>
-            </div>
+            </StaggerItem>
 
             {/* CNN */}
-            <div className="flex flex-col">
+            <StaggerItem className="flex flex-col hover-lift">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/cnn.svg"
@@ -88,12 +97,17 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Launched CNN&apos;s &quot;My Election&quot; feature during the 2020 cycle, driving 186K new users and a 45% revenue increase. Led accessibility improvements across internal tools, helping CNN rank #1 in desktop/mobile visibility with over 4.6M+ user interactions.
               </p>
-            </div>
-          </div>
+            </StaggerItem>
+          </StaggerContainer>
         </Container>
       </main>
 
-      <CareerTimeline key="career-timeline-work" />
-    </div>
+      <div className="h-[100px] bg-[#f6f0e9]"></div>
+
+      <FadeIn delay={0.3}>
+        <CareerTimeline key="career-timeline-work" />
+      </FadeIn>
+    </PageWrapper>
+  </div>
   );
 }

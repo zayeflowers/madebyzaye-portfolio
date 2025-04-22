@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Container from './Container';
+import { motion } from 'framer-motion';
+import { FadeIn, StaggerContainer, StaggerItem } from './animations';
 
 interface TimelineItemProps {
   date: string;
@@ -21,32 +23,46 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   dateBgColor = "bg-emerald-100"
 }) => {
   return (
-    <div className="relative pl-8 sm:pl-32 py-6 group">
+    <motion.div
+      className="relative pl-8 sm:pl-32 py-6 group"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1.0] }}
+    >
       {label && (
         <div className="font-medium text-2xl text-red-500 mb-1 sm:mb-0">{label}</div>
       )}
       <div className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-white/30 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-red-500 after:border-4 after:box-content after:border-black after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-        <time className={`sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-[family-name:var(--font-montserrat)] font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 ${dateColor} ${dateBgColor} rounded-full`}>
+        <motion.time
+          className={`sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-[family-name:var(--font-montserrat)] font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 ${dateColor} ${dateBgColor} rounded-full`}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2 }}
+        >
           {date}
-        </time>
+        </motion.time>
         <div className="text-xl font-[family-name:var(--font-montserrat)] font-bold text-white">{title}</div>
       </div>
       <div className="text-white/80 font-[family-name:var(--font-montserrat)]">{description}</div>
-    </div>
+    </motion.div>
   );
 };
 
 const CareerTimeline: React.FC = () => {
   return (
-    <section className="w-full bg-black text-white pt-[56px] pb-[56px]">
+    <section className="w-full bg-black text-white pt-[40px] pb-[56px]">
       <Container>
-        <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-[32px] [text-edge:cap] [leading-trim:both]">
-          Career Timeline
-        </h2>
+        <FadeIn>
+          <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-[32px] [text-edge:cap] [leading-trim:both]">
+            Career Timeline
+          </h2>
+        </FadeIn>
 
-        <p className="max-w-3xl mb-[32px] font-[family-name:var(--font-montserrat)]">
-          My professional journey spans design leadership roles across various industries, with a focus on creating impactful digital experiences that solve real problems for users.
-        </p>
+        <FadeIn delay={0.1}>
+          <p className="max-w-3xl mb-[32px] font-[family-name:var(--font-montserrat)]">
+            My professional journey spans design leadership roles across various industries, with a focus on creating impactful digital experiences that solve real problems for users.
+          </p>
+        </FadeIn>
 
         <div className="w-full max-w-3xl -my-6">
           <TimelineItem

@@ -12,7 +12,7 @@ export default function AIProjects() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar key="navbar-ai-projects" />
 
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
+      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-ai-projects">
           <PageHeading title="AI Projects" />
