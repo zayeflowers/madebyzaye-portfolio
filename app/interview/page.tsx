@@ -23,20 +23,20 @@ export default function Interview() {
               <div>
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">What are your main responsibilities as a Senior Product Designer?</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  My main priorities as a Senior Product Designer are to oversee high-quality design deliverables, support the team's goals, concept features, and thoughtfully tell data-driven stories. There's definitely more to my job than what I mentioned but overall, pursue the design of empowering our users.
+                  My main priorities as a Senior Product Designer are to oversee high-quality design deliverables, support the team&apos;s goals, concept features, and thoughtfully tell data-driven stories. There&apos;s definitely more to my job than what I mentioned but overall, pursue the design of empowering our users.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">What is a typical day (or week) like for you?</h3>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-4">
-                  Chaotic fun! A typical day starts with me with my team and doing our Daily Standup at 9:30 am. Everyone discusses what they worked on the day before and what's on their agenda for the day. The standup includes our project manager, product manager, two other designers, three QA analysts, tech director, and several developers.
+                  Chaotic fun! A typical day starts with me with my team and doing our Daily Standup at 9:30 am. Everyone discusses what they worked on the day before and what&apos;s on their agenda for the day. The standup includes our project manager, product manager, two other designers, three QA analysts, tech director, and several developers.
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-4">
-                  Afterward, I have a meeting with my UX Design Team at 10:45 am, where again we discuss our agenda for the week. It's one of my favorite meetings because our Manager will ask, "Are there any blockers?". I love this question because it show's how important support is at CNN. In between meetings, I will have Sketch fired up (now Figma), Spotify blasting through my headphones, Slack, Zeplin, Miro (wireframing and conceptual ideas), and several tabs related to the election and previous years.
+                  Afterward, I have a meeting with my UX Design Team at 10:45 am, where again we discuss our agenda for the week. It&apos;s one of my favorite meetings because our Manager will ask, &quot;Are there any blockers?&quot;. I love this question because it show&apos;s how important support is at CNN. In between meetings, I will have Sketch fired up (now Figma), Spotify blasting through my headphones, Slack, Zeplin, Miro (wireframing and conceptual ideas), and several tabs related to the election and previous years.
                 </p>
                 <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                  The entire week is sprinkled with meetings, but normally, Thursdays are the most stressful. It's when we have to present to our editorial team, directors, and stakeholders. Personally, I love this meeting because I will receive some amazing feedback on the work we're designing. The rest of the week is spent in roundtables, research updates, dev grooming sessions, and time spent updating mocks/concepts.
+                  The entire week is sprinkled with meetings, but normally, Thursdays are the most stressful. It&apos;s when we have to present to our editorial team, directors, and stakeholders. Personally, I love this meeting because I will receive some amazing feedback on the work we&apos;re designing. The rest of the week is spent in roundtables, research updates, dev grooming sessions, and time spent updating mocks/concepts.
                 </p>
               </div>
 
