@@ -55,21 +55,7 @@ export default function IHGProject() {
             </div>
           </div>
 
-          {/* Widescreen Image - IHG Hero Section */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
-            <div className="p-6">
-              <div className="relative">
-                <div className="w-full h-[400px] bg-[#003366] flex items-center justify-center text-white">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl">IHG Booking Homepage UI</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                IHG booking homepage UI highlight
-              </p>
-            </div>
-          </div>
+
 
           {/* The Challenge Section */}
           <div className="max-w-4xl mb-16">
@@ -93,21 +79,7 @@ export default function IHGProject() {
             </ul>
           </div>
 
-          {/* User research setup image */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="p-6">
-              <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">User Research Setup</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                User research setup and test feedback board
-              </p>
-            </div>
-          </div>
+
 
           {/* Discovery & Research Section */}
           <div className="max-w-4xl mb-16">
@@ -123,21 +95,7 @@ export default function IHGProject() {
             </ul>
           </div>
 
-          {/* Mobile calendar UI example */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="p-6">
-              <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Mobile Calendar UI Example</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Mobile calendar UI example and annotated wireframes
-              </p>
-            </div>
-          </div>
+
 
           {/* Ideation & Solutions Section */}
           <div className="max-w-4xl mb-16">
@@ -153,21 +111,7 @@ export default function IHGProject() {
             </ul>
           </div>
 
-          {/* Before/after comparison image */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="p-6">
-              <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Before/After Comparison</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Before/after comparison of redesigned booking flows
-              </p>
-            </div>
-          </div>
+
 
           {/* Testing the New Experience Section */}
           <div className="max-w-4xl mb-16">
@@ -203,6 +147,21 @@ export default function IHGProject() {
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               This project reminded me that the best digital hospitality feels human — clear, responsive, and thoughtful. Our team helped IHG move closer to that vision, one touchpoint at a time.
             </p>
+          </div>
+
+          {/* PDF Download Link */}
+          <div className="max-w-4xl mb-16">
+            <a
+              href="/IHG-hotelexperience.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+            >
+              <svg className="mr-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download the pdf version
+            </a>
           </div>
 
           {/* Previous Project Link */}
