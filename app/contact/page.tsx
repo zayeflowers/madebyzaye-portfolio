@@ -17,7 +17,7 @@ export default function Contact() {
             I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mb-40 md:mb-0">
             <div className="bg-white rounded-[14px] p-8 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Get in Touch</h2>
 
