@@ -9,7 +9,7 @@ import PageLayout from '../../components/PageLayout';
 export default function DailyUplift() {
   return (
     <PageLayout navbarKey="navbar-daily-uplift">
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
+      <main className="w-full text-black pt-[16px] pb-0 relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-daily-uplift">
           <div className="mb-8">
@@ -110,7 +110,7 @@ export default function DailyUplift() {
               We&apos;re polishing the experience, adding accessibility improvements, and expanding mood categories with more nuanced emotional ranges. The app will launch on iOS first, with Android and web versions in the future.
             </p>
 
-            <div className="mt-8 text-center">
+            <div className="mt-8 mb-20">
               <Link
                 href="#"
                 className="inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"

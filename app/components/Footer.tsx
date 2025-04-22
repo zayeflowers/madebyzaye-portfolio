@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-white h-[70px] relative">
-      <div className="absolute top-0 left-0 w-full h-[2px] bg-black opacity-80"></div>
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-black"></div>
       <Container>
         <div className="flex items-center justify-between h-[70px]">
           <motion.p
