@@ -3,7 +3,7 @@
 import React from 'react';
 import Container from './Container';
 import { motion } from 'framer-motion';
-import { FadeIn, StaggerContainer, StaggerItem } from './animations';
+import { FadeIn } from './animations';
 
 interface TimelineItemProps {
   date: string;
