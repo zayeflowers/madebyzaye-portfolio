@@ -4,6 +4,14 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
+// Define the gtag function type
+declare global {
+  interface Window {
+    gtag: (command: string, ...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
+
 export default function GoogleAnalytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -11,9 +19,11 @@ export default function GoogleAnalytics() {
   useEffect(() => {
     const url = pathname + searchParams.toString();
     // Track page views
-    window.gtag?.('config', 'G-4CDCRPZ80D', {
-      page_path: url,
-    });
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('config', 'G-4CDCRPZ80D', {
+        page_path: url,
+      });
+    }
   }, [pathname, searchParams]);
 
   return (
