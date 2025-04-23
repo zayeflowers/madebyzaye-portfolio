@@ -26,7 +26,7 @@ const lexendExa = Lexend_Exa({
 
 export const metadata: Metadata = {
   title: "Made By Zaye",
-  description: "Portfolio website for MadebyZaye",
+  description: "Lead Product Designer using AI to build tools that feel",
   robots: {
     index: false,
     follow: false,
@@ -52,6 +52,28 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://madebyzaye.com',
+    title: 'Made By Zaye',
+    description: 'Lead Product Designer using AI to build tools that feel',
+    siteName: 'Made By Zaye',
+    images: [
+      {
+        url: 'https://madebyzaye.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Made By Zaye',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Made By Zaye',
+    description: 'Lead Product Designer using AI to build tools that feel',
+    images: ['https://madebyzaye.com/og-image.png'],
+  },
 };
 
 export default function RootLayout({
