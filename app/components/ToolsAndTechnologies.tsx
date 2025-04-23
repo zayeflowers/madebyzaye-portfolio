@@ -28,7 +28,8 @@ const ToolsAndTechnologies: React.FC = () => {
     "GitHub",
     "Figma",
     "Cursor",
-    "Augment Code"
+    "Augment Code",
+    "ChatGPT / Claude"
   ];
 
   return (

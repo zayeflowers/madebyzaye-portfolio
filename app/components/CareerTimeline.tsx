@@ -82,6 +82,14 @@ const CareerTimeline: React.FC = () => {
           />
 
           <TimelineItem
+            date="2021-2023"
+            title="Senior UX Designer at Publicis Sapient"
+            description="Led UX for major banking clients, designing intuitive, high-impact digital experiences across web and mobile platforms."
+            dateColor="text-indigo-600"
+            dateBgColor="bg-indigo-100"
+          />
+
+          <TimelineItem
             date="2019-2021"
             title="Senior Product Designer at CNN"
             description="Led design initiatives for CNN&apos;s digital platforms, focusing on user experience and engagement metrics."

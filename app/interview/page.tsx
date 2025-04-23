@@ -12,11 +12,15 @@ export default function Interview() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-interview">
-          <PageHeading title="Interview" />
+          <PageHeading title="Thinkful Interview" />
 
           <div className="max-w-4xl mb-16">
-            <p className="font-[family-name:var(--font-montserrat)] text-lg italic mb-8 leading-[28px]">
+            <p className="font-[family-name:var(--font-montserrat)] text-lg italic mb-4 leading-[28px]">
               Interview by Carlton Mckoy
+            </p>
+
+            <p className="font-[family-name:var(--font-montserrat)] mb-8 leading-[28px]">
+              I started mentoring in the fall of 2019 as a way to give back and stay connected to the next wave of designers. Since then, I&apos;ve worked one-on-one with students from all kinds of backgrounds — offering critique, career advice, and honest feedback on their work. It&apos;s become one of the most grounding parts of my design journey.
             </p>
 
             <div className="space-y-8">

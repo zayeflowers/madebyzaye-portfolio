@@ -107,7 +107,7 @@ export default function Work() {
                 />
               </div>
               <p className="font-[family-name:var(--font-montserrat)]">
-                Launched CNN&apos;s &quot;My Election&quot; feature during the 2020 cycle, driving 186K new users and a 45% revenue increase. Led accessibility improvements across internal tools, helping CNN rank #1 in desktop/mobile visibility with over 4.6M+ user interactions.
+                Led design ops and delivery for CNN&apos;s Politics and 2020 Election platforms, managing cross-functional workflows and driving accessibility-focused design. Collaborated with a team of six designers using a component-based system, helping CNN become the #1 most visible publisher on desktop and mobile.
               </p>
             </StaggerItem>
           </StaggerContainer>
