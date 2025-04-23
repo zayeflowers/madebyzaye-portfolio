@@ -49,14 +49,14 @@ const FeaturedProjects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-[16px] w-full overflow-x-auto">
           <ProjectCard
+            title="GEICO - Injury Intake"
+            href="/projects/geico"
+            imageSrc="/geico.webp"
+          />
+          <ProjectCard
             title="US Bank Case Study"
             href="/projects/us-bank"
             imageSrc="/casestudy1.jpg"
-          />
-          <ProjectCard
-            title="CNN Case Study"
-            href="/projects/cnn"
-            imageSrc="/casestudy2.jpg"
           />
           <ProjectCard
             title="Read my Thinkful Interview"
