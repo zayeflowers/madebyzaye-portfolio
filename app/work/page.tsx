@@ -47,6 +47,22 @@ export default function Work() {
               </p>
             </StaggerItem>
 
+            {/* IHG */}
+            <StaggerItem className="flex flex-col hover-lift">
+              <div className="h-24 flex items-center mb-6">
+                <Image
+                  src="/ihg.svg"
+                  alt="IHG"
+                  width={300}
+                  height={80}
+                  className="object-contain h-full"
+                />
+              </div>
+              <p className="font-[family-name:var(--font-montserrat)]">
+                I led UX efforts to streamline the booking experience across desktop and mobile. Working closely with Product and Engineering, I helped simplify user flows, reduce friction, and align the design system across brands.
+              </p>
+            </StaggerItem>
+
             {/* Thinkful */}
             <StaggerItem className="flex flex-col hover-lift">
               <div className="h-24 flex items-center mb-6">
