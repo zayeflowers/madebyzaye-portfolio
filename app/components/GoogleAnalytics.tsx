@@ -7,8 +7,8 @@ import { useEffect } from 'react';
 // Define the gtag function type
 declare global {
   interface Window {
-    gtag: (command: string, ...args: any[]) => void;
-    dataLayer: any[];
+    gtag: (command: string, id: string, config?: Record<string, unknown>) => void;
+    dataLayer: unknown[];
   }
 }
 
