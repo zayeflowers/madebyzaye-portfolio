@@ -53,9 +53,7 @@ const ToolsAndTechnologies: React.FC = () => {
             ))}
           </ul>
 
-          <p className="font-[family-name:var(--font-montserrat)] text-gray-300">
-            I prioritize modern, maintainable code with a focus on performance and user experience. My approach combines technical expertise with design thinking to create solutions that are both functional and beautiful.
-          </p>
+
         </div>
       </Container>
     </section>
