@@ -32,9 +32,11 @@ const whatIDo = [
 
 export default function WhatIDo() {
   return (
-    <section className="pt-[90px] pb-16 bg-[#f6f0e9] px-6 md:px-12 max-w-6xl mx-auto">
+    <section className="pt-[90px] pb-16 bg-[#f6f0e9] px-6 md:px-12 max-w-6xl mx-auto relative">
+      <div className="absolute inset-0 bg-[#f6f0e9] opacity-100"></div>
+      <div className="relative z-10">
       <FadeIn>
-        <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-10 text-center [text-edge:cap] [leading-trim:both]">
+        <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-10 text-center [text-edge:cap] [leading-trim:both] text-black">
           What I Do
         </h2>
       </FadeIn>
@@ -45,13 +47,14 @@ export default function WhatIDo() {
             key={index}
             className="transition-transform duration-300 hover:scale-[1.03] group"
           >
-            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-xl mb-2 group-hover:text-[#CC0101] transition-colors">
+            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-xl mb-2 group-hover:text-[#CC0101] transition-colors text-black">
               {item.title}
             </h3>
-            <p className="font-[family-name:var(--font-montserrat)] text-gray-600 leading-[28px]">{item.description}</p>
+            <p className="font-[family-name:var(--font-montserrat)] text-gray-800 leading-[28px]">{item.description}</p>
           </StaggerItem>
         ))}
       </StaggerContainer>
+      </div>
     </section>
   );
 }
