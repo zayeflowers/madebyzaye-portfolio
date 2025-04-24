@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Container from '../../components/Container';
 import PageLayout from '../../components/PageLayout';
 
@@ -11,16 +12,41 @@ export default function GeicoProject() {
       <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
         <Container key="container-geico-project">
-          <div className="flex flex-col md:flex-row items-start justify-between mb-[32px]">
-            <div>
-              <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-[48px] leading-[54px] [text-edge:cap] [leading-trim:both] tracking-[-0.04em] text-black mb-[20px]">
-                GEICO - Injury Intake
-              </h1>
-              <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] max-w-2xl">
-                Redesigning a critical part of the auto claims experience to reduce abandonment and improve user engagement.
-              </p>
+          {/* Back button */}
+          <div className="mb-8">
+            <Link
+              href="/projects"
+              className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+            >
+              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+              Back to Projects
+            </Link>
+          </div>
+
+          {/* Hero Section */}
+          <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 p-6">
+            <div className="flex items-center justify-center">
+              <div className="h-24 flex items-center">
+                <Image
+                  src="/geico.svg"
+                  alt="GEICO Logo"
+                  width={300}
+                  height={80}
+                  className="object-contain h-full"
+                />
+              </div>
             </div>
           </div>
+
+          <h1 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[64px] leading-tight tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
+            GEICO - Injury Intake
+          </h1>
+
+          <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
+            Redesigning a critical part of the auto claims experience
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-[40px]">
             <div>
@@ -121,7 +147,7 @@ export default function GeicoProject() {
           {/* My Approach Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🛠️ My Approach</h2>
-
+            
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">1. Mapped the End-to-End Experience</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               I audited the real production flows (outside Figma) and collaborated with First Party Medical (FPM) adjusters to understand how the data was used. This gave us a true picture of what was essential and what wasn&apos;t.
