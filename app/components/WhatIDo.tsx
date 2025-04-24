@@ -32,7 +32,7 @@ const whatIDo = [
 
 export default function WhatIDo() {
   return (
-    <section className="py-16 bg-[#f6f0e9] px-6 md:px-12 max-w-6xl mx-auto">
+    <section className="pt-[90px] pb-16 bg-[#f6f0e9] px-6 md:px-12 max-w-6xl mx-auto">
       <FadeIn>
         <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-10 text-center [text-edge:cap] [leading-trim:both]">
           What I Do

@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   // Add a unique key to force re-render and avoid hydration issues
   const uniqueKey = "hero-component-v1";
   return (
-    <section key={uniqueKey} className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-16 md:pb-20 lg:pb-24 relative">
+    <section key={uniqueKey} className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 relative">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 relative">
