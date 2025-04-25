@@ -195,12 +195,19 @@ export default function GeicoProject() {
               Using analytics (Quantum Metrics / PowerBI) and user feedback, I discovered users were often mentally fatigued by the time they reached Injury Intake. Many didn&apos;t know why they were answering more questions or how it connected to the claim&apos;s outcome.
             </p>
 
-            {/* Analytics dashboard image */}
+            {/* Comic Strip 3 Image */}
             <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
               <div className="p-6">
                 <div className="relative">
-                  <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                    <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Analytics Dashboard</p>
+                  <div className="flex justify-center">
+                    <Image
+                      src="/comicstrip3.png"
+                      alt="GEICO Injury Intake Analytics and Pain Points"
+                      width={800}
+                      height={450}
+                      style={{ width: '100%', height: 'auto' }}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
@@ -227,12 +234,19 @@ export default function GeicoProject() {
               </li>
             </ul>
 
-            {/* Redesigned UI image */}
+            {/* Comic Strip 4 Image */}
             <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
               <div className="p-6">
                 <div className="relative">
-                  <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                    <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Redesigned UI</p>
+                  <div className="flex justify-center">
+                    <Image
+                      src="/comicstrip4.png"
+                      alt="GEICO Injury Intake Redesigned UI"
+                      width={800}
+                      height={450}
+                      style={{ width: '100%', height: 'auto' }}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
