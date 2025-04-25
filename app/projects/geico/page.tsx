@@ -261,12 +261,19 @@ export default function GeicoProject() {
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
             I created a functional prototype that brought early design concepts to life, enabling cross-functional teams to test interactions and gather actionable insights directly from users.</p>
 
-            {/* Prototype testing image */}
+            {/* Comic Strip 5 Image */}
             <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
               <div className="p-6">
                 <div className="relative">
-                  <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                    <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Prototype Testing</p>
+                  <div className="flex justify-center">
+                    <Image
+                      src="/comicstrip5.png"
+                      alt="GEICO Injury Intake Prototype Testing"
+                      width={800}
+                      height={450}
+                      style={{ width: '100%', height: 'auto' }}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
