@@ -32,7 +32,7 @@ export default function Work() {
 
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-y-[46px] gap-x-6 md:gap-x-[93px] max-w-6xl" delayChildren={0.3} staggerChildren={0.1}>
             {/* GEICO */}
-            <StaggerItem className="flex flex-col hover-lift">
+            <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/geico.svg"
@@ -43,12 +43,12 @@ export default function Work() {
                 />
               </div>
               <p className="font-[family-name:var(--font-montserrat)]">
-                Redesigning critical insurance workflows across mobile and desktop. I lead Injury Intake usability testing, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.
+                Redesigning critical insurance workflows across mobile and desktop. I lead UX design for the Injury Intake experience, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.
               </p>
             </StaggerItem>
 
             {/* IHG */}
-            <StaggerItem className="flex flex-col hover-lift">
+            <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/ihg.svg"
@@ -64,7 +64,7 @@ export default function Work() {
             </StaggerItem>
 
             {/* Thinkful */}
-            <StaggerItem className="flex flex-col hover-lift">
+            <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/thinkful.png"
@@ -80,7 +80,7 @@ export default function Work() {
             </StaggerItem>
 
             {/* Publicis Sapient */}
-            <StaggerItem className="flex flex-col hover-lift">
+            <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/publicissapient.svg"
@@ -96,7 +96,7 @@ export default function Work() {
             </StaggerItem>
 
             {/* CNN */}
-            <StaggerItem className="flex flex-col hover-lift">
+            <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
                 <Image
                   src="/cnn.svg"

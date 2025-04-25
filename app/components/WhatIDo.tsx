@@ -9,8 +9,8 @@ const whatIDo = [
     description: "Crafting intuitive, scalable experiences rooted in empathy and systems thinking.",
   },
   {
-    title: "Frontend Development",
-    description: "Building modern interfaces with React, Next.js, and Tailwind CSS.",
+    title: "Frontend Development w/ AI",
+    description: "Building modern interfaces with React, Next.js, and Tailwind CSS with AI tools like Cursor and Claude.",
   },
   {
     title: "AI Experiments",
@@ -18,7 +18,7 @@ const whatIDo = [
   },
   {
     title: "Product Thinking",
-    description: "Balancing strategy and execution to launch tools like Daily Uplift.",
+    description: "Balancing strategy and execution to launch apps like Daily Uplift.",
   },
   {
     title: "Creative Direction",

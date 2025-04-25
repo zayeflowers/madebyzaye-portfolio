@@ -47,7 +47,7 @@ export default function DailyUplift() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Role</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Founder, Product Designer, AI Engineer</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Owner, Design Engineer</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Status</h2>
