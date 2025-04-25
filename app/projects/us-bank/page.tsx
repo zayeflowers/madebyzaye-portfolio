@@ -54,7 +54,7 @@ export default function USBankProject() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Timeline</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">2020-2022</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">2021-2023</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
