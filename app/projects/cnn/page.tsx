@@ -262,8 +262,8 @@ export default function CNNProject() {
           {/* Next Project Link */}
           <div className="border-t border-gray-300 pt-12 mt-16 mb-40">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Next Project</h2>
-            <Link href="/projects/ihg" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
-              IHG Case Study
+            <Link href="/projects/geico" className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors text-xl">
+              GEICO - Injury Intake
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>

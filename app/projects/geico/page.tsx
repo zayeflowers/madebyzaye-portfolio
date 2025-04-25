@@ -55,7 +55,7 @@ export default function GeicoProject() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Timeline</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Q3 2024 – Present</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Q1 2024 – Present</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
@@ -67,8 +67,15 @@ export default function GeicoProject() {
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-12">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#0066b2] flex items-center justify-center text-white">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl">GEICO Injury Intake Hero Image</p>
+                <div className="flex justify-center">
+                  <Image
+                    src="/geico_banner.png"
+                    alt="GEICO Injury Intake Hero Image"
+                    width={600}
+                    height={338}
+                    style={{ width: '50%', height: 'auto' }}
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -83,10 +90,10 @@ export default function GeicoProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Overview</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              Injury Intake is a critical part of GEICO&apos;s auto claims experience—where users report bodily injuries after an accident. However, it&apos;s one of the last steps in a long, multi-screen flow, and it had a staggering 30.2% abandonment rate by the time users reached it.
+              Injury Intake is a critical part of GEICO&apos;s auto claims experience—where users report bodily injuries after an accident. However, it&apos;s one of the last steps in a long, multi-screen flow, and it had a staggering  abandonment rate by the time users reached it.
             </p>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-              My role as Lead UX Designer was to overhaul the experience. I led design, testing, and strategy for this phase, advocating for user needs while aligning with business goals and technical constraints.
+              My role as Lead UX Designer was to overhaul the experience. I led design and strategy for this phase, advocating for user needs while aligning with business goals and technical constraints.
             </p>
           </div>
 
@@ -114,32 +121,39 @@ export default function GeicoProject() {
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                High drop-off rates near the final step
+                High drop-off rates at the first step
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
                 Low user engagement due to cognitive fatigue after 10–15 previous screens
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                Overwhelming form layouts with accessibility issues
+                Form elements with no clear guidance
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                Inconsistent UI patterns and unclear guidance throughout
+                Inconsistent UI patterns from siloed teams
               </li>
             </ul>
           </div>
 
-          {/* Before/After comparison image */}
+          {/* Comic Strip Image */}
           <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
             <div className="p-6">
               <div className="relative">
-                <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                  <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">Before/After Comparison</p>
+                <div className="flex justify-center">
+                  <Image
+                    src="/comicstrip1.png"
+                    alt="GEICO Injury Intake Comic Strip"
+                    width={800}
+                    height={450}
+                    style={{ width: '100%', height: 'auto' }}
+                    className="object-contain"
+                  />
                 </div>
               </div>
             </div>
             <div className="p-4">
               <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Before/after comparison of the Injury Intake flow
+                Visual storytelling of the Injury Intake user experience
               </p>
             </div>
           </div>
@@ -147,18 +161,25 @@ export default function GeicoProject() {
           {/* My Approach Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🛠️ My Approach</h2>
-            
+
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">1. Mapped the End-to-End Experience</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              I audited the real production flows (outside Figma) and collaborated with First Party Medical (FPM) adjusters to understand how the data was used. This gave us a true picture of what was essential and what wasn&apos;t.
+              I audited the real production flows utilizing Quantum Metric and collaborated with Product adjusters to understand how the data was used. This gave us a true picture of what our users were experiencing.
             </p>
 
-            {/* User journey map image */}
+            {/* Comic Strip 2 Image */}
             <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
               <div className="p-6">
                 <div className="relative">
-                  <div className="w-full h-[400px] bg-[#f5f5f5] flex items-center justify-center">
-                    <p className="font-[family-name:var(--font-montserrat)] text-xl text-gray-700">User Journey Map</p>
+                  <div className="flex justify-center">
+                    <Image
+                      src="/comicstrip2.png"
+                      alt="GEICO Injury Intake Process Flow"
+                      width={800}
+                      height={450}
+                      style={{ width: '100%', height: 'auto' }}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
@@ -196,9 +217,6 @@ export default function GeicoProject() {
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2">
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                Prefilled key data (like name and accident date) from earlier responses, with an &quot;Edit&quot; option
-              </li>
-              <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
                 Prioritized empathy and tone in UI text: &quot;We know this part isn&apos;t easy. Let&apos;s take it step by step.&quot;
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
@@ -227,8 +245,7 @@ export default function GeicoProject() {
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">4. Prototyped & Usability Tested</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              I created a working prototype and collaborated with Researchers on usability sessions with real users. Feedback helped validate the chunked format and highlighted remaining accessibility gaps.
-            </p>
+            I created a functional prototype that brought early design concepts to life, enabling cross-functional teams to test interactions and gather actionable insights directly from users.</p>
 
             {/* Prototype testing image */}
             <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
@@ -248,7 +265,7 @@ export default function GeicoProject() {
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">5. Navigated Constraints & Alignment</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              I partnered closely with Product and Engineering to negotiate what could be released now vs. later, and documented pros/cons of proposed features like the Body Map and DocuSign No-Fault Form (NF-2) for future implementation.
+              I partnered closely with Product and Engineering to negotiate what could be released now vs. later, and documented pros/cons of future proposed features.
             </p>
           </div>
 
@@ -263,7 +280,7 @@ export default function GeicoProject() {
                 <strong>Increased visibility:</strong> My findings helped shift team understanding toward user mental load, not just screen count
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                <strong>Foundation for future improvements:</strong> My documentation and testing paved the way for enhancements like the NF-2 form integration and Documents Upload
+                <strong>Foundation for future improvements:</strong> My documentation and testing paved the way for enhancements like state form integration and uploaded documents
               </li>
             </ul>
           </div>

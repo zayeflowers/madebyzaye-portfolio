@@ -10,7 +10,7 @@ const whatIDo = [
   },
   {
     title: "Frontend Development w/ AI",
-    description: "Building modern interfaces with React, Next.js, and Tailwind CSS with AI tools like Cursor and Claude.",
+    description: "Building modern interfaces with React / Next.js and AI tools like Cursor and Claude.",
   },
   {
     title: "AI Experiments",

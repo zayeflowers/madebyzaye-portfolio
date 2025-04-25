@@ -66,21 +66,7 @@ export default function Projects() {
               </div>
             </Link>
 
-            <Link href="/projects/ihg">
-              <div className="bg-white rounded-[16px] h-[223px] w-full shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden relative">
-                <div className="relative h-full w-full">
-                  <Image
-                    src="/casestudy3.jpg"
-                    alt="IHG Case Study"
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
-                    <h3 className="text-white font-[family-name:var(--font-montserrat)] font-medium text-xl">IHG Case Study</h3>
-                  </div>
-                </div>
-              </div>
-            </Link>
+
           </div>
         </Container>
       </main>
