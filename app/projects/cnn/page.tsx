@@ -259,6 +259,33 @@ export default function CNNProject() {
             </p>
           </div>
 
+          {/* Links Section */}
+          <div className="max-w-4xl mb-16">
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔗 Links</h2>
+            <ul className="space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
+              <li>
+                <a
+                  href="https://www.cnn.com/election/2020/results/president"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#CC0101] hover:text-[#a50000] transition-colors underline"
+                >
+                  CNN Election 2020 Results: President
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.cnn.com/election/2020/presidential-polls"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#CC0101] hover:text-[#a50000] transition-colors underline"
+                >
+                  CNN Election 2020 Presidential Polls
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Next Project Link */}
           <div className="border-t border-gray-300 pt-12 mt-16 mb-40">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Next Project</h2>

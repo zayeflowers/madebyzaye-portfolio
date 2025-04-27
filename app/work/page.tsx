@@ -3,6 +3,7 @@
 import React from 'react';
 // Updated to fix build issue
 import Image from 'next/image';
+import Link from 'next/link';
 import Container from '../components/Container';
 import CareerTimeline from '../components/CareerTimeline';
 import PageHeading from '../components/PageHeading';
@@ -45,6 +46,9 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Redesigning critical insurance workflows across mobile and desktop. I lead UX design for the Injury Intake experience, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.
               </p>
+              <Link href="/projects/geico" className="inline-block mt-3 text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                View my project snapshot →
+              </Link>
             </StaggerItem>
 
             {/* IHG */}
@@ -93,6 +97,9 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Contributed to digital transformation work for clients like U.S. Bank, Goldman Sachs, and Comcast. Focused on small business tools and early AI features, bringing a user-first lens to highly regulated, data-driven environments.
               </p>
+              <Link href="/projects/us-bank" className="inline-block mt-3 text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                View my US Bank case study →
+              </Link>
             </StaggerItem>
 
             {/* CNN */}
@@ -109,6 +116,9 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Led design ops and delivery for CNN&apos;s Politics and 2020 Election platforms, managing cross-functional workflows and driving accessibility-focused design. Collaborated with a team of six designers using a component-based system, helping CNN become the #1 most visible publisher on desktop and mobile.
               </p>
+              <Link href="/projects/cnn" className="inline-block mt-3 text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                View my case study →
+              </Link>
             </StaggerItem>
           </StaggerContainer>
         </Container>
