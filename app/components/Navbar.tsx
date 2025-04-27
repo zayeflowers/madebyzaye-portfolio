@@ -57,6 +57,7 @@ const Navbar: React.FC = () => {
           <StaggerItem><NavLink href="/work" label="WORK" /></StaggerItem>
           <StaggerItem><NavLink href="/ai-projects" label="AI PROJECTS" /></StaggerItem>
           <StaggerItem><NavLink href="/about" label="ABOUT ME" /></StaggerItem>
+          <StaggerItem><NavLink href="/now" label="NOW" /></StaggerItem>
           <StaggerItem><NavLink href="/contact" label="CONTACT" /></StaggerItem>
         </StaggerContainer>
       </Container>
@@ -77,6 +78,7 @@ const Navbar: React.FC = () => {
             <StaggerItem><MobileNavLink href="/work" label="WORK" onClick={toggleMobileMenu} /></StaggerItem>
             <StaggerItem><MobileNavLink href="/ai-projects" label="AI PROJECTS" onClick={toggleMobileMenu} /></StaggerItem>
             <StaggerItem><MobileNavLink href="/about" label="ABOUT ME" onClick={toggleMobileMenu} /></StaggerItem>
+            <StaggerItem><MobileNavLink href="/now" label="NOW" onClick={toggleMobileMenu} /></StaggerItem>
             <StaggerItem><MobileNavLink href="/contact" label="CONTACT" onClick={toggleMobileMenu} /></StaggerItem>
           </StaggerContainer>
         </Container>
