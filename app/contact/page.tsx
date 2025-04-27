@@ -31,21 +31,6 @@ export default function Contact() {
                   <h3 className="font-bold text-lg mb-2">Based in</h3>
                   <p>Washington D.C.</p>
                 </div>
-
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Social</h3>
-                  <div className="flex space-x-4">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#CC0101] transition-colors">
-                      LinkedIn
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#CC0101] transition-colors">
-                      Twitter
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#CC0101] transition-colors">
-                      Instagram
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
