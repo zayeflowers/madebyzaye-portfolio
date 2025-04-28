@@ -128,4 +128,4 @@ All rights reserved. This code is not open-source.
 
 ## Contact
 
-For any inquiries, please reach out to hello@madebyzaye.com
+For any inquiries, please reach out to hey@madebyzaye.com

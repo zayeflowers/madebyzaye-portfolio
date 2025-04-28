@@ -112,7 +112,7 @@ export default function DailyUplift() {
 
             <div className="mt-8 mb-20">
               <a
-                href="mailto:hello@madebyzaye.com?subject=Daily%20Uplift%20Waitlist%20Request&body=Hi%20Zaye%2C%0A%0AI'd%20like%20to%20join%20the%20waitlist%20for%20Daily%20Uplift.%20Please%20notify%20me%20when%20it%20launches.%0A%0AThank%20you!"
+                href="mailto:hey@madebyzaye.com?subject=Daily%20Uplift%20Waitlist%20Request&body=Hi%20Zaye%2C%0A%0AI'd%20like%20to%20join%20the%20waitlist%20for%20Daily%20Uplift.%20Please%20notify%20me%20when%20it%20launches.%0A%0AThank%20you!"
                 className="inline-flex items-center justify-center box-border w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
               >
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">

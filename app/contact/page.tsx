@@ -24,7 +24,7 @@ export default function Contact() {
               <div className="space-y-6 font-[family-name:var(--font-montserrat)] leading-[28px]">
                 <div>
                   <h3 className="font-bold text-lg mb-2">Email</h3>
-                  <p className="text-[#CC0101]">hello@madebyzaye.com</p>
+                  <p className="text-[#CC0101]">hey@madebyzaye.com</p>
                 </div>
 
                 <div>
@@ -42,7 +42,7 @@ export default function Contact() {
               </p>
 
               <a
-                href="mailto:hello@madebyzaye.com?subject=Work%20Inquiry"
+                href="mailto:hey@madebyzaye.com?subject=Work%20Inquiry"
                 className="inline-flex items-center justify-center box-border w-full md:w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
               >
                 <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">
