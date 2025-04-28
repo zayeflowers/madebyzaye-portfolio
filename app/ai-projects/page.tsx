@@ -19,37 +19,7 @@ export default function AIProjects() {
             Exploring what happens when creativity meets computation. These projects combine storytelling, visual design, and generative AI to push boundaries — and spark new conversations about what technology can feel like.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mb-40 md:mb-0">
-            {/* Candy Paint Project */}
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="relative">
-                <Image
-                  src="/candypaint_medium.svg"
-                  alt="Candy Paint"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="p-6">
-                <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
-                  Candy Paint
-                </h2>
-                <p className="font-[family-name:var(--font-montserrat)] mb-4">
-                  A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
-                </p>
-                <Link
-                  href="/ai-projects/candy-paint"
-                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
-                >
-                  View Project
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mb-40">
             {/* Daily Uplift Project */}
             <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <div className="p-6">
@@ -73,6 +43,69 @@ export default function AIProjects() {
                 </p>
                 <Link
                   href="/ai-projects/daily-uplift"
+                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+                >
+                  View Project
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* UX Strip Project */}
+            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+              <div className="relative">
+                <Image
+                  src="/uxstrip.png"
+                  alt="UX Strip"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
+                  UX Strip
+                </h2>
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
+                  A comic strip series capturing the humorous, relatable, and sometimes absurd moments of working in UX and product design. Created to document the real conversations, frustrations, and ironies that designers experience daily — all through simple, satirical illustrations.
+                </p>
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
+                  <span className="font-bold">Status:</span> Launched
+                </p>
+                <Link
+                  href="/ai-projects/ux-strip"
+                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+                >
+                  View Project
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Candy Paint Project */}
+            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+              <div className="relative">
+                <Image
+                  src="/candypaint_medium.svg"
+                  alt="Candy Paint"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
+                  Candy Paint
+                </h2>
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
+                  A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
+                </p>
+                <Link
+                  href="/ai-projects/candy-paint"
                   className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
                 >
                   View Project

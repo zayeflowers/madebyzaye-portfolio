@@ -68,6 +68,13 @@ export default function CandyPaint() {
               Candy Paint explores how AI can be used as a creative collaborator — not just a tool. What began as a prompt experiment quickly evolved into a full visual narrative that blurs the line between reality and imagination. This project investigates digital identity, futurism, and the aesthetics of self-expression through synthetic visuals and stylized motion.
             </p>
 
+            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Music Credits</h2>
+            <div className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
+              <p className="mb-2"><span className="font-bold">Artist:</span> Normani</p>
+              <p className="mb-2"><span className="font-bold">Produced by:</span> TBHits</p>
+              <p className="mb-2"><span className="font-bold">Written by:</span> Normani, Starrah, Jacob Gago, June Nawakii, Keynon Moore, 302Quan & Ty Steez</p>
+            </div>
+
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Process</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
               Using Midjourney for visual concepting and Runway ML for motion, I constructed a visual storyline that would feel cinematic but surreal. The character design, framing, and styling were all directed with an intentional nod to Afrofuturism, digital fashion, and the idea of &quot;digital armor.&quot; The edit was mostly composed in Davinci Resolve, allowing for tight control over pacing and mood.
