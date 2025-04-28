@@ -79,11 +79,7 @@ export default function GeicoProject() {
                 </div>
               </div>
             </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                GEICO Injury Intake Redesign Overview
-              </p>
-            </div>
+
           </div>
 
           {/* Overview Section */}
@@ -151,11 +147,7 @@ export default function GeicoProject() {
                 </div>
               </div>
             </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Visual storytelling of the Injury Intake user experience
-              </p>
-            </div>
+
           </div>
 
           {/* My Approach Section */}
@@ -183,11 +175,7 @@ export default function GeicoProject() {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                  End-to-end user journey mapping of the claims process
-                </p>
-              </div>
+
             </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">2. Identified Drop-Off Pain Points</h3>
@@ -211,11 +199,7 @@ export default function GeicoProject() {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                  Analytics showing drop-off points in the user journey
-                </p>
-              </div>
+
             </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">3. Redesigned for Clarity & Compassion</h3>
@@ -250,11 +234,7 @@ export default function GeicoProject() {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                  Redesigned UI with improved clarity and compassion
-                </p>
-              </div>
+
             </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">4. Prototyped & Usability Tested</h3>
@@ -277,11 +257,7 @@ export default function GeicoProject() {
                   </div>
                 </div>
               </div>
-              <div className="p-4">
-                <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                  Usability testing sessions with real users
-                </p>
-              </div>
+
             </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">5. Navigated Constraints & Alignment</h3>
