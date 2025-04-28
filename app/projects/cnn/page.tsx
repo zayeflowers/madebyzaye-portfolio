@@ -117,11 +117,7 @@ export default function CNNProject() {
                 />
               </div>
             </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Collaboration and wireframing process
-              </p>
-            </div>
+
           </div>
 
           {/* Discovery & Research Section */}
@@ -152,11 +148,7 @@ export default function CNNProject() {
                 />
               </div>
             </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Demographic map and wireframe iterations
-              </p>
-            </div>
+
           </div>
 
           {/* Ideation Section */}
@@ -187,11 +179,7 @@ export default function CNNProject() {
                 />
               </div>
             </div>
-            <div className="p-4">
-              <p className="font-[family-name:var(--font-montserrat)] text-sm text-gray-600 italic">
-                Polling visualization design iterations
-              </p>
-            </div>
+
           </div>
 
           {/* Testing & Iteration Section */}
