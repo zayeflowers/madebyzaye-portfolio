@@ -27,7 +27,7 @@ export default function Work() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-                I&apos;ve worked on everything from AI-powered tools to large-scale claims systems — always focused on building experiences that feel intuitive, useful, and human.
+                I&apos;ve worked on everything from AI-powered tools to large-scale claims systems — always focused on building experiences that feel intuitive and useful.
               </p>
             </FadeIn>
 

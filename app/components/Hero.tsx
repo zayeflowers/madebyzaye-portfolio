@@ -85,6 +85,7 @@ const Hero: React.FC = () => {
                     alt="Daily Uplift App"
                     width={600}
                     height={400}
+                    priority
                     className="w-full h-auto object-contain block"
                   />
                 </div>

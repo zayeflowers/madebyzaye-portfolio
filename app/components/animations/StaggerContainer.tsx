@@ -1,7 +1,8 @@
 "use client";
 
-import React, { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import React, { ReactNode, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 interface StaggerContainerProps {
   children: ReactNode;
@@ -18,12 +19,29 @@ const StaggerContainer: React.FC<StaggerContainerProps> = ({
   staggerChildren = 0.1,
   once = true,
 }) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: once,
+    threshold: 0.1, // Trigger when 10% of the element is in view
+    rootMargin: '-50px 0px', // Start animation slightly before element enters viewport
+  });
+
+  useEffect(() => {
+    if (inView) {
+      // Add a small delay to ensure all children are mounted
+      const timer = setTimeout(() => {
+        controls.start('visible');
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [controls, inView]);
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once }}
+      animate={controls}
       variants={{
         hidden: { opacity: 0 },
         visible: {
