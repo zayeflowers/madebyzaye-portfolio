@@ -22,12 +22,12 @@ export default function Work() {
 
             <FadeIn delay={0.1}>
               <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-                I&apos;ve designed for scale, speed, and soul — leading product design initiatives across finance, insurance, hospitality, and media. Whether refining form flows or mentoring designers, I approach each challenge with empathy, experimentation, and strategic focus.
+                I lead product design initiatives across finance, insurance, hospitality, and media. Whether refining complex form flows or mentoring designers, I bring a hands-on, practical approach to every challenge — balancing user needs, business goals, and real-world constraints.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="max-w-3xl text-lg mb-[32px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-                From launching AI-powered features to transforming claims workflows used by millions, I build experiences that move with people — not against them.
+                I&apos;ve worked on everything from AI-powered tools to large-scale claims systems — always focused on building experiences that feel intuitive, useful, and human.
               </p>
             </FadeIn>
 

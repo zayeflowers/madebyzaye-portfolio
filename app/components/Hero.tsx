@@ -27,19 +27,19 @@ const Hero: React.FC = () => {
             <StaggerContainer className="space-y-4" delayChildren={0.1} staggerChildren={0.1}>
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)] -mt-[20px]">
-                  I&apos;m a Lead Product Designer using AI to build tools that feel. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app powered by empathy, mood, and motivation. It&apos;s designed to meet people in their moment &mdash; with the right words, at the right time.
+                  I&apos;m a Lead Product Designer using AI to build new experiences. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app designed to meet people where they are, with the right words at the right time.
                 </p>
               </StaggerItem>
 
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)]">
-                  My work blends thoughtful design, emerging tech, and real-world care. Whether I&apos;m prototyping wellness experiences, exploring generative AI, or writing the front-end myself &mdash; I lead with intention.
+                  My work blends thoughtful design, emerging tech, and real-world understanding. Whether I&apos;m shaping wellness experiences, exploring generative AI, or guiding AI tools to bring front-end ideas to life. I believe in building products that don&apos;t just function &mdash; they connect.
                 </p>
               </StaggerItem>
 
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)]">
-                  I believe in building products that aren&apos;t just smart, but supportive. That don&apos;t just work &mdash; they resonate. Because it&apos;s not just what I build. It&apos;s how it connects.
+                  Along the way, I&apos;ve helped shape UX at companies like Geico, CNN, and Publicis Sapient &mdash; designing complex systems, aligning teams, and delivering products that balance business needs with real human experiences.
                 </p>
               </StaggerItem>
             </StaggerContainer>
