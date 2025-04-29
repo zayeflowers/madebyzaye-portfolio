@@ -91,6 +91,26 @@ export default function About() {
                       <h3 className="font-bold">Interests</h3>
                       <p>AI, Music Production, Photography, Travel</p>
                     </div>
+
+                    <div>
+                      <h3 className="font-bold">Currently Building</h3>
+                      <p>Daily Uplift, UX Strip</p>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold">Favorite Tools</h3>
+                      <p>Figma, Cursor AI, Midjourney, Notion</p>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold">Why I Create</h3>
+                      <p>I'm driven by curiosity — always exploring how design, technology, and storytelling can create real connection.</p>
+                    </div>
+
+                    <div>
+                      <h3 className="font-bold">Fun Fact</h3>
+                      <p>I'm a huge R&B fan and have a side project brewing around music and storytelling.</p>
+                    </div>
                   </div>
                 </div>
               </StaggerItem>
