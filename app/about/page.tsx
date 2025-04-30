@@ -24,7 +24,7 @@ export default function About() {
 
                 <div className="space-y-8">
                   <p className="font-[family-name:var(--font-montserrat)]">
-                    I&apos;m Zaye Flowers, a Designer Engineer / Product Designer with a passion for creating tech-powered tools that inspire and empower people. My journey in design and technology has been driven by a simple philosophy: create what I wish existed.
+                    I&apos;m Zaye Flowers, a Design Engineer / Product Designer with a passion for creating tech-powered tools that inspire and empower people. My journey in design and technology has been driven by a simple philosophy: create what I wish existed.
                   </p>
 
                   <p className="font-[family-name:var(--font-montserrat)]">
