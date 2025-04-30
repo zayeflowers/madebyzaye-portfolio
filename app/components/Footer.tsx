@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Container from './Container';
 import { motion } from 'framer-motion';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
   return (
@@ -19,19 +20,37 @@ const Footer: React.FC = () => {
           >
             © 2025 Made By Zaye
           </motion.p>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <Link
-              href="https://www.linkedin.com/in/zayeflowers/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-[family-name:var(--font-montserrat)] text-[#CC0101] hover:text-[#a50000] transition-colors"
+          <div className="flex items-center space-x-4">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
             >
-              LinkedIn
-            </Link>
-          </motion.div>
+              <Link
+                href="https://www.linkedin.com/in/zayeflowers/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#CC0101] hover:text-[#a50000] transition-colors"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={24} />
+              </Link>
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Link
+                href="https://github.com/zayeflowers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#CC0101] hover:text-[#a50000] transition-colors"
+                aria-label="GitHub"
+              >
+                <FaGithub size={24} />
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </Container>
     </footer>
