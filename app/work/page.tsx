@@ -81,6 +81,9 @@ export default function Work() {
               <p className="font-[family-name:var(--font-montserrat)]">
                 Mentored 10+ aspiring designers through portfolio reviews, mock interviews, and job search prep. Helped 85% land roles while building confidence, clarity, and design craft in a fast-moving remote learning environment.
               </p>
+              <Link href="/interview" className="inline-block mt-3 text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                View my interview with Thinkful →
+              </Link>
             </StaggerItem>
 
             {/* Publicis Sapient */}
