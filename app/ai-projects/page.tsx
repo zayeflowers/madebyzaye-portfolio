@@ -25,7 +25,7 @@ export default function AIProjects() {
               <div className="p-6">
                 <div className="mb-4">
                   <Image
-                    src="/dailyupliftapp.svg"
+                    src="/dailyupliftapp.png"
                     alt="Daily Uplift App"
                     width={300}
                     height={200}

@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               >
                 <div className="mb-4">
                   <Image
-                    src="/dailyupliftapp.svg"
+                    src="/dailyupliftapp.png"
                     alt="Daily Uplift App"
                     width={600}
                     height={400}

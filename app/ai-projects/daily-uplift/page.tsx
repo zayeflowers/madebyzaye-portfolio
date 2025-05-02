@@ -27,7 +27,7 @@ export default function DailyUplift() {
           <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 p-0">
             <div className="flex items-center justify-center">
               <Image
-                src="/dailyupliftapp.svg"
+                src="/dailyupliftapp.png"
                 alt="Daily Uplift App"
                 width={600}
                 height={400}
