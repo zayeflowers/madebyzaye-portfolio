@@ -51,7 +51,7 @@ export default function GeicoProject() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-[40px]">
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Role</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Lead UX Designer</p>
+              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Product Design Lead</p>
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Timeline</h2>
