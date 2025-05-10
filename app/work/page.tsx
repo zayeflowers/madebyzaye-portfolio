@@ -124,64 +124,6 @@ export default function Work() {
               </p>
             </StaggerItem>
           </StaggerContainer>
-
-          <div className="mt-[80px] mb-[60px]">
-            <FadeIn>
-              <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-[24px] [text-edge:cap] [leading-trim:both]">
-                Additional Clients
-              </h3>
-            </FadeIn>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-              <FadeIn delay={0.1}>
-                <div className="h-10 flex items-center">
-                  <Image
-                    src="/cox.svg"
-                    alt="Cox"
-                    width={100}
-                    height={30}
-                    className="object-contain h-full"
-                  />
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.2}>
-                <div className="h-10 flex items-center">
-                  <Image
-                    src="/TheHomeDepot.svg"
-                    alt="The Home Depot"
-                    width={100}
-                    height={30}
-                    className="object-contain h-full"
-                  />
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.3}>
-                <div className="h-10 flex items-center">
-                  <Image
-                    src="/adplogo.svg"
-                    alt="ADP"
-                    width={100}
-                    height={30}
-                    className="object-contain h-full"
-                  />
-                </div>
-              </FadeIn>
-
-              <FadeIn delay={0.4}>
-                <div className="h-10 flex items-center">
-                  <Image
-                    src="/scufgaming.png"
-                    alt="SCUF Gaming"
-                    width={100}
-                    height={30}
-                    className="object-contain h-full"
-                  />
-                </div>
-              </FadeIn>
-            </div>
-          </div>
         </Container>
       </main>
 
