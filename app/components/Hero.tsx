@@ -27,19 +27,19 @@ const Hero: React.FC = () => {
             <StaggerContainer className="space-y-4" delayChildren={0.1} staggerChildren={0.1}>
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)] -mt-[20px]">
-                  I&apos;m a Lead Product Designer using AI to build new experiences. Right now, I&apos;m crafting <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app designed to meet people where they are, with the right words at the right time.
+                  I&apos;m a Product Design Lead using AI to create meaningful experiences. Right now, I&apos;m building <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app that delivers the right words when people need them most.
                 </p>
               </StaggerItem>
 
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)]">
-                  My work blends thoughtful design, emerging tech, and real-world understanding. Whether I&apos;m shaping wellness experiences, exploring generative AI, or guiding AI tools to bring front-end ideas to life. I believe in building products that don&apos;t just function &mdash; they connect.
+                  My work blends design, emerging tech, and a deep understanding of real-world needs. I&apos;m focused on creating products that feel personal and purposeful.
                 </p>
               </StaggerItem>
 
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)]">
-                  Along the way, I&apos;ve helped shape UX at companies like Geico, CNN, and Publicis Sapient &mdash; designing complex systems, aligning teams, and delivering products that balance business needs with real human experiences.
+                  I&apos;ve shaped UX at companies like Geico, CNN, and Publicis Sapient, designing complex systems, aligning teams, and creating solutions that connect people and products.
                 </p>
               </StaggerItem>
             </StaggerContainer>
