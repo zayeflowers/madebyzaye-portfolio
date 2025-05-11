@@ -86,7 +86,7 @@ export default function GeicoProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Overview</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              Injury Intake is a critical part of GEICO&apos;s auto claims experience—where users report bodily injuries after an accident. However, it&apos;s one of the last steps in a long, multi-screen flow, and it had a staggering  abandonment rate by the time users reached it.
+              Injury Intake is a critical part of GEICO&apos;s auto claims experience where users report bodily injuries after an accident. However, it&apos;s one of the last steps in a long, multi-screen flow, and it had a staggering  abandonment rate by the time users reached it.
             </p>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               My role as Lead UX Designer was to overhaul the experience. I led design and strategy for this phase, advocating for user needs while aligning with business goals and technical constraints.
@@ -182,25 +182,6 @@ export default function GeicoProject() {
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               Using analytics (Quantum Metrics / PowerBI) and user feedback, I discovered users were often mentally fatigued by the time they reached Injury Intake. Many didn&apos;t know why they were answering more questions or how it connected to the claim&apos;s outcome.
             </p>
-
-            {/* Comic Strip 3 Image */}
-            <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
-              <div className="p-6">
-                <div className="relative">
-                  <div className="flex justify-center">
-                    <Image
-                      src="/comicstrip3.png"
-                      alt="GEICO Injury Intake Analytics and Pain Points"
-                      width={800}
-                      height={450}
-                      style={{ width: '100%', height: 'auto' }}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-            </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">3. Redesigned for Clarity & Compassion</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
