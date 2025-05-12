@@ -131,25 +131,6 @@ export default function GeicoProject() {
             </ul>
           </div>
 
-          {/* Comic Strip Image */}
-          <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-16">
-            <div className="p-6">
-              <div className="relative">
-                <div className="flex justify-center">
-                  <Image
-                    src="/comicstrip1.png"
-                    alt="GEICO Injury Intake Comic Strip"
-                    width={800}
-                    height={450}
-                    style={{ width: '100%', height: 'auto' }}
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-
-          </div>
-
           {/* My Approach Section */}
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🛠️ My Approach</h2>
@@ -158,25 +139,6 @@ export default function GeicoProject() {
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
               I audited the real production flows utilizing Quantum Metric and collaborated with Product adjusters to understand how the data was used. This gave us a true picture of what our users were experiencing.
             </p>
-
-            {/* Comic Strip 2 Image */}
-            <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
-              <div className="p-6">
-                <div className="relative">
-                  <div className="flex justify-center">
-                    <Image
-                      src="/comicstrip2.png"
-                      alt="GEICO Injury Intake Process Flow"
-                      width={800}
-                      height={450}
-                      style={{ width: '100%', height: 'auto' }}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-            </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">2. Identified Drop-Off Pain Points</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
@@ -199,47 +161,9 @@ export default function GeicoProject() {
               </li>
             </ul>
 
-            {/* Comic Strip 4 Image */}
-            <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
-              <div className="p-6">
-                <div className="relative">
-                  <div className="flex justify-center">
-                    <Image
-                      src="/comicstrip4.png"
-                      alt="GEICO Injury Intake Redesigned UI"
-                      width={800}
-                      height={450}
-                      style={{ width: '100%', height: 'auto' }}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">4. Prototyped & Usability Tested</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
             I created a functional prototype that brought early design concepts to life, enabling cross-functional teams to test interactions and gather actionable insights directly from users.</p>
-
-            {/* Comic Strip 5 Image */}
-            <div className="w-full bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8">
-              <div className="p-6">
-                <div className="relative">
-                  <div className="flex justify-center">
-                    <Image
-                      src="/comicstrip5.png"
-                      alt="GEICO Injury Intake Prototype Testing"
-                      width={800}
-                      height={450}
-                      style={{ width: '100%', height: 'auto' }}
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              </div>
-
-            </div>
 
             <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">5. Navigated Constraints & Alignment</h3>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
@@ -258,7 +182,7 @@ export default function GeicoProject() {
                 <strong>Increased visibility:</strong> My findings helped shift team understanding toward user mental load, not just screen count
               </li>
               <li className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-                <strong>Foundation for future improvements:</strong> My documentation and testing paved the way for enhancements like state form integration and uploaded documents
+                <strong>Foundation for future improvements:</strong> My documentation and testing paved the way for enhancements like state form integration and uploaded documents.
               </li>
             </ul>
           </div>
@@ -267,7 +191,7 @@ export default function GeicoProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💭 Reflection</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
-              This project reminded me that design isn&apos;t just about simplifying screens—it&apos;s about advocating for what the user has left to give. When we respect their emotional and cognitive bandwidth, we build better products and better trust.
+              This project reminded me that design isn&apos;t just about simplifying screens, it&apos;s about advocating for what the user has left to give. When we respect their emotional and cognitive bandwidth, we build better products and better trust.
             </p>
           </div>
 

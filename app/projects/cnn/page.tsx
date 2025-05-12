@@ -85,8 +85,8 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🚩 The Challenge</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              How do we empower users to navigate and decide in an election unlike any in U.S. history? Our team at CNN was tasked with helping 150+ million voters engage with complex political information — amidst a pandemic and a deeply polarized climate.
-            </p>
+            How do we help people navigate and make decisions in an election unlike any other?
+            Our team at CNN was tasked with reaching over 150 million voters, guiding them through complex political information during a pandemic and a divided political climate.</p>
           </div>
 
           {/* My Role Section */}
@@ -155,7 +155,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">💡 Ideation</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              We explored how shifting demographics affect election outcomes in swing states like Florida. My proposal was to incorporate visual timelines for historic voting patterns — ultimately scaled down to a 2016 comparison due to performance constraints.
+              We explored how shifting demographics affect election outcomes in swing states like Florida. My proposal was to incorporate visual timelines for historic voting patterns ultimately scaled down to a 2016 comparison due to performance constraints.
             </p>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-4">We also ideated on:</p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
@@ -196,7 +196,7 @@ export default function CNNProject() {
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li><strong>Time:</strong> The election wasn&apos;t going to wait. We delivered on a fixed timeline.</li>
               <li><strong>Technical feasibility:</strong> Not all ideas could be supported by legacy systems and external APIs.</li>
-              <li><strong>Ad pressure:</strong> Design decisions had to balance storytelling with space for advertising — a constant tension with editorial needs.</li>
+              <li><strong>Ad pressure:</strong> Design decisions had to balance storytelling with space for advertising, a constant tension with editorial needs.</li>
             </ul>
           </div>
 
@@ -225,7 +225,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">📈 Outcomes</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              CNN broke digital records in 2020, with over 215M monthly unique visitors globally — ranking #1 across every key digital metric for the year. Our Election Center work contributed to this historic moment in U.S. media engagement.
+              CNN broke digital records in 2020, with over 215M monthly unique visitors globally, ranking #1 across every key digital metric for the year. Our Election Center work contributed to this historic moment in U.S. media engagement.
             </p>
           </div>
 
@@ -234,7 +234,7 @@ export default function CNNProject() {
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🤔 Reflections & Takeaways</h2>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Designing for democracy is layered — it&apos;s political, emotional, and data-driven</li>
-              <li>Fast feedback cycles are crucial — we lost time chasing approvals</li>
+              <li>Fast feedback cycles are crucial, we lost time chasing approvals</li>
               <li>Partnership with editorial and engineering was essential to ship thoughtful, scalable experiences</li>
             </ul>
           </div>
@@ -243,7 +243,7 @@ export default function CNNProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🏆 Final Thought</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              This work taught me that impact isn&apos;t always about perfection — it&apos;s about designing under real constraints to help people understand the world. That&apos;s what makes product design powerful.
+              This work taught me that impact isn&apos;t always about perfection, it&apos;s about designing under real constraints to help people understand the world. That&apos;s what makes product design powerful.
             </p>
           </div>
 

@@ -130,7 +130,7 @@ export default function USBankProject() {
           <div className="max-w-4xl mb-16">
             <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">🔍 Discovery & Research</h2>
             <p className="font-[family-name:var(--font-montserrat)] text-base leading-[28px] mb-6">
-              We uncovered that small business owners want more than just transactional banking — they needed tools that could help with:
+              We uncovered that small business owners want more than just transactional banking, they needed tools that could help with:
             </p>
             <ul className="list-disc pl-6 mb-6 space-y-2 font-[family-name:var(--font-montserrat)] text-base leading-[28px]">
               <li>Invoicing</li>
