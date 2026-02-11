@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            © 2025 Made By Zaye
+            © 2026 Made By Zaye
           </motion.p>
           <div className="flex items-center space-x-4">
             <motion.div

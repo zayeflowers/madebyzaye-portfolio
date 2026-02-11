@@ -24,14 +24,15 @@ export default function CandyPaint() {
             </Link>
           </div>
 
-          <div className="overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 mb-8 w-full aspect-video relative h-0 pb-[56.25%]">
+          <div className="overflow-hidden mb-8 w-full aspect-video relative">
             <iframe
-              src="https://videopress.com/embed/6a6owULP"
+              src="https://player.vimeo.com/video/1164171496?badge=0&autopause=0&player_id=0&app_id=58479"
               frameBorder="0"
-              allowFullScreen
-              allow="clipboard-write"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
               className="absolute top-0 left-0 w-full h-full"
-            ></iframe>
+              title="Candy Paint"
+            />
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
@@ -87,7 +88,7 @@ export default function CandyPaint() {
           </div>
         </Container>
       </main>
-      <Script src="https://videopress.com/videopress-iframe.js" strategy="afterInteractive" />
+      <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
     </PageLayout>
   );
 }
