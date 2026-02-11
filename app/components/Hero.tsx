@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
             <StaggerContainer className="space-y-4" delayChildren={0.1} staggerChildren={0.1}>
               <StaggerItem>
                 <p className="font-[family-name:var(--font-montserrat)] -mt-[20px]">
-                  I&apos;m a Product Design Lead using AI to create meaningful experiences. Right now, I&apos;m building <span className="text-red-600 font-medium">Daily Uplift</span> &mdash; an emotional wellness app that delivers the right words when people need them most.
+                  I&apos;m a Product Design Lead using AI to create meaningful experiences. Right now, I&apos;m building <span className="text-red-600 font-medium">BrotherSignal</span> &mdash; a scalable SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers.
                 </p>
               </StaggerItem>
 
@@ -71,9 +71,9 @@ const Hero: React.FC = () => {
             </FadeIn>
 
 
-            {/* Daily Uplift Project */}
+            {/* BrotherSignal Project */}
             <FadeIn delay={0.3} className="mb-8">
-              <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">Daily Uplift - AI Wellness App</h3>
+              <h3 className="font-[family-name:var(--font-montserrat)] text-[20px] font-medium leading-[24px] tracking-[-0.04em] mb-4 [text-edge:cap] [leading-trim:both] text-[#000000]">BrotherSignal – SMS-Based Engagement Platform</h3>
               <motion.div
                 className="bg-[#FFFFFF] rounded-[14px] px-6 pt-6 pb-6 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50 hover-lift"
                 whileHover={{ y: -5 }}
@@ -81,8 +81,8 @@ const Hero: React.FC = () => {
               >
                 <div className="mb-4">
                   <Image
-                    src="/dailyupliftapp.png"
-                    alt="Daily Uplift App"
+                    src="/brothersignal.jpg"
+                    alt="BrotherSignal"
                     width={600}
                     height={400}
                     priority
@@ -90,11 +90,11 @@ const Hero: React.FC = () => {
                   />
                 </div>
                 <p className="font-[family-name:var(--font-montserrat)] mb-4">
-                  An AI-powered wellness app that delivers mood-based affirmations and reflections.
+                  A scalable SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers.
                 </p>
                 <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
                   <Link
-                    href="/ai-projects/daily-uplift"
+                    href="/ai-projects/brothersignal"
                     className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
                   >
                     View Project
