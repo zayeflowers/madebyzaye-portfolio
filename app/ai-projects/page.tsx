@@ -20,36 +20,6 @@ export default function AIProjects() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mb-40">
-            {/* BrotherSignal Project */}
-            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <div className="p-6">
-                <div className="mb-4">
-                  <Image
-                    src="/brothersignal.jpg"
-                    alt="BrotherSignal"
-                    width={300}
-                    height={200}
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-                <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
-                  BrotherSignal
-                </h2>
-                <p className="font-[family-name:var(--font-montserrat)] mb-4">
-                  A scalable SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers. Built with automated messaging infrastructure, backend scheduling, and API integrations to support consistent community outreach.
-                </p>
-                <Link
-                  href="/ai-projects/brothersignal"
-                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
-                >
-                  View Project
-                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
             {/* Daily Uplift Project */}
             <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <div className="p-6">

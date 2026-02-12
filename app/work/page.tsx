@@ -32,6 +32,25 @@ export default function Work() {
             </FadeIn>
 
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-y-[46px] gap-x-6 md:gap-x-[93px] max-w-6xl" delayChildren={0.3} staggerChildren={0.1}>
+            {/* BrotherSignal */}
+            <StaggerItem className="flex flex-col">
+              <div className="h-24 flex items-center mb-6">
+                <Image
+                  src="/brotherSignal_logo.png"
+                  alt="BrotherSignal"
+                  width={300}
+                  height={80}
+                  className="object-contain h-full"
+                />
+              </div>
+              <p className="font-[family-name:var(--font-montserrat)]">
+                A scalable SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers. Built with automated messaging infrastructure, backend scheduling, and API integrations to support consistent community outreach.<br />
+                <Link href="/ai-projects/brothersignal" className="inline-block text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                  View project →
+                </Link>
+              </p>
+            </StaggerItem>
+
             {/* GEICO */}
             <StaggerItem className="flex flex-col">
               <div className="h-24 flex items-center mb-6">
