@@ -31,12 +31,12 @@ export default function CandyPaint() {
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               className="absolute top-0 left-0 w-full h-full"
-              title="Candy Paint"
+              title="Candy Paint — Generative AI Music Visual"
             />
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-            Candy Paint
+            Candy Paint — Generative AI Music Visual
           </h1>
 
           <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
