@@ -20,6 +20,36 @@ export default function AIProjects() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mb-40">
+            {/* Candy Paint Project */}
+            <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
+              <div className="relative">
+                <Image
+                  src="/candypaint_medium.svg"
+                  alt="Candy Paint"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
+                  Candy Paint
+                </h2>
+                <p className="font-[family-name:var(--font-montserrat)] mb-4">
+                  A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
+                </p>
+                <Link
+                  href="/ai-projects/candy-paint"
+                  className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
+                >
+                  View Project
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Daily Uplift Project */}
             <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <div className="p-6">
@@ -86,26 +116,26 @@ export default function AIProjects() {
               </div>
             </div>
 
-            {/* Candy Paint Project */}
+            {/* Hall Sisters Project */}
             <div className="bg-white rounded-[14px] overflow-hidden shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
               <div className="relative">
                 <Image
-                  src="/candypaint_medium.svg"
-                  alt="Candy Paint"
+                  src="/hallsisters.jpg"
+                  alt="Hall Sisters"
                   width={600}
                   height={400}
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div className="p-6">
                 <h2 className="font-[family-name:var(--font-montserrat)] font-medium text-2xl mb-3 tracking-[-0.04em]">
-                  Candy Paint
+                  Hall Sisters
                 </h2>
                 <p className="font-[family-name:var(--font-montserrat)] mb-4">
-                  A music video experiment that blends motion, style, and identity through generative AI tools. Designed to test the limits of storytelling when visuals are co-created with machines — bold, weird, and unapologetically future-facing.
+                  A documentary-style exploration examining identity, trauma, and public narrative through an AI-assisted research and storytelling workflow — supporting long-form storytelling, research synthesis, and cultural documentation.
                 </p>
                 <Link
-                  href="/ai-projects/candy-paint"
+                  href="/ai-projects/hall-sisters"
                   className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
                 >
                   View Project

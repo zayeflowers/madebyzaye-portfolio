@@ -66,6 +66,14 @@ const CareerTimeline: React.FC = () => {
 
         <div className="w-full max-w-3xl -my-6">
           <TimelineItem
+            date="Jan 2026"
+            title="BrotherSignal"
+            description="SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers."
+            dateColor="text-red-600"
+            dateBgColor="bg-red-100"
+          />
+
+          <TimelineItem
             date="2025"
             title="Owner, Design Engineer at Daily Uplift"
             description="Leading the development of an AI-powered emotional wellness app rooted in empathy, mood, and motivation."
