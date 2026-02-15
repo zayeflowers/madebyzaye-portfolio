@@ -82,7 +82,10 @@ export default function Work() {
                 />
               </div>
               <p className="font-[family-name:var(--font-montserrat)]">
-                I led UX efforts to streamline the booking experience across desktop and mobile. Working closely with Product and Engineering, I helped simplify user flows, reduce friction, and align the design system across brands.
+                I led UX efforts to streamline the booking experience across desktop and mobile. Working closely with Product and Engineering, I helped simplify user flows, reduce friction, and align the design system across brands.<br />
+                <Link href="/ihg.pdf" target="_blank" rel="noopener noreferrer" className="inline-block text-[#CC0101] hover:text-[#a50000] transition-colors font-[family-name:var(--font-montserrat)] font-medium">
+                  View presentation (PDF) →
+                </Link>
               </p>
             </StaggerItem>
 
