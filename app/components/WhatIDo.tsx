@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import { FadeIn, StaggerContainer, StaggerItem } from './animations';
+import SectionHeading from './SectionHeading';
 
-const whatIDo = [
+const WHAT_I_DO = [
   {
     title: "UX Design",
     description: "Crafting intuitive, scalable experiences rooted in empathy and systems thinking.",
   },
   {
-    title: "Frontend Development w/ AI",
+    title: "Frontend w/ AI",
     description: "Building modern interfaces with React / Next.js and AI tools like Cursor and Claude.",
   },
   {
@@ -32,28 +32,24 @@ const whatIDo = [
 
 export default function WhatIDo() {
   return (
-    <section className="pt-[90px] pb-16 bg-[#f6f0e9] px-6 md:px-12 max-w-6xl mx-auto relative">
-      <div className="absolute inset-0 bg-[#f6f0e9] opacity-100"></div>
-      <div className="relative z-10">
-      <FadeIn>
-        <h2 className="font-[family-name:var(--font-montserrat)] font-extrabold text-4xl md:text-5xl lg:text-[48px] leading-tight tracking-[-0.04em] mb-10 text-center [text-edge:cap] [leading-trim:both] text-black">
-          What I Do
-        </h2>
-      </FadeIn>
+    <section className="section band-cream">
+      <SectionHeading title="What I do" meta="Six disciplines" />
 
-      <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" delayChildren={0.1} staggerChildren={0.1}>
-        {whatIDo.map((item, index) => (
-          <StaggerItem
-            key={index}
-            className="transition-transform duration-300 hover:scale-[1.03] group"
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[28px]">
+        {WHAT_I_DO.map((item, index) => (
+          <div
+            key={item.title}
+            className="border-t border-[color:var(--hair-strong)] py-[26px] max-sm:py-[20px] group"
           >
-            <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-xl mb-2 group-hover:text-[#CC0101] transition-colors text-black">
+            <span className="mono text-[11px] text-[color:var(--ink-42)]">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <h3 className="display t-xs mt-[12px] transition-colors group-hover:text-[color:var(--red)]">
               {item.title}
             </h3>
-            <p className="font-[family-name:var(--font-montserrat)] text-gray-800 leading-[28px]">{item.description}</p>
-          </StaggerItem>
+            <p className="body-copy-sm mt-[10px]">{item.description}</p>
+          </div>
         ))}
-      </StaggerContainer>
       </div>
     </section>
   );

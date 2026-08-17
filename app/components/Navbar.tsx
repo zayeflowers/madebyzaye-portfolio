@@ -3,123 +3,121 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Container from './Container';
-import { motion } from 'framer-motion';
-import { FadeIn, StaggerContainer, StaggerItem } from './animations';
+import { usePathname } from 'next/navigation';
+import { AnimatePresence, motion } from 'framer-motion';
+
+const NAV_LINKS = [
+  { href: '/work', label: 'Work' },
+  { href: '/ai-projects', label: 'AI Projects' },
+  { href: '/about', label: 'About' },
+];
+
+const MOBILE_LINKS = [...NAV_LINKS, { href: '/now', label: 'Now' }];
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   return (
-    <nav className="w-full bg-white border-b border-gray-100">
-      <Container className="flex flex-row items-center justify-between">
-        {/* Logo */}
-        <FadeIn direction="none">
-          <div className="flex items-center py-6 md:py-0 md:h-[128px] md:flex md:items-center">
-            <Link href="/">
-              <Image
-                src="/madebyzayelogo.svg"
-                alt="MadebyZaye Logo"
-                width={471}
-                height={116}
-                className="w-[225px] sm:w-[312px] md:w-[375px] h-auto"
-                priority
-              />
-            </Link>
-          </div>
-        </FadeIn>
+    <header className="w-full bg-white border-b border-[color:var(--hair)] relative z-50">
+      <div className="gutter flex items-center justify-between py-6 max-sm:py-4">
+        <Link href="/" aria-label="Made By Zaye — home" className="block">
+          <Image
+            src="/madebyzaye-logo.svg"
+            alt="Made By Zaye"
+            width={377}
+            height={93}
+            className="h-[34px] max-sm:h-[26px] w-auto block"
+            priority
+          />
+        </Link>
 
-        {/* Mobile Menu Button - visible on mobile and tablet (including landscape) */}
-        <div className="xl:hidden">
+        {/* Desktop nav */}
+        <nav className="hidden sm:flex items-center gap-8 text-[12px] font-medium leading-none tracking-[0.1em] uppercase">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`transition-colors hover:text-[color:var(--red)] ${
+                isActive(link.href) ? 'text-black' : 'text-[color:var(--ink-55)]'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact"
+            className="border border-black rounded-full px-[18px] py-[10px] text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
+          >
+            Get in touch
+          </Link>
+        </nav>
+
+        {/* Mobile: CTA + menu toggle */}
+        <div className="flex sm:hidden items-center gap-3">
+          <Link
+            href="/contact"
+            className="border border-black rounded-full px-4 py-[9px] text-[10px] font-medium leading-none tracking-[0.1em] uppercase text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
+          >
+            Contact
+          </Link>
           <button
-            onClick={toggleMobileMenu}
-            className="p-2 focus:outline-none transition-colors hover:bg-gray-100 rounded-md"
-            aria-label="Toggle mobile menu"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            className="flex flex-col justify-center gap-[5px] w-8 h-8 items-center"
+            aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
           >
-            <Image
-              src="/bars-3.svg"
-              alt="Menu"
-              width={28}
-              height={28}
-              className={mobileMenuOpen ? 'opacity-70' : 'opacity-100'}
+            <span
+              className={`block h-[1.5px] w-5 bg-black transition-transform duration-200 ${
+                mobileMenuOpen ? 'translate-y-[6.5px] rotate-45' : ''
+              }`}
+            />
+            <span
+              className={`block h-[1.5px] w-5 bg-black transition-opacity duration-200 ${
+                mobileMenuOpen ? 'opacity-0' : 'opacity-100'
+              }`}
+            />
+            <span
+              className={`block h-[1.5px] w-5 bg-black transition-transform duration-200 ${
+                mobileMenuOpen ? '-translate-y-[6.5px] -rotate-45' : ''
+              }`}
             />
           </button>
         </div>
+      </div>
 
-        {/* Desktop Navigation Links - only visible on xl screens */}
-        <StaggerContainer className="hidden xl:flex flex-wrap items-center justify-end gap-6 py-4 md:py-0 w-full md:w-auto md:h-[128px] md:items-center" delayChildren={0.1} staggerChildren={0.05}>
-          <StaggerItem><NavLink href="/" label="HOME" /></StaggerItem>
-          <StaggerItem><NavLink href="/work" label="WORK" /></StaggerItem>
-          <StaggerItem><NavLink href="/ai-projects" label="AI PROJECTS" /></StaggerItem>
-          <StaggerItem><NavLink href="/about" label="ABOUT ME" /></StaggerItem>
-          <StaggerItem><NavLink href="/contact" label="CONTACT" /></StaggerItem>
-        </StaggerContainer>
-      </Container>
-
-      {/* Mobile Menu - visible on mobile and tablet (including landscape) */}
-      <motion.div
-        className={`xl:hidden bg-white w-full border-t border-gray-100 py-4 ${mobileMenuOpen ? 'block' : 'hidden'}`}
-        initial={{ opacity: 0, height: 0 }}
-        animate={{
-          opacity: mobileMenuOpen ? 1 : 0,
-          height: mobileMenuOpen ? 'auto' : 0
-        }}
-        transition={{ duration: 0.3 }}
-      >
-        <Container>
-          <StaggerContainer className="flex flex-col space-y-4 py-2" delayChildren={0.05} staggerChildren={0.05}>
-            <StaggerItem><MobileNavLink href="/" label="HOME" onClick={toggleMobileMenu} /></StaggerItem>
-            <StaggerItem><MobileNavLink href="/work" label="WORK" onClick={toggleMobileMenu} /></StaggerItem>
-            <StaggerItem><MobileNavLink href="/ai-projects" label="AI PROJECTS" onClick={toggleMobileMenu} /></StaggerItem>
-            <StaggerItem><MobileNavLink href="/about" label="ABOUT ME" onClick={toggleMobileMenu} /></StaggerItem>
-            <StaggerItem><MobileNavLink href="/contact" label="CONTACT" onClick={toggleMobileMenu} /></StaggerItem>
-          </StaggerContainer>
-        </Container>
-      </motion.div>
-    </nav>
-  );
-};
-
-// NavLink component for consistent styling
-interface NavLinkProps {
-  href: string;
-  label: string;
-}
-
-const NavLink: React.FC<NavLinkProps> = ({ href, label }) => {
-  return (
-    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-      <Link
-        href={href}
-        className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors pr-[24px] last:pr-0 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#e53935] after:transition-all hover:after:w-full"
-      >
-        {label}
-      </Link>
-    </motion.div>
-  );
-};
-
-// Mobile NavLink component
-interface MobileNavLinkProps extends NavLinkProps {
-  onClick: () => void;
-}
-
-const MobileNavLink: React.FC<MobileNavLinkProps> = ({ href, label, onClick }) => {
-  return (
-    <motion.div whileTap={{ scale: 0.98 }}>
-      <Link
-        href={href}
-        className="font-[family-name:var(--font-lexend-exa)] text-[16px] md:text-[18px] lg:text-[20px] tracking-[-0.1em] font-normal text-black hover:text-[#e53935] transition-colors block py-3 border-b border-gray-100 last:border-b-0"
-        onClick={onClick}
-      >
-        {label}
-      </Link>
-    </motion.div>
+      {/* Mobile menu */}
+      <AnimatePresence initial={false}>
+        {mobileMenuOpen && (
+          <motion.div
+            className="sm:hidden overflow-hidden border-t border-[color:var(--hair)] bg-white"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25 }}
+          >
+            <div className="gutter py-2">
+              {MOBILE_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 text-[13px] font-medium tracking-[0.14em] uppercase transition-colors hover:text-[color:var(--red)] ${
+                    isActive(link.href) ? 'text-black' : 'text-[color:var(--ink-55)]'
+                  }`}
+                >
+                  {link.label}
+                  <span className="text-[color:var(--red)]">→</span>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
   );
 };
 

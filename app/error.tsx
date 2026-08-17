@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
+import Link from 'next/link';
 import Navbar from './components/Navbar';
-import Container from './components/Container';
-import PageHeading from './components/PageHeading';
+import Footer from './components/Footer';
 
 export default function Error({
   error,
@@ -18,27 +18,35 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen flex flex-col bg-white text-black">
       <Navbar />
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-24 min-h-screen relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container>
-          <div className="flex flex-col items-center justify-center py-16">
-            <PageHeading title="Something went wrong!" className="text-center" />
-            <p className="text-lg font-[family-name:var(--font-montserrat)] leading-[28px] mb-8 text-center max-w-2xl">
-              An unexpected error has occurred. Please try again.
-            </p>
-            <button
-              onClick={() => reset()}
-              className="inline-flex items-center justify-center box-border w-[200px] h-[60px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
-            >
-              <span className="font-[family-name:var(--font-montserrat)] font-bold text-[20px] leading-[24px] tracking-[-0.02em] text-white">
-                Try again
-              </span>
-            </button>
-          </div>
-        </Container>
+
+      <main className="flex-grow gutter pt-[88px] pb-[96px] max-sm:pt-[40px] max-sm:pb-[48px] animate-rise">
+        <div className="eyebrow">
+          <span className="rule" />
+          Something broke
+        </div>
+
+        <h1 className="display t-hero mt-[22px] max-sm:mt-[16px]">
+          Well, that didn&apos;t work<span className="red-period">.</span>
+        </h1>
+
+        <p className="lede mt-[36px] max-sm:mt-[20px]">
+          An unexpected error occurred. Try again — and if it keeps happening, let me
+          know.
+        </p>
+
+        <div className="flex gap-3 max-sm:gap-[10px] mt-[38px] max-sm:mt-[24px] max-sm:flex-col">
+          <button className="pill pill--dark" onClick={() => reset()}>
+            Try again
+          </button>
+          <Link className="pill pill--ghost" href="/">
+            Go to homepage
+          </Link>
+        </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

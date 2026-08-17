@@ -1,30 +1,55 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
 import Script from 'next/script';
-import Container from '../../components/Container';
 import PageLayout from '../../components/PageLayout';
+import CaseStudyHero from '../../components/CaseStudyHero';
+import Prose from '../../components/Prose';
+import NextProject from '../../components/NextProject';
+
+const TOOLS = [
+  { label: 'Midjourney', href: 'https://www.midjourney.com/' },
+  { label: 'Runway ML', href: 'https://runwayml.com' },
+  {
+    label: 'DaVinci Resolve',
+    href: 'https://www.blackmagicdesign.com/products/davinciresolve',
+  },
+  { label: 'CapCut', href: 'https://www.capcut.com/' },
+];
 
 export default function CandyPaint() {
   return (
     <PageLayout navbarKey="navbar-candy-paint">
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container key="container-candy-paint">
-          <div className="mb-8">
-            <Link
-              href="/ai-projects"
-              className="inline-flex items-center font-[family-name:var(--font-montserrat)] font-medium text-[#CC0101] hover:text-[#a50000] transition-colors"
-            >
-              <svg className="mr-2 w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-              Back to AI Projects
-            </Link>
-          </div>
+      <CaseStudyHero
+        eyebrow="Case study · Identity"
+        title="Candy Paint"
+        summary="A music video experiment that blends motion, style, and identity through generative AI — generative type, motion and machine-made texture."
+        backHref="/ai-projects"
+        backLabel="Back to AI projects"
+        meta={[
+          { label: 'Role', value: 'Creative Director, AI Prompt Engineer' },
+          { label: 'Year', value: '2024' },
+          {
+            label: 'Tools',
+            value: (
+              <>
+                {TOOLS.map((tool, index) => (
+                  <React.Fragment key={tool.label}>
+                    {index > 0 && ', '}
+                    <a href={tool.href} target="_blank" rel="noopener noreferrer">
+                      {tool.label}
+                    </a>
+                  </React.Fragment>
+                ))}
+              </>
+            ),
+          },
+        ]}
+      />
 
-          <div className="overflow-hidden mb-8 w-full aspect-video relative">
+      <section className="gutter pb-[56px] max-sm:pb-[32px]">
+        <div className="frame">
+          <div className="relative w-full aspect-video bg-black">
             <iframe
               src="https://player.vimeo.com/video/1164171496?badge=0&autopause=0&player_id=0&app_id=58479"
               frameBorder="0"
@@ -34,60 +59,67 @@ export default function CandyPaint() {
               title="Candy Paint — Generative AI Music Visual"
             />
           </div>
+          <figcaption className="frame-caption">
+            Candy Paint — generative AI music visual
+          </figcaption>
+        </div>
+      </section>
 
-          <h1 className="text-5xl md:text-6xl lg:text-[72px] font-[family-name:var(--font-montserrat)] font-extrabold leading-[74px] lg:leading-[74px] tracking-[-0.04em] text-[#000000] mb-[16px] [text-edge:cap] [leading-trim:both]">
-            Candy Paint — Generative AI Music Visual
-          </h1>
+      <Prose className="pb-[48px] max-sm:pb-[28px]">
+        <h2>Project overview</h2>
+        <p>
+          Candy Paint explores how AI can be used as a creative collaborator — not
+          just a tool. What began as a prompt experiment quickly evolved into a full
+          visual narrative that blurs the line between reality and imagination. This
+          project investigates digital identity, futurism, and the aesthetics of
+          self-expression through synthetic visuals and stylized motion.
+        </p>
 
-          <p className="text-xl font-[family-name:var(--font-montserrat)] font-medium mb-8 text-[#CC0101]">
-            A music video experiment that blends motion, style, and identity through generative AI tools
-          </p>
+        <h2>Process</h2>
+        <p>
+          Using Midjourney for visual concepting and Runway ML for motion, I
+          constructed a visual storyline that would feel cinematic but surreal. The
+          character design, framing, and styling were all directed with an intentional
+          nod to Afrofuturism, digital fashion, and the idea of &quot;digital
+          armor.&quot; The edit was mostly composed in DaVinci Resolve, allowing for
+          tight control over pacing and mood.
+        </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div>
-              <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Role</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">Creative Director, AI Prompt Engineer</p>
-            </div>
-            <div>
-              <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Year</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">2024</p>
-            </div>
-            <div>
-              <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2">Tools</h2>
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px]">
-                <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Midjourney</a>,
-                <a href="https://runwayml.com" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Runway ML</a>,
-                <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Davinci Resolve</a>,
-                <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer" className="text-[#CC0101] hover:underline">Capcut</a>
-              </p>
-            </div>
-          </div>
+        <h2>Outcome</h2>
+        <p>
+          The result is a high-style music visual that merges narrative with
+          generative art. More than an experiment, Candy Paint is a proof-of-concept
+          for how emerging tools can extend the creative voice of independent
+          storytellers — blending tech and intention in unexpected ways.
+        </p>
+      </Prose>
 
-          <div className="max-w-4xl">
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4">Project Overview</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Candy Paint explores how AI can be used as a creative collaborator — not just a tool. What began as a prompt experiment quickly evolved into a full visual narrative that blurs the line between reality and imagination. This project investigates digital identity, futurism, and the aesthetics of self-expression through synthetic visuals and stylized motion.
-            </p>
+      <section className="gutter pb-[48px] max-sm:pb-[28px]">
+        <div className="border-t border-[color:var(--hair-strong)] pt-[24px]">
+          <div className="micro-label">Music credits</div>
+          <dl className="mt-[20px] grid grid-cols-1 sm:grid-cols-3 gap-x-[28px]">
+            {[
+              { label: 'Artist', value: 'Normani' },
+              { label: 'Produced by', value: 'TBHits' },
+              {
+                label: 'Written by',
+                value:
+                  'Normani, Starrah, Jacob Gago, June Nawakii, Keynon Moore, 302Quan & Ty Steez',
+              },
+            ].map((credit) => (
+              <div key={credit.label} className="py-[10px]">
+                <dt className="fact-k">{credit.label}</dt>
+                <dd className="mt-[10px] text-[15px] leading-[1.5] text-[color:var(--ink-70)]">
+                  {credit.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Music Credits</h2>
-            <div className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              <p className="mb-2"><span className="font-bold">Artist:</span> Normani</p>
-              <p className="mb-2"><span className="font-bold">Produced by:</span> TBHits</p>
-              <p className="mb-2"><span className="font-bold">Written by:</span> Normani, Starrah, Jacob Gago, June Nawakii, Keynon Moore, 302Quan & Ty Steez</p>
-            </div>
+      <NextProject title="Daily Uplift" href="/ai-projects/daily-uplift" />
 
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Process</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              Using Midjourney for visual concepting and Runway ML for motion, I constructed a visual storyline that would feel cinematic but surreal. The character design, framing, and styling were all directed with an intentional nod to Afrofuturism, digital fashion, and the idea of &quot;digital armor.&quot; The edit was mostly composed in Davinci Resolve, allowing for tight control over pacing and mood.
-            </p>
-
-            <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-4 mt-12">Outcome</h2>
-            <p className="font-[family-name:var(--font-montserrat)] text-lg leading-[28px] mb-6">
-              The result is a high-style music visual that merges narrative with generative art. More than an experiment, Candy Paint is a proof-of-concept for how emerging tools can extend the creative voice of independent storytellers — blending tech and intention in unexpected ways.
-            </p>
-          </div>
-        </Container>
-      </main>
       <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
     </PageLayout>
   );
