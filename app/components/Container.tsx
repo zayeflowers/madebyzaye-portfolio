@@ -7,9 +7,14 @@ interface ContainerProps {
   className?: string;
 }
 
+/**
+ * Full-bleed container: content spans the viewport minus the design gutter
+ * (56px desktop / 20px mobile). Width is constrained per-block with the
+ * `measure` helpers rather than by a page-level max-width.
+ */
 const Container: React.FC<ContainerProps> = ({ children, className = '' }) => {
   return (
-    <div className={`container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl ${className}`}>
+    <div className={`gutter ${className}`}>
       {children}
     </div>
   );

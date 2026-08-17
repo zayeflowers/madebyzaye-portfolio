@@ -59,6 +59,35 @@ madebyzaye-portfolio/
 
 ---
 
+## Design System
+
+The site runs on the **Concept 2b** direction from `design_handoff_madebyzaye_2b/`: white
+ground, hairline rules, Archivo Black display type, and red (`#CC0101`) used as a scalpel.
+
+Everything lives in `app/globals.css`, inside `@layer components` so Tailwind utilities can
+still override it. Build pages from these classes rather than raw Tailwind colors and sizes:
+
+| Group | Classes |
+| --- | --- |
+| Type | `.display` `.mono` `.t-hero` `.t-xl` `.t-lg` `.t-md` `.t-sm` `.t-xs` |
+| Copy | `.lede` `.body-copy` `.body-copy-sm` `.measure` `.measure-tight` `.prose-zaye` `.rich-text` |
+| Labels | `.eyebrow` (`--red`, `--light`) `.kicker` `.micro-label` `.red-period` |
+| Layout | `.gutter` `.section` `.band-red` `.band-cream` `.band-black` |
+| Buttons | `.pill` + `--dark` `--ghost` `--red` `--light` `--outline-light`, `.link-red` |
+| Surfaces | `.card` `.panel` `.frame` `.slot` |
+| Lists | `.rule-list` / `.rule-row`, `.facts` / `.fact` |
+| Motion | `.marquee` `.animate-rise` `.dot` (all disabled under `prefers-reduced-motion`) |
+
+Tokens are CSS custom properties on `:root` (`--red`, `--cream`, `--hair`, `--ink-*`,
+`--gutter`, `--radius-card`, `--shadow-card`). Breakpoints: mobile `≤639px`, tablet
+`640–1023px` (reduced display scale, 36px gutter), desktop `≥1024px` (56px gutter).
+
+Shared components in `app/components/`: `Navbar`, `Footer`, `Hero`, `Marquee`,
+`SelectedWork`, `FeaturedCaseStudy`, `ExperienceList`, `WhatIDo`, `WorkCard`,
+`SectionHeading`, `PageHeading`, `CaseStudyHero`, `Figure`, `Prose`, `NextProject`.
+
+---
+
 ## Getting Started
 
 ### Prerequisites

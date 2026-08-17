@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Made By Zaye — Portfolio (Concept 2b)</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#CC0101;
+  --red-band:#CC0100;
+  --black:#000;
+  --white:#fff;
+  --cream:#F7F1EA;
+  --hair:rgba(0,0,0,.1);
+  --hair-strong:rgba(0,0,0,.12);
+  --ink-70:rgba(0,0,0,.62);
+  --ink-60:rgba(0,0,0,.6);
+  --ink-55:rgba(0,0,0,.55);
+  --ink-50:rgba(0,0,0,.5);
+  --ink-45:rgba(0,0,0,.45);
+  --ink-40:rgba(0,0,0,.4);
+  --gutter:56px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--black);font-family:Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--red)}
+.display{font-family:'Archivo Black',Archivo,sans-serif;font-weight:400}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:500}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:500;line-height:1;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-45)}
+.eyebrow .rule{width:28px;height:1px;background:var(--red)}
+.eyebrow--red{color:var(--red)}
+.section{padding:76px var(--gutter)}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:17px 30px;border-radius:999px;font-size:13px;font-weight:600;line-height:1;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.pill--dark{background:var(--black);color:var(--white)}
+.pill--dark:hover{background:var(--red)}
+.pill--ghost{border:1px solid rgba(0,0,0,.18);color:rgba(0,0,0,.65)}
+.pill--ghost:hover{border-color:var(--black);color:var(--black)}
+.pill--red{background:var(--red);color:var(--white)}
+.pill--light{background:var(--white);color:var(--black)}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:center;padding:24px var(--gutter);border-bottom:1px solid var(--hair)}
+.header .logo{height:34px;width:auto;display:block}
+.nav{display:flex;gap:32px;align-items:center;font-size:12px;font-weight:500;line-height:1;letter-spacing:.1em;text-transform:uppercase}
+.nav a{color:var(--ink-55)}
+.nav .nav-cta{border:1px solid var(--black);padding:10px 18px;border-radius:999px;color:var(--black);transition:background .2s,color .2s,border-color .2s}
+.nav .nav-cta:hover{background:var(--red);color:var(--white);border-color:var(--red)}
+
+/* Hero */
+.hero{padding:88px var(--gutter) 72px;display:grid;grid-template-columns:1fr 320px;gap:72px;align-items:end;animation:rise .6s ease both}
+.hero h1{font-size:116px;line-height:.9;letter-spacing:-.06em}
+.hero .lede{margin-top:36px;font-size:19px;line-height:1.6;color:var(--ink-70);max-width:54ch;text-wrap:pretty}
+.hero .actions{display:flex;gap:12px;margin-top:38px}
+.facts{display:flex;flex-direction:column;border-top:1px solid var(--hair)}
+.fact{padding:18px 0;border-bottom:1px solid var(--hair)}
+.fact-k{font-size:10px;font-weight:500;line-height:1;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-40)}
+.fact-v{margin-top:10px;font-size:24px;line-height:1;letter-spacing:-.03em}
+.fact-live{margin-top:10px;display:flex;align-items:center;gap:9px;font-size:15px;font-weight:600;line-height:1}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--red);animation:blink 1.6s steps(1) infinite}
+
+/* Marquee */
+.marquee{overflow:hidden;background:var(--black);color:var(--white);padding:15px 0;border-top:1px solid var(--hair)}
+.marquee-track{display:flex;width:200%;animation:mq 22s linear infinite;font-size:30px;line-height:1;letter-spacing:-.03em;white-space:nowrap;gap:26px}
+.marquee-track .star{color:var(--red)}
+
+/* Work */
+.work{background:var(--red-band);padding:72px var(--gutter)}
+.work-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:38px}
+.work-head h2{font-size:40px;line-height:1;letter-spacing:-.045em;color:var(--white)}
+.work-count{font-size:11px;font-weight:500;line-height:1;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.06);transition:box-shadow .25s,transform .25s}
+.card:hover{box-shadow:0 18px 40px rgba(0,0,0,.12);transform:translateY(-5px)}
+.slot{background:repeating-linear-gradient(135deg,#f0eae1 0 10px,#fff 10px 20px);display:flex;align-items:flex-end;padding:14px}
+.slot span{font-size:11px;line-height:1;color:rgba(0,0,0,.42)}
+.card .slot{height:230px}
+.card-body{padding:22px 22px 24px}
+.kicker{font-size:10px;font-weight:500;line-height:1;letter-spacing:.2em;text-transform:uppercase;color:var(--red)}
+.card-title{margin-top:12px;font-size:27px;line-height:1.05;letter-spacing:-.035em}
+.card-desc{margin-top:10px;font-size:15px;line-height:1.55;color:var(--ink-60)}
+
+/* Case study */
+.case{background:var(--cream);padding:76px var(--gutter);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.case h3{margin-top:22px;font-size:62px;line-height:.95;letter-spacing:-.05em}
+.case p{margin-top:22px;font-size:18px;line-height:1.6;color:var(--ink-70);max-width:42ch}
+.case .pill{margin-top:30px}
+.case-slot{height:340px;border-radius:14px;border:1px solid var(--black);background:repeating-linear-gradient(135deg,#f0eae1 0 10px,#F7F1EA 10px 20px);display:flex;align-items:flex-end;padding:16px}
+.case-slot span{font-size:11px;line-height:1;color:var(--ink-45)}
+
+/* Experience */
+.exp{padding:48px var(--gutter) 76px}
+.exp h2{margin-bottom:30px;font-size:40px;line-height:1;letter-spacing:-.045em}
+.exp-list{display:flex;flex-direction:column}
+.exp-row{display:grid;grid-template-columns:150px 1fr 200px;gap:24px;padding:22px 0;border-top:1px solid var(--hair-strong);align-items:baseline;transition:padding-left .25s}
+.exp-row:hover{padding-left:12px}
+.exp-row:last-child{border-bottom:1px solid var(--hair-strong)}
+.exp-when{font-size:12px;font-weight:500;line-height:1;letter-spacing:.14em;color:var(--red)}
+.exp-role{font-size:24px;line-height:1;letter-spacing:-.03em}
+.exp-co{font-size:15px;line-height:1.4;color:var(--ink-50)}
+
+/* Footer */
+.footer{background:var(--black);color:var(--white);padding:76px var(--gutter);display:flex;justify-content:space-between;align-items:flex-end}
+.footer-lead{font-size:82px;line-height:.92;letter-spacing:-.055em}
+.footer-meta{text-align:right;font-size:15px;line-height:1.8;color:rgba(255,255,255,.6)}
+.red-period{color:var(--red)}
+
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none}.dot{animation:none}.hero{animation:none}}
+
+/* ---------- Mobile (≤ 640px) ---------- */
+@media (max-width:640px){
+  :root{--gutter:20px}
+  .header{padding:16px var(--gutter)}
+  .header .logo{height:26px}
+  .nav a:not(.nav-cta){display:none}
+  .nav .nav-cta{font-size:10px;padding:9px 16px}
+  .hero{padding:34px var(--gutter) 30px;grid-template-columns:1fr;gap:26px}
+  .hero h1{font-size:52px;line-height:.92;letter-spacing:-.055em}
+  .hero .lede{margin-top:20px;font-size:15px}
+  .hero .actions{flex-direction:column;gap:10px;margin-top:24px}
+  .hero .pill{justify-content:center;text-align:center;font-size:12px;padding:17px}
+  .facts .fact:not(:last-child){display:none}
+  .fact{display:flex;justify-content:space-between;align-items:center;padding:16px 0 0;border-bottom:0}
+  .fact-live{margin-top:0;font-size:14px}
+  .marquee{padding:11px 0;border-top:0}
+  .marquee-track{animation-duration:16s;font-size:20px;gap:16px}
+  .work{padding:32px var(--gutter)}
+  .work-head{margin-bottom:20px}
+  .work-head h2{font-size:30px}
+  .work-count{display:none}
+  .work-grid{grid-template-columns:1fr;gap:16px}
+  .card .slot{height:165px}
+  .card-body{padding:18px}
+  .card-title{font-size:24px}
+  .card-desc{font-size:14px}
+  .case{padding:32px var(--gutter);grid-template-columns:1fr;gap:20px}
+  .case h3{margin-top:16px;font-size:42px}
+  .case p{margin-top:16px;font-size:15px}
+  .case .pill{margin-top:20px;justify-content:center;width:100%;font-size:12px;padding:16px}
+  .case-slot{height:200px;order:2}
+  .exp{padding:36px var(--gutter) 32px}
+  .exp h2{font-size:30px;margin-bottom:14px}
+  .exp-row{grid-template-columns:1fr;gap:6px;padding:16px 0}
+  .exp-row:hover{padding-left:0}
+  .exp-when{font-size:11px}
+  .exp-role{font-size:19px;line-height:1.1}
+  .exp-co{font-size:14px}
+  .footer{padding:34px var(--gutter);flex-direction:column;align-items:stretch;gap:20px}
+  .footer-lead{font-size:46px}
+  .footer .pill{justify-content:center;width:100%;font-size:12px;padding:16px}
+  .footer-meta{text-align:left;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img class="logo" src="assets/madebyzaye-logo.svg" alt="Made By Zaye">
+  <nav class="nav">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#writing">Writing</a>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow"><span class="rule"></span>Creative Technologist</div>
+    <h1 class="display">Creating what I wish existed<span class="red-period">.</span></h1>
+    <p class="lede">Product Design Lead using AI to create meaningful experiences. Twelve years shaping UX at Geico, CNN and Publicis Sapient — complex systems, aligned teams, products that feel personal.</p>
+    <div class="actions">
+      <a class="pill pill--dark" href="#work">Explore my work</a>
+      <a class="pill pill--ghost" href="#resume">Résumé</a>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact">
+      <div class="fact-k">Now building</div>
+      <div class="fact-v display">BrotherSignal</div>
+    </div>
+    <div class="fact">
+      <div class="fact-k">Experience</div>
+      <div class="fact-v display">12 years</div>
+    </div>
+    <div class="fact">
+      <div class="fact-k">Status</div>
+      <div class="fact-live"><span class="dot"></span>Open to work</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track display">
+    <span>Product Thinking</span><span class="star">✳</span><span>Creative Direction</span><span class="star">✳</span><span>Frontend w/ AI</span><span class="star">✳</span><span>Prototyping</span><span class="star">✳</span>
+    <span>Product Thinking</span><span class="star">✳</span><span>Creative Direction</span><span class="star">✳</span><span>Frontend w/ AI</span><span class="star">✳</span><span>Prototyping</span><span class="star">✳</span>
+  </div>
+</div>
+
+<section class="work" id="work">
+  <div class="work-head">
+    <h2 class="display">Selected work</h2>
+    <span class="work-count">Three of twelve</span>
+  </div>
+  <div class="work-grid">
+    <article class="card">
+      <div class="slot"><span class="mono">brothersignal-hero.jpg</span></div>
+      <div class="card-body">
+        <div class="kicker">Product · 2026</div>
+        <div class="card-title display">BrotherSignal</div>
+        <p class="card-desc">An SMS platform delivering culturally relevant daily affirmations.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="slot"><span class="mono">candypaint-cover.jpg</span></div>
+      <div class="card-body">
+        <div class="kicker">Identity · 2025</div>
+        <div class="card-title display">Candy Paint</div>
+        <p class="card-desc">Generative type, motion and machine-made texture.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="slot"><span class="mono">usbank-flow.jpg</span></div>
+      <div class="card-body">
+        <div class="kicker">Enterprise UX · 2024</div>
+        <div class="card-title display">US Bank</div>
+        <p class="card-desc">One system across a fragmented product estate.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="case">
+  <div>
+    <div class="eyebrow eyebrow--red"><span class="rule"></span>Case study</div>
+    <h3 class="display">Quiet affirmations at scale</h3>
+    <p>How BrotherSignal turned a text message into a daily ritual for Black men — consent-first, no app required.</p>
+    <a class="pill pill--red" href="#case-study">Read the case study →</a>
+  </div>
+  <div class="case-slot"><span class="mono">case-study-screens.png</span></div>
+</section>
+
+<section class="exp" id="about">
+  <h2 class="display">Experience</h2>
+  <div class="exp-list">
+    <div class="exp-row">
+      <span class="exp-when">2021 — NOW</span>
+      <span class="exp-role display">Product Design Lead</span>
+      <span class="exp-co">Publicis Sapient</span>
+    </div>
+    <div class="exp-row">
+      <span class="exp-when">2018 — 2021</span>
+      <span class="exp-role display">Senior UX Designer</span>
+      <span class="exp-co">CNN</span>
+    </div>
+    <div class="exp-row">
+      <span class="exp-when">2014 — 2018</span>
+      <span class="exp-role display">UX Designer</span>
+      <span class="exp-co">Geico</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div>
+    <div class="footer-lead display">Let's build it<span class="red-period">.</span></div>
+    <a class="pill pill--light" href="mailto:hey@madebyzaye.com">hey@madebyzaye.com</a>
+  </div>
+  <div class="footer-meta">LinkedIn · GitHub · Bluesky<br>© 2026 Made By Zaye</div>
+</footer>
+
+</body>
+</html>

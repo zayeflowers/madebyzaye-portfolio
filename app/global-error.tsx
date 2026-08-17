@@ -1,29 +1,25 @@
 'use client';
 
 import { useEffect } from 'react';
-import { Geist, Geist_Mono, Montserrat, Lexend_Exa } from "next/font/google";
+import { Archivo, Archivo_Black, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-const lexendExa = Lexend_Exa({
-  variable: "--font-lexend-exa",
+const archivoBlack = Archivo_Black({
+  variable: "--font-archivo-black",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["500"],
 });
 
 export default function GlobalError({
@@ -40,17 +36,25 @@ export default function GlobalError({
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${lexendExa.variable} antialiased`}>
-        <div className="min-h-screen flex items-center justify-center bg-[#f6f0e9] p-4">
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
-            <h2 className="text-2xl font-bold mb-4 font-[family-name:var(--font-montserrat)]">Something went wrong!</h2>
-            <p className="mb-6 font-[family-name:var(--font-montserrat)]">
-              An unexpected error has occurred. Please try again later.
-            </p>
-            <button
-              onClick={() => reset()}
-              className="bg-[#CC0101] text-white px-4 py-2 rounded font-[family-name:var(--font-montserrat)] hover:bg-[#a50000] transition-colors"
-            >
+      <body
+        className={`${archivo.variable} ${archivoBlack.variable} ${jetbrainsMono.variable} antialiased`}
+      >
+        <div className="min-h-screen flex flex-col justify-center gutter py-[76px]">
+          <div className="eyebrow">
+            <span className="rule" />
+            Something broke
+          </div>
+
+          <h1 className="display t-lg mt-[22px]">
+            Well, that didn&apos;t work<span className="red-period">.</span>
+          </h1>
+
+          <p className="lede mt-[22px]">
+            An unexpected error has occurred. Please try again.
+          </p>
+
+          <div className="mt-[30px]">
+            <button className="pill pill--dark" onClick={() => reset()}>
               Try again
             </button>
           </div>

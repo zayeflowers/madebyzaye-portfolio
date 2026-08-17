@@ -17,13 +17,13 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children, navbarKey = "navbar" 
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen flex flex-col bg-white text-black">
       <Navbar key={navbarKey} />
-      <div className="flex-grow bg-[#f6f0e9]">
+      <main className="flex-grow">
         <PageTransition>
           {children}
         </PageTransition>
-      </div>
+      </main>
       <Footer />
     </div>
   );

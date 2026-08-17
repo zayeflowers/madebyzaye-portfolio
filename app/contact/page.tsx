@@ -1,58 +1,128 @@
 "use client";
 
 import React from 'react';
-import Container from '../components/Container';
 import PageHeading from '../components/PageHeading';
 import PageLayout from '../components/PageLayout';
+import Marquee from '../components/Marquee';
+
+const CHANNELS = [
+  {
+    label: 'Email',
+    value: 'hey@madebyzaye.com',
+    href: 'mailto:hey@madebyzaye.com',
+    external: false,
+  },
+  {
+    label: 'LinkedIn',
+    value: 'in/zayeflowers',
+    href: 'https://www.linkedin.com/in/zayeflowers/',
+    external: true,
+  },
+  {
+    label: 'GitHub',
+    value: 'zayeflowers',
+    href: 'https://github.com/zayeflowers',
+    external: true,
+  },
+  { label: 'Based in', value: 'Washington D.C.', href: null, external: false },
+];
 
 export default function Contact() {
   return (
     <PageLayout navbarKey="navbar-contact">
-      <main className="w-full bg-[#f6f0e9] text-black pt-[16px] pb-0 min-h-screen relative">
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-[#9E9E9E]"></div>
-        <Container key="container-contact">
-          <PageHeading title="Contact" />
+      <div className="gutter pt-[72px] pb-[48px] max-sm:pt-[34px] max-sm:pb-[28px]">
+        <PageHeading
+          eyebrow="Contact"
+          title="Tell me what you're building"
+          redPeriod
+          lede="I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision."
+          actions={
+            <>
+              <a
+                className="pill pill--dark"
+                href="mailto:hey@madebyzaye.com?subject=Work%20Inquiry"
+              >
+                Send an email
+              </a>
+              <a
+                className="pill pill--ghost"
+                href="https://www.linkedin.com/in/zayeflowers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect on LinkedIn
+              </a>
+            </>
+          }
+        />
+      </div>
 
-          <p className="max-w-3xl text-lg mb-[48px] font-[family-name:var(--font-montserrat)] leading-[28px]">
-            I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+      <Marquee />
+
+      <section className="section band-cream grid grid-cols-1 sm:grid-cols-2 gap-[48px] sm:gap-[64px]">
+        <div>
+          <h2 className="display t-md">Get in touch</h2>
+
+          <dl className="mt-[30px] max-sm:mt-[20px]">
+            {CHANNELS.map((channel) => (
+              <div
+                key={channel.label}
+                className="border-t border-[color:var(--hair-strong)] py-[20px] last:border-b last:border-[color:var(--hair-strong)] flex items-baseline justify-between gap-6"
+              >
+                <dt className="fact-k">{channel.label}</dt>
+                <dd className="display t-xs text-right">
+                  {channel.href ? (
+                    <a
+                      href={channel.href}
+                      target={channel.external ? '_blank' : undefined}
+                      rel={channel.external ? 'noopener noreferrer' : undefined}
+                      className="transition-colors hover:text-[color:var(--red)]"
+                    >
+                      {channel.value}
+                    </a>
+                  ) : (
+                    channel.value
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+
+        <div>
+          <h2 className="display t-md">Work inquiries</h2>
+
+          <p className="body-copy measure-tight mt-[22px] max-sm:mt-[16px]">
+            Interested in working together? Share a few details about the problem,
+            the timeline, and who&apos;s involved — I&apos;ll come back with how I&apos;d
+            approach it.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mb-40 md:mb-0">
-            <div className="bg-white rounded-[14px] p-8 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Get in Touch</h2>
-
-              <div className="space-y-6 font-[family-name:var(--font-montserrat)] leading-[28px]">
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Email</h3>
-                  <p className="text-[#CC0101]">hey@madebyzaye.com</p>
-                </div>
-
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Based in</h3>
-                  <p>Washington D.C.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-[14px] p-8 shadow-[0_3px_10px_-3px_rgba(0,0,0,0.25)] border border-[#CCCCCC] border-opacity-50">
-              <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-2xl mb-6">Work Inquiries</h2>
-
-              <p className="font-[family-name:var(--font-montserrat)] leading-[28px] mb-6">
-                Interested in working together? Let&apos;s discuss your project. Please provide some details about what you&apos;re looking for.
-              </p>
-
-              <a
-                href="mailto:hey@madebyzaye.com?subject=Work%20Inquiry"
-                className="inline-flex items-center justify-center box-border w-full md:w-[300px] h-[68px] bg-[#CC0101] border border-[#FFFFFF] border-opacity-50 rounded-[60px] hover:bg-[#a50000] transition-colors"
+          <ul className="mt-[30px]">
+            {[
+              'Product design leadership',
+              'End-to-end UX for complex systems',
+              'AI-assisted prototyping and build',
+              'Design systems and handoff',
+            ].map((item) => (
+              <li
+                key={item}
+                className="border-t border-[color:var(--hair-strong)] py-[14px] last:border-b last:border-[color:var(--hair-strong)] text-[15px] leading-[1.5] flex items-center gap-3"
               >
-                <span className="font-[family-name:var(--font-montserrat)] font-bold text-[24px] leading-[29px] tracking-[-0.02em] text-white">
-                  Send an Email
-                </span>
-              </a>
-            </div>
-          </div>
-        </Container>
-      </main>
+                <span className="text-[color:var(--red)]">✳</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
+          <a
+            className="pill pill--red mt-[30px] max-sm:w-full"
+            href="mailto:hey@madebyzaye.com?subject=Work%20Inquiry"
+          >
+            Start a conversation →
+          </a>
+        </div>
+      </section>
     </PageLayout>
   );
 }
