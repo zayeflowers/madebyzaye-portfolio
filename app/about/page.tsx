@@ -12,7 +12,7 @@ import SectionHeading from '../components/SectionHeading';
 const DETAILS = [
   { label: 'Location', value: 'Washington D.C.' },
   { label: 'Interests', value: 'AI, music production, photography, travel' },
-  { label: 'Currently building', value: 'BrotherSignal, Daily Uplift, UX Strip' },
+  { label: 'Currently building', value: 'Daily Uplift, UX Strip' },
   { label: 'Favorite tools', value: 'Figma, Cursor, Claude, Midjourney, Notion' },
 ];
 
@@ -59,11 +59,10 @@ export default function About() {
             that resonate with people and move the business at the same time.
           </p>
           <p>
-            Today I&apos;m focused on <strong>BrotherSignal</strong>, an SMS platform
-            delivering culturally relevant daily affirmations, and{' '}
-            <strong>Daily Uplift</strong>, an AI-powered emotional wellness app. Both
-            combine my passion for technology with a commitment to tools that make a
-            positive impact.
+            Today I&apos;m focused on <strong>Daily Uplift</strong>, an AI-powered
+            emotional wellness app, and <strong>UX Strip</strong>, a comic series about
+            the absurd side of product work. Both combine my passion for technology with
+            a commitment to tools that make a positive impact.
           </p>
           <p>
             I&apos;m driven by curiosity — always exploring how design, technology, and
@@ -123,8 +122,8 @@ export default function About() {
       <section className="band-black section">
         <SectionHeading title="Now" meta="What I'm up to" tone="light" />
         <p className="body-copy measure text-[color:var(--paper-70)]">
-          Shipping BrotherSignal, prepping Daily Uplift for the App Store, and writing
-          about designing with AI.
+          Prepping Daily Uplift for the App Store, drawing the next run of UX Strip, and
+          writing about designing with AI.
         </p>
         <Link href="/now" className="link-red link-red--light mt-[30px]">
           Read the now page

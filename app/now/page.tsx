@@ -15,10 +15,6 @@ const BLOCKS: NowBlock[] = [
     label: 'Building',
     items: [
       <>
-        Scaling <strong>BrotherSignal</strong> — automated scheduling, delivery
-        reliability, and the subscriber onboarding flow
-      </>,
-      <>
         Final polish and App Store prep for <strong>Daily Uplift</strong>
       </>,
       <>

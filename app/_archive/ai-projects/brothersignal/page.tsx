@@ -1,11 +1,11 @@
 "use client";
 
 import React from 'react';
-import PageLayout from '../../components/PageLayout';
-import CaseStudyHero from '../../components/CaseStudyHero';
-import Figure from '../../components/Figure';
-import Prose from '../../components/Prose';
-import NextProject from '../../components/NextProject';
+import PageLayout from '../../../components/PageLayout';
+import CaseStudyHero from '../../../components/CaseStudyHero';
+import Figure from '../../../components/Figure';
+import Prose from '../../../components/Prose';
+import NextProject from '../../../components/NextProject';
 
 const TOOLS = [
   { label: 'Twilio', href: 'https://www.twilio.com/' },
