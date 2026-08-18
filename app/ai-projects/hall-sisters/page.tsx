@@ -178,7 +178,7 @@ export default function HallSisters() {
         </p>
       </Prose>
 
-      <NextProject title="BrotherSignal" href="/ai-projects/brothersignal" />
+      <NextProject title="Candy Paint" href="/ai-projects/candy-paint" />
     </PageLayout>
   );
 }

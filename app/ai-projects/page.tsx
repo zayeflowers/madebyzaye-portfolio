@@ -8,15 +8,6 @@ import WorkCard, { WorkCardProps } from '../components/WorkCard';
 
 const PROJECTS: (WorkCardProps & { status?: string })[] = [
   {
-    kicker: 'Product · 2026',
-    title: 'BrotherSignal',
-    description:
-      'A scalable SMS platform delivering culturally relevant daily affirmations — consent-first, no app required.',
-    href: '/ai-projects/brothersignal',
-    imageSrc: '/brothersignal.jpg',
-    imageAlt: 'BrotherSignal',
-  },
-  {
     kicker: 'Identity · 2025',
     title: 'Candy Paint',
     description:

@@ -21,15 +21,6 @@ interface Engagement {
 
 const ENGAGEMENTS: Engagement[] = [
   {
-    company: 'BrotherSignal',
-    logo: '/brotherSignal_logo.png',
-    kicker: 'Product · 2026',
-    description:
-      'A scalable SMS-based engagement platform delivering culturally relevant daily affirmations to subscribers. Built with automated messaging infrastructure, backend scheduling, and API integrations to support consistent community outreach.',
-    href: '/ai-projects/brothersignal',
-    linkLabel: 'View project',
-  },
-  {
     company: 'GEICO',
     logo: '/geico.svg',
     kicker: 'Insurance · 2024',

@@ -3,8 +3,14 @@
 import React from 'react';
 import Link from 'next/link';
 
-const FACTS = [
-  { key: 'Now building', value: 'BrotherSignal', href: '/ai-projects/brothersignal' },
+interface Fact {
+  key: string;
+  value: string;
+  href?: string;
+}
+
+const FACTS: Fact[] = [
+  { key: 'Based in', value: 'Washington D.C.' },
   { key: 'Experience', value: '12 years' },
 ];
 
