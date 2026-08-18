@@ -17,16 +17,6 @@ const PROJECTS: (WorkCardProps & { status?: string })[] = [
     imageAlt: 'Candy Paint',
   },
   {
-    kicker: 'Wellness · Coming soon',
-    title: 'Daily Uplift',
-    description:
-      'An AI-powered wellness app delivering mood-based affirmations and reflections. Emotional design married to intelligent content.',
-    href: '/ai-projects/daily-uplift',
-    imageSrc: '/dailyupliftapp.png',
-    imageAlt: 'Daily Uplift app',
-    contain: true,
-  },
-  {
     kicker: 'Illustration · Launched',
     title: 'UX Strip',
     description:

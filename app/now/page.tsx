@@ -15,7 +15,7 @@ const BLOCKS: NowBlock[] = [
     label: 'Building',
     items: [
       <>
-        Final polish and App Store prep for <strong>Daily Uplift</strong>
+        Final polish and App Store prep for <strong>Before Us</strong>
       </>,
       <>
         Rolling the new visual identity across{' '}

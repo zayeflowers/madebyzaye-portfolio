@@ -17,9 +17,21 @@ interface Engagement {
   href: string;
   linkLabel: string;
   external?: boolean;
+  /** Square icon rather than a wordmark — pair it with the name so the row is legible. */
+  markOnly?: boolean;
 }
 
 const ENGAGEMENTS: Engagement[] = [
+  {
+    company: 'Before Us',
+    logo: '/beforeus/logo-mark.png',
+    kicker: 'Product · 2026',
+    description:
+      'My own product: a daily-quote app of Black American and Black Diaspora voices, credited and contextualized. I own the design and the build — brand, interface, and the React Native app heading to the App Store.',
+    href: '/work/before-us',
+    linkLabel: 'View case study',
+    markOnly: true,
+  },
   {
     company: 'GEICO',
     logo: '/geico.svg',
@@ -91,14 +103,19 @@ export default function Work() {
               className="group border-t border-[color:var(--hair-strong)] py-[30px] max-sm:py-[22px]"
             >
               <div className="flex items-center justify-between gap-6">
-                <div className="h-[46px] max-sm:h-[36px] flex items-center">
+                <div className="h-[46px] max-sm:h-[36px] flex items-center gap-3">
                   <Image
                     src={item.logo}
-                    alt={item.company}
+                    alt={item.markOnly ? '' : item.company}
                     width={300}
                     height={80}
-                    className="h-full w-auto object-contain object-left"
+                    className={`w-auto object-contain object-left ${
+                      item.markOnly ? 'h-[38px] max-sm:h-[30px]' : 'h-full'
+                    }`}
                   />
+                  {item.markOnly && (
+                    <span className="display t-xs">{item.company}</span>
+                  )}
                 </div>
                 <span className="kicker text-[color:var(--ink-40)]">{item.kicker}</span>
               </div>

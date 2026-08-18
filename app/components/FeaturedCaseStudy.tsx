@@ -14,29 +14,29 @@ const FeaturedCaseStudy: React.FC = () => {
         </div>
 
         <h3 className="display t-lg mt-[22px] max-sm:mt-[16px]">
-          Affirmations that read the room
+          One voice a day
         </h3>
 
         <p className="body-copy measure-tight mt-[22px] max-sm:mt-[16px]">
-          How Daily Uplift turns a mood you pick into a message worth keeping —
-          emotional design married to intelligent content.
+          How Before Us turns a daily quote into an inheritance — Black voices,
+          credited and contextualized, with nothing to scroll past.
         </p>
 
         <Link
           className="pill pill--red mt-[30px] max-sm:mt-[20px] max-sm:w-full"
-          href="/ai-projects/daily-uplift"
+          href="/work/before-us"
         >
           Read the case study →
         </Link>
       </div>
 
-      <div className="relative h-[340px] max-sm:h-[200px] max-sm:order-2 rounded-[14px] border border-black overflow-hidden bg-white">
+      <div className="relative h-[340px] max-sm:h-[200px] max-sm:order-2 rounded-[14px] border border-black overflow-hidden bg-[#1B1109]">
         <Image
-          src="/dailyupliftapp.png"
-          alt="Daily Uplift app screens"
+          src="/beforeus/og.png"
+          alt="Before Us — a voice a day, from those who came before"
           fill
           sizes="(max-width: 1023px) 100vw, 50vw"
-          className="object-contain p-8 max-sm:p-5"
+          className="object-cover"
         />
       </div>
     </section>
