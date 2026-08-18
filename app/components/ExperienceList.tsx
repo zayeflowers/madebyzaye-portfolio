@@ -11,7 +11,7 @@ export interface ExperienceRow {
 }
 
 export const EXPERIENCE: ExperienceRow[] = [
-  { period: '2025 — NOW', role: 'Owner, Design Engineer', company: 'Daily Uplift' },
+  { period: '2025 — NOW', role: 'Owner, Design Engineer', company: 'Before Us' },
   { period: '2024 — 2025', role: 'UX / Product Lead', company: 'GEICO' },
   { period: '2021 — 2023', role: 'Senior UX Designer', company: 'Publicis Sapient' },
   { period: '2019 — 2023', role: 'Product Design Mentor', company: 'Thinkful' },

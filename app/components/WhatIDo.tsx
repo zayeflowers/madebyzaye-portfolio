@@ -18,7 +18,7 @@ const WHAT_I_DO = [
   },
   {
     title: "Product Thinking",
-    description: "Balancing strategy and execution to launch apps like Daily Uplift.",
+    description: "Balancing strategy and execution to launch apps like Before Us.",
   },
   {
     title: "Creative Direction",
