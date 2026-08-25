@@ -8,9 +8,10 @@ interface ContainerProps {
 }
 
 /**
- * Full-bleed container: content spans the viewport minus the design gutter
- * (56px desktop / 20px mobile). Width is constrained per-block with the
- * `measure` helpers rather than by a page-level max-width.
+ * Content container: spans the viewport minus the design gutter (56px desktop /
+ * 20px mobile) until the viewport clears `--shell`, past which the gutter grows
+ * into a centring margin and the content stops widening. Reading width is
+ * constrained per-block with the `measure` helpers.
  */
 const Container: React.FC<ContainerProps> = ({ children, className = '' }) => {
   return (

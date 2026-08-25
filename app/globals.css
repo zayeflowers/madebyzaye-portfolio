@@ -36,6 +36,11 @@
 
   /* Layout */
   --gutter: 56px;
+  /* Content shell: the desktop layout is drawn at 1280, so past that width the
+     page stops growing and centers instead of stretching to the viewport. */
+  --shell: 1280px;
+  /* Gutter that grows into a centering margin once the viewport clears --shell. */
+  --shell-pad: max(var(--gutter), calc((100% - var(--shell)) / 2));
 
   /* Radius */
   --radius-card: 14px;
@@ -267,16 +272,16 @@
      -------------------------------------------------------------------------- */
 
   .gutter {
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
+    padding-left: var(--shell-pad);
+    padding-right: var(--shell-pad);
   }
 
   .section {
-    padding: 76px var(--gutter);
+    padding: 76px var(--shell-pad);
   }
 
   .section-tight {
-    padding: 48px var(--gutter);
+    padding: 48px var(--shell-pad);
   }
 
   .band-red {
@@ -742,7 +747,7 @@
     }
 
     .section {
-      padding: 52px var(--gutter);
+      padding: 52px var(--shell-pad);
     }
 
     .rule-row {
@@ -761,11 +766,11 @@
 
   @media (max-width: 639.98px) {
     .section {
-      padding: 32px var(--gutter);
+      padding: 32px var(--shell-pad);
     }
 
     .section-tight {
-      padding: 28px var(--gutter);
+      padding: 28px var(--shell-pad);
     }
 
     .t-hero {
