@@ -6,6 +6,7 @@ import CaseStudyHero from '../../components/CaseStudyHero';
 import Figure from '../../components/Figure';
 import Prose from '../../components/Prose';
 import NextProject from '../../components/NextProject';
+import Wireframes from '../../components/Wireframes';
 
 const PRINCIPLES = [
   'Ask only what is relevant to the customer’s situation, using earlier responses to shape later questions.',
@@ -68,6 +69,43 @@ export default function GeicoProject() {
         ]}
       />
 
+      <section className="gutter pb-[48px] max-sm:pb-[28px]">
+        <div className="border-t border-[color:var(--hair-strong)] pt-[30px] max-sm:pt-[22px] grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-[28px] lg:gap-[64px]">
+          <div>
+            <div className="fact-k">Outcome</div>
+            <div className="display t-md mt-[14px] whitespace-nowrap">
+              25.8% → 30.2%
+            </div>
+            <p className="body-copy-sm mt-[12px]">
+              Completion, after launch and continued iteration — a 4.4
+              percentage-point improvement.
+            </p>
+          </div>
+
+          <div>
+            <div className="fact-k">In short</div>
+            <div className="measure mt-[14px] flex flex-col gap-[16px]">
+              <p className="body-copy">
+                Reporting an injury used to mean talking to an adjuster. GEICO needed
+                medical, employment and expense detail; customers arrived stressed,
+                often without it, and unsure what any of it was for.
+              </p>
+              <p className="body-copy">
+                I led the end-to-end design of a guided self-service path — sequencing
+                a large set of claims requirements into steps that explain themselves,
+                then building an evidence loop after launch that separated design
+                friction from technical failure. The work later expanded to no-fault
+                forms in five states.
+              </p>
+            </div>
+            <a href="#overview" className="link-red mt-[24px] max-sm:mt-[18px]">
+              Read the full case study
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Figure
           src="/geico_banner.png"
@@ -79,7 +117,9 @@ export default function GeicoProject() {
       </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
-        <h2>Overview</h2>
+        <h2 id="overview" className="scroll-mt-[24px]">
+          Overview
+        </h2>
         <p>
           Reporting an injury after an accident is emotionally demanding. Customers may
           be managing pain, medical appointments, missed work or the effects of a
@@ -147,10 +187,20 @@ export default function GeicoProject() {
         </p>
       </Prose>
 
-      {/* VISUAL TO ADD — End-to-end journey map. Show the major stages only:
-          introduction, injuries, treatment, providers, work impact/expenses,
-          confirmation and supporting documents. Drop the export in /public and
-          render it with <Figure> here. */}
+      <section className="gutter pb-[56px] max-sm:pb-[32px]">
+        <Wireframes
+          title="Setting expectations before the flow begins"
+          caption="The introduction I advocated for — the one screen that names every stage up front"
+          items={[
+            {
+              id: '1a',
+              tag: 'Net new',
+              tone: 'solution',
+              note: 'Names the time cost and every category of information the journey will ask for, so the customer can decide whether to start now or come back when they have their details.',
+            },
+          ]}
+        />
+      </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <h2>Shaping the digital journey</h2>
@@ -205,9 +255,71 @@ export default function GeicoProject() {
         </p>
       </Prose>
 
-      {/* VISUAL TO ADD — Flow evolution or information architecture. Pair an early
-          requirements-heavy flow with the simplified journey. Annotate what was
-          grouped, deferred or made conditional. */}
+      <section className="gutter pb-[40px] max-sm:pb-[24px]">
+        <Wireframes
+          title="Injuries — grouping the question and its guidance"
+          caption="Shipped flow, the redesign, and the modal where body-part selection happens"
+          items={[
+            {
+              id: '1b',
+              tag: 'Shipped',
+              note: 'A generic "Injury" header and a bare question. Nothing explains what counts as an injury or what happens if the customer does not know.',
+            },
+            {
+              id: '1c',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'An eyebrow header names the section, guidance explains the (+) affordance, and an explicit skip cue makes Next a legitimate answer rather than a dead end.',
+            },
+            {
+              id: '1d',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'Selection is deferred into a modal so the step itself stays short, and the Next and Back actions disable while the modal owns the screen.',
+            },
+          ]}
+        />
+      </section>
+
+      <section className="gutter pb-[40px] max-sm:pb-[24px]">
+        <Wireframes
+          title="Healthcare providers — moving effort off the customer"
+          caption="Six remembered fields, replaced by search with manual entry as the fallback"
+          items={[
+            {
+              id: '1e',
+              tag: 'Shipped',
+              note: 'Six fields typed from memory. This is where sessions showed customers pausing or leaving to look up an address, creating timeout and return risk.',
+            },
+            {
+              id: '1f',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'Search and autocomplete fill the address and phone number. Manual entry stays available rather than being removed, so an unlisted provider is not a wall.',
+            },
+          ]}
+        />
+      </section>
+
+      <section className="gutter pb-[56px] max-sm:pb-[32px]">
+        <Wireframes
+          title="Lost wages — explaining why the question is asked"
+          caption="The same question, with its rationale and room for more than one employer"
+          items={[
+            {
+              id: '1g',
+              tag: 'Shipped',
+              note: 'The five-day threshold arrives with no rationale, and the screen has nowhere to put a second employer.',
+            },
+            {
+              id: '1h',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'Says why the threshold matters, states plainly that the answer does not affect coverage, and lets employment stack instead of assuming a single job.',
+            },
+          ]}
+        />
+      </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <h2>A visual solution under scrutiny</h2>
@@ -315,9 +427,25 @@ export default function GeicoProject() {
         </p>
       </Prose>
 
-      {/* VISUAL TO ADD — Confirmation and next steps. Show how previous answers
-          generated relevant next steps and the transition into the separate
-          Document Upload experience. */}
+      <section className="gutter pb-[56px] max-sm:pb-[32px]">
+        <Wireframes
+          title="Ending with direction, not a receipt"
+          caption="Confirmation generated from earlier answers, and the handoff into Document Upload"
+          items={[
+            {
+              id: '1i',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'Next steps are generated from what the customer actually reported — the documents prompt is highlighted because they entered lost wages and expenses.',
+            },
+            {
+              id: '1j',
+              tag: 'Separate flow',
+              note: 'Document Upload is a different experience, so the transition says so outright rather than implying the customer is still inside the injury report.',
+            },
+          ]}
+        />
+      </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <h2>Outcomes</h2>
