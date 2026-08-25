@@ -1,0 +1,44 @@
+name: CI
+
+# Netlify already builds every PR, so this covers what that build does not:
+# `next.config.js` sets `typescript.ignoreBuildErrors`, and Next 16 removed
+# `next lint`, so neither type errors nor lint errors fail a deploy on their own.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# A newer push supersedes an in-flight run on the same branch.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Typecheck and lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Next 16 requires >= 20.9. Pinned rather than floating so a CI pass
+          # means the same thing next month as it does today.
+          node-version: '24'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      # Runs even when typecheck fails, so one push surfaces both sets of
+      # problems instead of trading a fix for the next failure.
+      - name: Lint
+        if: ${{ !cancelled() }}
+        run: npm run lint
