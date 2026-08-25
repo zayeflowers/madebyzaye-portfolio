@@ -18,6 +18,8 @@ interface WireframesProps {
   caption?: string;
   /** Small label above the frame. */
   title?: string;
+  /** Caveat printed under the frame — e.g. where a screen abstracts the real UI. */
+  footnote?: string;
   className?: string;
 }
 
@@ -32,6 +34,7 @@ const Wireframes: React.FC<WireframesProps> = ({
   items,
   caption,
   title,
+  footnote,
   className = '',
 }) => {
   return (
@@ -84,6 +87,12 @@ const Wireframes: React.FC<WireframesProps> = ({
 
         {caption && <figcaption className="frame-caption">{caption}</figcaption>}
       </figure>
+
+      {footnote && (
+        <p className="body-copy-sm mt-[14px] measure text-[color:var(--ink-45)]">
+          {footnote}
+        </p>
+      )}
     </div>
   );
 };

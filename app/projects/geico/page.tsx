@@ -353,9 +353,38 @@ export default function GeicoProject() {
         </div>
       </section>
 
-      {/* VISUAL TO ADD — Body Map interaction. One desktop and one mobile screen,
-          with short annotations about terminology, laterality, zoom and the mobile
-          tradeoff. */}
+      <section className="gutter pb-[56px] max-sm:pb-[32px]">
+        <Wireframes
+          title="The Body Map, and the control it had to beat"
+          caption="Area selection, the front/back toggle, and the dropdown it was measured against"
+          footnote="These wireframes abstract the interaction rather than reproduce it. The figure is drawn as simplified greybox zones to show the pattern — area selection, laterality and the front/back toggle. The production interface used a detailed anatomical illustration with more than 250 selectable regions, which is where much of the engineering cost sat."
+          items={[
+            {
+              id: '2a',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'The premise: point at where it hurts instead of naming it. Next stays disabled until an area is chosen.',
+            },
+            {
+              id: '2b',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'Selections echo back as named chips, so the customer can check that what they tapped matches what the claim will record.',
+            },
+            {
+              id: '2c',
+              tag: 'Redesign',
+              tone: 'solution',
+              note: 'The back view reverses left and right. Getting that legible in one line of copy — on a phone, on a small figure — was a large share of the difficulty.',
+            },
+            {
+              id: '2d',
+              tag: 'Shipped',
+              note: 'The existing dropdown. Lower ceiling, but no laterality to explain and no zoom to fight, which is why it outperformed the Body Map for months.',
+            },
+          ]}
+        />
+      </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <h2>Building an evidence-based iteration loop</h2>

@@ -7,9 +7,11 @@ import {
   Bar,
   BackLink,
   Body,
+  BodyMap,
   Btn,
   Bullet,
   C,
+  Chip,
   Chrome,
   Eyebrow,
   Field,
@@ -21,6 +23,7 @@ import {
   Question,
   Radio,
   Title,
+  Toggle,
 } from './parts';
 
 /**
@@ -650,6 +653,141 @@ const DocumentUpload: React.FC = () => (
   </Phone>
 );
 
+/* ---------------------------------------------------------------------------
+   Body Map (artboard t2)
+   ------------------------------------------------------------------------- */
+
+const BODY_MAP_PROMPT = 'Select the body area(s) that are injured.';
+
+/** 2a — front view, nothing selected yet, so Next is disabled. */
+const BodyMapFront: React.FC = () => (
+  <Phone>
+    <Chrome />
+    <Body>
+      <Eyebrow>Injury Report</Eyebrow>
+      <Title>Injuries</Title>
+      <Question>{BODY_MAP_PROMPT}</Question>
+      <Hint>
+        Tap an area to select it. You can select more than one, and switch between
+        the front and back of the body.
+      </Hint>
+      <BodyMap view="front" />
+      <Toggle active="front" />
+      <Actions>
+        <Btn tone="disabled">Next</Btn>
+        <Btn tone="ghost">Back</Btn>
+      </Actions>
+    </Body>
+    <Foot />
+  </Phone>
+);
+
+/** 2b — two areas selected, echoed back as removable chips. */
+const BodyMapSelected: React.FC = () => (
+  <Phone>
+    <Chrome />
+    <Body>
+      <Eyebrow>Injury Report</Eyebrow>
+      <Title>Injuries</Title>
+      <Question>{BODY_MAP_PROMPT}</Question>
+      <Hint>
+        Tap an area to select it. You can select more than one, and switch between
+        the front and back of the body.
+      </Hint>
+      <BodyMap view="front" selected={['rForearm', 'lLowerLeg']} />
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        <Chip>Right forearm</Chip>
+        <Chip>Left lower leg</Chip>
+      </div>
+      <Toggle active="front" />
+      <Actions>
+        <Btn>Next</Btn>
+        <Btn tone="ghost">Back</Btn>
+      </Actions>
+    </Body>
+    <Foot />
+  </Phone>
+);
+
+/** 2c — back view, where left and right reverse. The laterality problem. */
+const BodyMapBack: React.FC = () => (
+  <Phone>
+    <Chrome />
+    <Body>
+      <Eyebrow>Injury Report</Eyebrow>
+      <Title>Injuries</Title>
+      <Question>{BODY_MAP_PROMPT}</Question>
+      <Hint>
+        You&apos;re looking at the back of the body, so left and right are reversed.
+      </Hint>
+      <BodyMap view="back" />
+      <Toggle active="back" />
+      <Actions>
+        <Btn>Next</Btn>
+        <Btn tone="ghost">Back</Btn>
+      </Actions>
+    </Body>
+    <Foot />
+  </Phone>
+);
+
+/** 2d — the dropdown the Body Map had to outperform. */
+const DropdownAlternative: React.FC = () => (
+  <Phone>
+    <Chrome />
+    <Body>
+      <Eyebrow>Injury Report</Eyebrow>
+      <Title>Injuries</Title>
+      <Question>Where is your injury located?</Question>
+      <Hint>Select from the list. Add one injury at a time.</Hint>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          border: `1px solid ${C.border}`,
+          borderRadius: 6,
+          padding: '12px 14px',
+        }}
+      >
+        <div style={{ fontSize: 13, color: C.faint }}>Select an answer</div>
+        <div style={{ fontSize: 10, color: C.muted }}>▾</div>
+      </div>
+      <div
+        style={{ border: `1px solid ${C.line}`, borderRadius: 6, overflow: 'hidden' }}
+      >
+        {[
+          'Head',
+          'Neck',
+          'Shoulder — right',
+          'Shoulder — left',
+          'Upper back',
+          'More areas…',
+        ].map((item, index, all) => (
+          <div
+            key={item}
+            style={{
+              padding: '11px 14px',
+              borderBottom:
+                index === all.length - 1 ? undefined : `1px solid ${C.lineFaint}`,
+              fontSize: 12.5,
+              color: index === all.length - 1 ? C.soft : C.body,
+            }}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+      <AddRow compact>Add another injury</AddRow>
+      <Actions>
+        <Btn>Next</Btn>
+        <Btn tone="ghost">Back</Btn>
+      </Actions>
+    </Body>
+    <Foot />
+  </Phone>
+);
+
 export type ScreenId =
   | '1a'
   | '1b'
@@ -660,7 +798,11 @@ export type ScreenId =
   | '1g'
   | '1h'
   | '1i'
-  | '1j';
+  | '1j'
+  | '2a'
+  | '2b'
+  | '2c'
+  | '2d';
 
 /** Keyed by the artboard's own screen ids so the two files stay traceable. */
 export const SCREENS: Record<ScreenId, { label: string; Screen: React.FC }> = {
@@ -674,4 +816,8 @@ export const SCREENS: Record<ScreenId, { label: string; Screen: React.FC }> = {
   '1h': { label: 'Lost wages', Screen: WagesSolution },
   '1i': { label: 'Confirmation and next steps', Screen: Confirmation },
   '1j': { label: 'Document upload', Screen: DocumentUpload },
+  '2a': { label: 'Body Map — front', Screen: BodyMapFront },
+  '2b': { label: 'Body Map — areas selected', Screen: BodyMapSelected },
+  '2c': { label: 'Body Map — back', Screen: BodyMapBack },
+  '2d': { label: 'Dropdown alternative', Screen: DropdownAlternative },
 };
