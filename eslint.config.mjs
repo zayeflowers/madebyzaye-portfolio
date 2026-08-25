@@ -1,16 +1,19 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
+import nextTypeScript from "eslint-config-next/typescript";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
+/**
+ * Flat config, consumed by the ESLint CLI directly.
+ *
+ * Next 16 removed `next lint`, and eslint-config-next now ships native flat
+ * configs — wrapping them in FlatCompat throws on a circular structure, so the
+ * shim (and its @eslint/eslintrc dependency) is gone.
+ */
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...nextCoreWebVitals,
+  ...nextTypeScript,
+  {
+    ignores: [".next/**", "out/**", "node_modules/**", "next-env.d.ts"],
+  },
 ];
 
 export default eslintConfig;
