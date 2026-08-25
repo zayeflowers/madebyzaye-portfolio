@@ -27,7 +27,7 @@ const ENGAGEMENTS: Engagement[] = [
     logo: '/beforeus/logo-mark.png',
     kicker: 'Product · 2026',
     description:
-      'My own product: a daily-quote app of Black American and Black Diaspora voices, credited and contextualized. I own the design and the build — brand, interface, and the React Native app heading to the App Store.',
+      'My own product: a daily-quote app of Black American and Black Diaspora voices, credited and contextualized. I own the design and the build — brand, interface, and the React Native app, now shipped on the App Store.',
     href: '/work/before-us',
     linkLabel: 'View case study',
     markOnly: true,
