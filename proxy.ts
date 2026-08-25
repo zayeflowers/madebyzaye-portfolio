@@ -35,7 +35,7 @@ function challenge(): NextResponse {
   });
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const expectedUser = process.env.PREVIEW_USER || 'preview';
   const expectedPassword = process.env.PREVIEW_PASSWORD;
 
