@@ -362,3 +362,185 @@ export const Bar: React.FC<{ width: number | string; height?: number }> = ({
 export const B: React.FC<{ children: ReactNode }> = ({ children }) => (
   <span style={{ fontWeight: 700 }}>{children}</span>
 );
+
+/* ---------------------------------------------------------------------------
+   Body Map
+   ------------------------------------------------------------------------- */
+
+/**
+ * Zone ids are named for the *subject's* side, which on a front view puts the
+ * right arm on the viewer's left. That mismatch is the laterality problem the
+ * case study describes, so the naming keeps it visible rather than papering
+ * over it. On the back view the side labels flip and these ids no longer
+ * describe the anatomy — selection is only ever shown on the front.
+ */
+export type BodyZone =
+  | 'head' | 'neck' | 'chest' | 'abdomen' | 'pelvis'
+  | 'rUpperArm' | 'rForearm' | 'rHand'
+  | 'lUpperArm' | 'lForearm' | 'lHand'
+  | 'rThigh' | 'lThigh'
+  | 'rLowerLeg' | 'lLowerLeg'
+  | 'rFoot' | 'lFoot';
+
+type Shape =
+  | { kind: 'circle'; cx: number; cy: number; r: number }
+  | { kind: 'rect'; x: number; y: number; w: number; h: number; rx: number };
+
+const ZONES: { id: BodyZone; shape: Shape }[] = [
+  { id: 'head', shape: { kind: 'circle', cx: 100, cy: 26, r: 22 } },
+  { id: 'neck', shape: { kind: 'rect', x: 91, y: 48, w: 18, h: 10, rx: 4 } },
+  { id: 'chest', shape: { kind: 'rect', x: 62, y: 60, w: 76, h: 48, rx: 10 } },
+  { id: 'abdomen', shape: { kind: 'rect', x: 68, y: 110, w: 64, h: 40, rx: 10 } },
+  { id: 'pelvis', shape: { kind: 'rect', x: 68, y: 152, w: 64, h: 30, rx: 10 } },
+  { id: 'rUpperArm', shape: { kind: 'rect', x: 36, y: 62, w: 22, h: 50, rx: 11 } },
+  { id: 'rForearm', shape: { kind: 'rect', x: 36, y: 114, w: 22, h: 48, rx: 11 } },
+  { id: 'rHand', shape: { kind: 'rect', x: 38, y: 164, w: 18, h: 20, rx: 9 } },
+  { id: 'lUpperArm', shape: { kind: 'rect', x: 142, y: 62, w: 22, h: 50, rx: 11 } },
+  { id: 'lForearm', shape: { kind: 'rect', x: 142, y: 114, w: 22, h: 48, rx: 11 } },
+  { id: 'lHand', shape: { kind: 'rect', x: 144, y: 164, w: 18, h: 20, rx: 9 } },
+  { id: 'rThigh', shape: { kind: 'rect', x: 68, y: 184, w: 30, h: 62, rx: 12 } },
+  { id: 'lThigh', shape: { kind: 'rect', x: 102, y: 184, w: 30, h: 62, rx: 12 } },
+  { id: 'rLowerLeg', shape: { kind: 'rect', x: 70, y: 248, w: 26, h: 60, rx: 12 } },
+  { id: 'lLowerLeg', shape: { kind: 'rect', x: 104, y: 248, w: 26, h: 60, rx: 12 } },
+  { id: 'rFoot', shape: { kind: 'rect', x: 70, y: 310, w: 26, h: 18, rx: 8 } },
+  { id: 'lFoot', shape: { kind: 'rect', x: 104, y: 310, w: 26, h: 18, rx: 8 } },
+];
+
+const SideLabel: React.FC<{ x: number; text: string }> = ({ x, text }) => (
+  <>
+    <text x={x} y={200} fontSize={10} fill={C.soft} textAnchor="middle">
+      {text}
+    </text>
+    <text x={x} y={211} fontSize={10} fill={C.soft} textAnchor="middle">
+      side
+    </text>
+  </>
+);
+
+/**
+ * Greybox stand-in for the Body Map. This is an abstraction of the interaction
+ * pattern — area selection, laterality, the front/back toggle — not a
+ * reproduction of the production interface, which uses a detailed anatomical
+ * illustration with more than 250 selectable regions.
+ */
+export const BodyMap: React.FC<{
+  view?: 'front' | 'back';
+  selected?: BodyZone[];
+}> = ({ view = 'front', selected = [] }) => {
+  const isSelected = (id: BodyZone) => selected.includes(id);
+
+  return (
+    <div
+      style={{
+        border: `1px solid ${C.line}`,
+        borderRadius: 10,
+        background: C.offWhite,
+        padding: 12,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 6,
+      }}
+    >
+      <svg
+        viewBox="0 0 200 340"
+        width="100%"
+        style={{ maxWidth: 196, height: 'auto' }}
+        role="img"
+        aria-label={`${view === 'front' ? 'Front' : 'Back'} body map wireframe${
+          selected.length ? ' with selected areas' : ''
+        }`}
+      >
+        {ZONES.map(({ id, shape }) => {
+          const on = isSelected(id);
+          const paint = {
+            fill: on ? C.banner : C.fill,
+            stroke: on ? '#6B8FB8' : C.border,
+            strokeWidth: on ? 2.5 : 1.5,
+          };
+          return shape.kind === 'circle' ? (
+            <circle key={id} cx={shape.cx} cy={shape.cy} r={shape.r} {...paint} />
+          ) : (
+            <rect
+              key={id}
+              x={shape.x}
+              y={shape.y}
+              width={shape.w}
+              height={shape.h}
+              rx={shape.rx}
+              {...paint}
+            />
+          );
+        })}
+
+        {/* Spine, so the back view reads as a back rather than a mirrored front. */}
+        {view === 'back' && (
+          <line
+            x1={100}
+            y1={64}
+            x2={100}
+            y2={146}
+            stroke={C.border}
+            strokeWidth={1.5}
+            strokeDasharray="4 4"
+          />
+        )}
+
+        <SideLabel x={22} text={view === 'front' ? 'Right' : 'Left'} />
+        <SideLabel x={178} text={view === 'front' ? 'Left' : 'Right'} />
+      </svg>
+    </div>
+  );
+};
+
+/** Segmented Front / Back of Body control. */
+export const Toggle: React.FC<{ active: 'front' | 'back' }> = ({ active }) => {
+  const seg = (label: string, on: boolean) => (
+    <div
+      style={{
+        flex: 1,
+        padding: 11,
+        textAlign: 'center',
+        fontSize: 12.5,
+        fontWeight: 700,
+        background: on ? C.accent : '#F4F5F7',
+        color: on ? C.accentInk : C.muted,
+      }}
+    >
+      {label}
+    </div>
+  );
+  return (
+    <div
+      style={{
+        display: 'flex',
+        border: `1px solid ${C.border}`,
+        borderRadius: 22,
+        overflow: 'hidden',
+      }}
+    >
+      {seg('Front of Body', active === 'front')}
+      {seg('Back of Body', active === 'back')}
+    </div>
+  );
+};
+
+/** Removable pill for an area the customer has selected. */
+export const Chip: React.FC<{ children: ReactNode }> = ({ children }) => (
+  <div
+    style={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: 8,
+      border: `1px solid ${C.accentLine}`,
+      background: C.accentSoft,
+      borderRadius: 16,
+      padding: '7px 12px',
+    }}
+  >
+    <span style={{ fontSize: 12, fontWeight: 700, color: C.accentInk }}>
+      {children}
+    </span>
+    <span style={{ fontSize: 11, color: C.muted }}>✕</span>
+  </div>
+);
