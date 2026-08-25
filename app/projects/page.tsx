@@ -24,7 +24,8 @@ const CASE_STUDIES: WorkCardProps[] = [
   {
     kicker: 'Insurance · 2024',
     title: 'GEICO Injury Intake',
-    description: 'Redesigning a critical part of the auto claims experience.',
+    description:
+      'Turning a phone-dependent claims process into guided self-service.',
     href: '/projects/geico',
     imageSrc: '/geico.webp',
     imageAlt: 'GEICO Injury Intake',
