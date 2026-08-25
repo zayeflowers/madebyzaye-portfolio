@@ -10,7 +10,7 @@ const PROJECTS: WorkCardProps[] = [
     title: 'GEICO',
     description: 'Injury intake, redesigned around the moment people need it most.',
     href: '/projects/geico',
-    imageSrc: '/geico_banner.png',
+    imageSrc: '/geico.webp',
     imageAlt: 'GEICO injury intake',
   },
   {
@@ -18,7 +18,7 @@ const PROJECTS: WorkCardProps[] = [
     title: 'CNN',
     description: 'Election night data, legible at national scale.',
     href: '/projects/cnn',
-    imageSrc: '/cnn1.png',
+    imageSrc: '/casestudy2.jpg',
     imageAlt: 'CNN Election Center',
   },
   {
