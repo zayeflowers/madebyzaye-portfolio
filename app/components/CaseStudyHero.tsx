@@ -65,7 +65,13 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
       </div>
 
       {meta && meta.length > 0 && (
-        <dl className="mt-[46px] max-sm:mt-[28px] grid grid-cols-1 sm:grid-cols-3 gap-x-6">
+        <dl
+          className={`mt-[46px] max-sm:mt-[28px] grid grid-cols-1 gap-x-6 ${
+            meta.length % 4 === 0
+              ? 'sm:grid-cols-2 lg:grid-cols-4'
+              : 'sm:grid-cols-3'
+          }`}
+        >
           {meta.map((item) => (
             <div
               key={item.label}
