@@ -7,6 +7,8 @@ import Figure from '../../components/Figure';
 import Prose from '../../components/Prose';
 import NextProject from '../../components/NextProject';
 
+const APP_STORE_URL = 'https://apps.apple.com/us/app/before-us/id6746684297';
+
 const TOOLS = [
   { label: 'Figma', href: 'https://www.figma.com/' },
   { label: 'React Native', href: 'https://reactnative.dev/' },
@@ -59,7 +61,14 @@ export default function BeforeUs() {
         logoAlt="Before Us app icon"
         meta={[
           { label: 'Role', value: 'Owner, Design Engineer' },
-          { label: 'Status', value: 'Coming to the App Store' },
+          {
+            label: 'Status',
+            value: (
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+                Live on the App Store
+              </a>
+            ),
+          },
           {
             label: 'Tools',
             value: (
@@ -170,16 +179,38 @@ export default function BeforeUs() {
           quote does its work and gets out of the way.
         </p>
 
-        <h2>Coming soon</h2>
+        <h2>Out now</h2>
         <p>
-          Before Us is heading to the App Store. You can see the current build and
-          follow along at{' '}
+          Before Us is on the App Store — free, for iPhone on iOS 15.1 or later. The
+          app is where the work actually lives;{' '}
           <a href="https://www.beforeus.app" target="_blank" rel="noopener noreferrer">
             beforeus.app
-          </a>
-          .
+          </a>{' '}
+          covers what it is and who it is for.
         </p>
       </Prose>
+
+      <section className="gutter pb-[76px] max-sm:pb-[40px]">
+        {/* measure + mx-auto so the buttons line up with the prose column above. */}
+        <div className="measure mx-auto flex gap-3 max-sm:gap-[10px] max-sm:flex-col">
+        <a
+          className="pill pill--dark"
+          href={APP_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download on the App Store
+        </a>
+        <a
+          className="pill pill--ghost"
+          href="https://www.beforeus.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          beforeus.app
+          </a>
+        </div>
+      </section>
 
       <NextProject title="GEICO Injury Intake" href="/projects/geico" />
     </PageLayout>

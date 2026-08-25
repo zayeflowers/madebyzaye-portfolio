@@ -122,8 +122,8 @@ export default function About() {
       <section className="band-black section">
         <SectionHeading title="Now" meta="What I'm up to" tone="light" />
         <p className="body-copy measure text-[color:var(--paper-70)]">
-          Prepping Before Us for the App Store, drawing the next run of UX Strip, and
-          writing about designing with AI.
+          Before Us is live on the App Store, so now it&apos;s listening to what people
+          do with it — plus the next run of UX Strip, and writing about designing with AI.
         </p>
         <Link href="/now" className="link-red link-red--light mt-[30px]">
           Read the now page
