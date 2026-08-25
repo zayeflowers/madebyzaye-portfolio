@@ -7,11 +7,15 @@ interface ProseProps {
   className?: string;
 }
 
-/** Long-form body copy block, gutter-aligned and capped to a reading measure. */
+/**
+ * Long-form body copy block, gutter-aligned and capped to a reading measure.
+ * The measure is centred in the content shell so case-study copy sits under the
+ * middle of the page rather than hugging the left edge on wide displays.
+ */
 const Prose: React.FC<ProseProps> = ({ children, wide = false, className = '' }) => {
   return (
     <section className={`gutter ${className}`}>
-      <div className={`prose-zaye ${wide ? '' : 'measure'}`}>{children}</div>
+      <div className={`prose-zaye ${wide ? '' : 'measure mx-auto'}`}>{children}</div>
     </section>
   );
 };
