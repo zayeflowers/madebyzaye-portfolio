@@ -108,11 +108,12 @@ export default function GeicoProject() {
 
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Figure
-          src="/geico_banner.png"
-          alt="GEICO Injury Intake"
-          fit="contain"
-          height_="h-[380px] max-sm:h-[220px]"
-          caption="GEICO — Injury Intake experience"
+          src="/geico-injury-intake.jpg"
+          alt="An adjuster taking a call at a desk, and a customer taking the same call at home"
+          fit="natural"
+          width={1915}
+          height={821}
+          caption="Before Injury Intake, reporting ran through the adjuster — a phone call on both ends"
         />
       </section>
 
