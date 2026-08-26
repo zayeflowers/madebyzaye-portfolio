@@ -57,8 +57,9 @@ export default function BeforeUs() {
         summary="A daily inheritance of Black wisdom — one quote a day from the writers, leaders, athletes, and artists who came before."
         backHref="/work"
         backLabel="Back to work"
-        logoSrc="/beforeus/logo-mark.png"
+        logoSrc="/beforeus/app-icon.svg"
         logoAlt="Before Us app icon"
+        logoIsIcon
         meta={[
           { label: 'Role', value: 'Owner, Creative Technologist' },
           {
