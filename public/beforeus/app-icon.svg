@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Before Us app icon">
+  <title>Before Us</title>
+  <defs>
+    <linearGradient id="bui-bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1024">
+      <stop offset="0" stop-color="#201E1B"/>
+      <stop offset="0.45" stop-color="#100F0E"/>
+      <stop offset="1" stop-color="#060605"/>
+    </linearGradient>
+    <filter id="bui-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="11" result="b"/>
+      <feComponentTransfer in="b">
+        <feFuncA type="linear" slope="0.55"/>
+      </feComponentTransfer>
+    </filter>
+    <linearGradient id="bui-g1" gradientUnits="userSpaceOnUse" x1="0" y1="199" x2="0" y2="1046">
+      <stop offset="0" stop-color="#F7DFBA"/>
+      <stop offset="0.47" stop-color="#CA985F"/>
+      <stop offset="0.71" stop-color="#AB7239"/>
+      <stop offset="1" stop-color="#5C3918"/>
+    </linearGradient>
+    <linearGradient id="bui-g2" gradientUnits="userSpaceOnUse" x1="0" y1="380" x2="0" y2="1046">
+      <stop offset="0" stop-color="#F0D0A6"/>
+      <stop offset="0.48" stop-color="#B17E49"/>
+      <stop offset="0.78" stop-color="#80552B"/>
+      <stop offset="1" stop-color="#4E3417"/>
+    </linearGradient>
+    <linearGradient id="bui-g3" gradientUnits="userSpaceOnUse" x1="0" y1="535" x2="0" y2="1046">
+      <stop offset="0" stop-color="#996F42"/>
+      <stop offset="0.32" stop-color="#78542D"/>
+      <stop offset="0.71" stop-color="#4E351C"/>
+      <stop offset="1" stop-color="#322212"/>
+    </linearGradient>
+    <linearGradient id="bui-gf" gradientUnits="userSpaceOnUse" x1="0" y1="675" x2="0" y2="1046">
+      <stop offset="0" stop-color="#F4D5B0"/>
+      <stop offset="0.47" stop-color="#E3BE93"/>
+      <stop offset="0.88" stop-color="#CFA578"/>
+      <stop offset="1" stop-color="#BD9568"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bui-bg)"/>
+  <g transform="scale(0.93945) translate(-82 -70)">
+    <g filter="url(#bui-glow)" opacity="0.4">
+  <path fill="url(#bui-g1)" d="M270.5 1046V570A354 371 0 0 1 978.5 570V1046H936.5V587.4A312 333.4 0 0 0 312.5 587.4V1046Z"/>
+  <path fill="url(#bui-g2)" d="M386 1046V644.1A238.5 264.1 0 0 1 863 644.1V1046H834V660.9A209.5 231.9 0 0 0 415 660.9V1046Z"/>
+  <path fill="url(#bui-g3)" d="M467 1046V717.3A157.5 182.3 0 0 1 782 717.3V1046H763.5V734.4A139 157.4 0 0 0 485.5 734.4V1046Z"/>
+  <path fill="url(#bui-gf)" fill-rule="evenodd" d="M531 1046V784.8A93.5 109.8 0 0 1 718 784.8V1046H686V961A61.5 70 0 0 0 563 961V1046ZM574 834a51 51 0 1 0 102 0a51 51 0 1 0 -102 0Z"/>
+    </g>
+  <path fill="url(#bui-g1)" d="M270.5 1046V570A354 371 0 0 1 978.5 570V1046H936.5V587.4A312 333.4 0 0 0 312.5 587.4V1046Z"/>
+  <path fill="url(#bui-g2)" d="M386 1046V644.1A238.5 264.1 0 0 1 863 644.1V1046H834V660.9A209.5 231.9 0 0 0 415 660.9V1046Z"/>
+  <path fill="url(#bui-g3)" d="M467 1046V717.3A157.5 182.3 0 0 1 782 717.3V1046H763.5V734.4A139 157.4 0 0 0 485.5 734.4V1046Z"/>
+  <path fill="url(#bui-gf)" fill-rule="evenodd" d="M531 1046V784.8A93.5 109.8 0 0 1 718 784.8V1046H686V961A61.5 70 0 0 0 563 961V1046ZM574 834a51 51 0 1 0 102 0a51 51 0 1 0 -102 0Z"/>
+  </g>
+</svg>
