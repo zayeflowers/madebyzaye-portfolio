@@ -24,7 +24,7 @@ interface Engagement {
 const ENGAGEMENTS: Engagement[] = [
   {
     company: 'Before Us',
-    logo: '/beforeus/logo-mark.png',
+    logo: '/beforeus/app-icon.svg',
     kicker: 'Product · 2026',
     description:
       'My own product: a daily-quote app of Black American and Black Diaspora voices, credited and contextualized. I own the design and the build — brand, interface, and the React Native app, now shipped on the App Store.',
@@ -96,48 +96,57 @@ export default function Work() {
       <section className="section band-cream">
         <SectionHeading title="Engagements" meta={`${ENGAGEMENTS.length} of twelve`} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[64px] gap-y-[10px]">
+        <div className="flex flex-col">
           {ENGAGEMENTS.map((item) => (
             <article
               key={item.company}
-              className="group border-t border-[color:var(--hair-strong)] py-[30px] max-sm:py-[22px]"
+              className="grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-x-[56px] gap-y-[22px] items-start border-t border-[color:var(--hair-strong)] last:border-b py-[40px] max-sm:py-[26px]"
             >
-              <div className="flex items-center justify-between gap-6">
-                <div className="h-[46px] max-sm:h-[36px] flex items-center gap-3">
+              {/* A wordmark names the company on its own; a symbol needs the
+                  name beside it, so only markOnly entries carry one. */}
+              {item.markOnly ? (
+                <div className="flex items-center gap-4 lg:flex-col lg:items-start lg:gap-[16px]">
                   <Image
                     src={item.logo}
-                    alt={item.markOnly ? '' : item.company}
-                    width={300}
-                    height={80}
-                    className={`w-auto object-contain object-left ${
-                      item.markOnly ? 'h-[38px] max-sm:h-[30px]' : 'h-full'
-                    }`}
+                    alt=""
+                    width={152}
+                    height={152}
+                    className="h-[76px] w-[76px] max-sm:h-[60px] max-sm:w-[60px] rounded-[17px] shrink-0"
                   />
-                  {item.markOnly && (
-                    <span className="display t-xs">{item.company}</span>
-                  )}
+                  <span className="display t-xs">{item.company}</span>
                 </div>
-                <span className="kicker text-[color:var(--ink-40)]">{item.kicker}</span>
-              </div>
-
-              <p className="body-copy-sm mt-[18px]">{item.description}</p>
-
-              {item.external ? (
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-red mt-[18px]"
-                >
-                  {item.linkLabel}
-                  <span aria-hidden="true">→</span>
-                </a>
               ) : (
-                <Link href={item.href} className="link-red mt-[18px]">
-                  {item.linkLabel}
-                  <span aria-hidden="true">→</span>
-                </Link>
+                <Image
+                  src={item.logo}
+                  alt={item.company}
+                  width={400}
+                  height={120}
+                  className="w-auto h-auto max-h-[58px] max-sm:max-h-[40px] max-w-full object-contain object-left"
+                />
               )}
+
+              <div>
+                <span className="kicker text-[color:var(--ink-40)]">{item.kicker}</span>
+
+                <p className="body-copy-sm mt-[14px] max-w-[64ch]">{item.description}</p>
+
+                {item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-red mt-[20px]"
+                  >
+                    {item.linkLabel}
+                    <span aria-hidden="true">→</span>
+                  </a>
+                ) : (
+                  <Link href={item.href} className="link-red mt-[20px]">
+                    {item.linkLabel}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                )}
+              </div>
             </article>
           ))}
         </div>
