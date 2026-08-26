@@ -59,7 +59,7 @@ export default function GeicoProject() {
         backHref="/projects"
         backLabel="Back to case studies"
         meta={[
-          { label: 'Role', value: 'Lead UX/UI Designer' },
+          { label: 'Role', value: 'Product Design Lead' },
           { label: 'Platform', value: 'Responsive web' },
           { label: 'Scope', value: 'End-to-end product design, strategy and prototyping' },
           {
@@ -171,7 +171,7 @@ export default function GeicoProject() {
 
         <h2>My role</h2>
         <p>
-          As Lead UX/UI Designer, I owned the end-to-end digital experience, including
+          As Product Design Lead, I owned the end-to-end digital experience, including
           design direction, interaction strategy, prototyping and alignment with the
           product roadmap. I translated complex requirements into understandable
           concepts, managed shifting priorities and guided designers through iterations.
