@@ -24,7 +24,7 @@ const CHANNELS = [
     href: 'https://github.com/zayeflowers',
     external: true,
   },
-  { label: 'Based in', value: 'Washington D.C.', href: null, external: false },
+  { label: 'Based in', value: 'Baltimore / D.C.', href: null, external: false },
 ];
 
 export default function Contact() {
