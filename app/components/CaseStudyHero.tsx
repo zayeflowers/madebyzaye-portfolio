@@ -16,6 +16,9 @@ interface CaseStudyHeroProps {
   meta?: MetaItem[];
   logoSrc?: string;
   logoAlt?: string;
+  /** The logo is a square app icon rather than a wordmark, so it gets sized
+   *  and rounded like one instead of being fitted to the wordmark box. */
+  logoIsIcon?: boolean;
   backHref?: string;
   backLabel?: string;
 }
@@ -27,6 +30,7 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
   meta,
   logoSrc,
   logoAlt,
+  logoIsIcon = false,
   backHref = '/work',
   backLabel = 'Back to work',
 }) => {
@@ -56,9 +60,13 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
             <Image
               src={logoSrc}
               alt={logoAlt ?? ''}
-              width={300}
-              height={80}
-              className="max-h-[64px] w-auto object-contain"
+              width={logoIsIcon ? 160 : 300}
+              height={logoIsIcon ? 160 : 80}
+              className={
+                logoIsIcon
+                  ? 'h-[72px] w-[72px] rounded-[16px]'
+                  : 'max-h-[64px] w-auto object-contain'
+              }
             />
           </div>
         )}
