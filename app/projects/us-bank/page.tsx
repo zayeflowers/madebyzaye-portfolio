@@ -45,7 +45,7 @@ export default function USBankProject() {
 
         <h2>My role</h2>
         <p>
-          As a Senior UX Designer, I partnered closely with strategy, research, and
+          As a Senior Designer, I partnered closely with strategy, research, and
           product teams to:
         </p>
         <ul>

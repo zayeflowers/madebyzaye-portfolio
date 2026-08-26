@@ -60,7 +60,7 @@ export default function BeforeUs() {
         logoSrc="/beforeus/logo-mark.png"
         logoAlt="Before Us app icon"
         meta={[
-          { label: 'Role', value: 'Owner, Design Engineer' },
+          { label: 'Role', value: 'Owner, Creative Technologist' },
           {
             label: 'Status',
             value: (
