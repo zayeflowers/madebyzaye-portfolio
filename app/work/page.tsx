@@ -35,7 +35,7 @@ const ENGAGEMENTS: Engagement[] = [
   {
     company: 'GEICO',
     logo: '/geico.svg',
-    kicker: 'Insurance · 2024',
+    kicker: 'Insurance · 2024—2026',
     description:
       'Redesigning critical insurance workflows across mobile and desktop. I lead UX design for the Injury Intake experience, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.',
     href: '/projects/geico',
@@ -94,7 +94,7 @@ export default function Work() {
       <Marquee />
 
       <section className="section band-cream">
-        <SectionHeading title="Engagements" />
+        <SectionHeading title="Work" />
 
         <div className="flex flex-col">
           {ENGAGEMENTS.map((item) => (
