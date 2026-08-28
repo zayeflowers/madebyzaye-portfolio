@@ -10,7 +10,7 @@ interface Fact {
 }
 
 const FACTS: Fact[] = [
-  { key: 'Based in', value: 'Washington D.C.' },
+  { key: 'Based in', value: 'Baltimore / D.C.' },
   { key: 'Experience', value: '12 years' },
 ];
 
