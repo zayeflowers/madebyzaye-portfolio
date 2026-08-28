@@ -22,7 +22,7 @@ const CASE_STUDIES: WorkCardProps[] = [
     imageAlt: 'CNN case study',
   },
   {
-    kicker: 'Insurance · 2024',
+    kicker: 'Insurance · 2024—2026',
     title: 'GEICO Injury Intake',
     description:
       'Turning a phone-dependent claims process into guided self-service.',

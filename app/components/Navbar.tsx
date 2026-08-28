@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
             alt="Made By Zaye"
             width={377}
             height={93}
-            className="h-[68px] max-sm:h-[52px] w-auto block"
+            className="h-[68px] max-sm:h-[clamp(32px,10vw,40px)] w-auto block"
             priority
           />
         </Link>
