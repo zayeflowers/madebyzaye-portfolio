@@ -839,7 +839,14 @@ export default function CNNProject() {
           single story, according to Adobe.
         </p>
         <p>
-          <strong>Source</strong>: CNN Press Room
+          <strong>Source</strong>:{' '}
+          <a
+            href="https://cnnpressroom.blogs.cnn.com/2020/12/22/cnn-digital-shatters-all-historical-records-reaches-largest-most-engaged-audience-in-history-in-2020/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CNN Press Room
+          </a>
         </p>
 
         <h2 className="border-t border-[color:var(--hair-strong)] pt-[46px]">Learnings</h2>
