@@ -13,6 +13,7 @@
   --red-deep: #a50000;
   --black: #000000;
   --white: #ffffff;
+  --usbank-navy: #17409c;
   --cream: #f7f1ea;
   --stripe: #f0eae1;
 
@@ -295,6 +296,12 @@
 
   .band-black {
     background: var(--black);
+    color: var(--white);
+  }
+
+  /* US Bank navy, for the Business Essentials case study bands */
+  .band-navy {
+    background: var(--usbank-navy);
     color: var(--white);
   }
 
