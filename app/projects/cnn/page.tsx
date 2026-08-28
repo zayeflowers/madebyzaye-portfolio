@@ -233,7 +233,16 @@ export default function CNNProject() {
           Here&apos;s a short rundown of how it works:
         </p>
         <ol>
-          <li>Biz/Product Managers write the requirements/acceptance criteria using Jira</li>
+          <li>
+            Biz/Product Managers write the requirements/acceptance criteria using{' '}
+            <a
+              href="https://www.atlassian.com/software/jira"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jira
+            </a>
+          </li>
           <li>
             The project manager sets the Dev/Design meeting to discuss req. We decide who
             will work on the project (mini-team) and others (legal, editorial, Wolf
@@ -376,11 +385,20 @@ export default function CNNProject() {
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <h3 className="!mt-0">Discovering Insights</h3>
         <p>
-          <strong>Quantum Metric</strong> is one of my favorite tools that I&apos;ve always
-          enjoyed using. I encountered the IHG tool on the UX team and it was very important
-          for our studies. I proposed using the CNN tool, but learned they used a similar
-          service—<strong>Fullstory</strong>—but it was not implemented in our product
-          Election Center.
+          <a
+            href="https://www.quantummetric.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quantum Metric
+          </a>{' '}
+          is one of my favorite tools that I&apos;ve always enjoyed using. I encountered
+          the IHG tool on the UX team and it was very important for our studies. I
+          proposed using the CNN tool, but learned they used a similar service—
+          <a href="https://www.fullstory.com" target="_blank" rel="noopener noreferrer">
+            Fullstory
+          </a>
+          —but it was not implemented in our product Election Center.
         </p>
       </Prose>
 
