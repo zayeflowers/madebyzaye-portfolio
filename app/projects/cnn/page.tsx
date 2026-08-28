@@ -213,17 +213,26 @@ export default function CNNProject() {
         <h3>Collaboration Tools</h3>
       </Prose>
 
-      <section className="gutter pb-[48px] max-sm:pb-[28px]">
+      <section className="gutter pb-[28px] max-sm:pb-[20px]">
         <Figure
           src="/cnn/06-collaboration-tools.png"
           alt="Table of collaboration tools: Sketch, Figma, Miro and Abstract for design; Jira and Zeplin for dev and QA; Dropbox and SharePoint for documents; Slack, Webex and Monday.com for communication"
-          caption="During our brainstorming sessions, Miro became the ultimate collaborative method. It allowed Product Managers and Engineers to become more involved and it allowed our team to save time, which was our biggest constraint."
           width={1800}
           height={505}
         />
       </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
+        <p className="!mt-0">
+          During our brainstorming sessions,{' '}
+          <a href="https://miro.com" target="_blank" rel="noopener noreferrer">
+            Miro
+          </a>{' '}
+          became the ultimate collaborative method. It allowed Product Managers and
+          Engineers to become more involved and it allowed our team to save time, which
+          was our biggest constraint.
+        </p>
+
         <h3>Work Process</h3>
         <p>
           After the initial research and brainstorming sessions, it&apos;s time to work. A
@@ -490,10 +499,6 @@ export default function CNNProject() {
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
         <p>
-          <strong>State page</strong> (full view)
-        </p>
-
-        <p className="!mt-[56px]">
           <strong>Design objective</strong>: Show a distinct contrast between candidates.
         </p>
         <p>
