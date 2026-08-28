@@ -455,7 +455,6 @@ export default function CNNProject() {
         <Figure
           src="/cnn/09-florida-timeline-concept.png"
           alt="Concept for a Florida state page with a 2008–2016 election timeline, annotated to show the three API calls it would require"
-          caption="(click on thumbnail for full view)"
           width={1025}
           height={592}
         />
