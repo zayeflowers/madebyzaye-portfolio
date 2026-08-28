@@ -255,7 +255,7 @@ export default function USBankProject() {
           src="/usbank/06-concept-testing-participants.png"
           alt="Nine research participants grouped into Micro, Tier 1 and Tier 2 segments, alongside the banks and apps they use — Chase, Security Bank, US Bank, Bank of America, QuickBooks, Square, Shopify, Zelle, Venmo and PayPal"
           width={1800}
-          height={667}
+          height={691}
         />
       </section>
 
