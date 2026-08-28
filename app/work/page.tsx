@@ -94,7 +94,7 @@ export default function Work() {
       <Marquee />
 
       <section className="section band-cream">
-        <SectionHeading title="Engagements" meta={`${ENGAGEMENTS.length} of twelve`} />
+        <SectionHeading title="Engagements" />
 
         <div className="flex flex-col">
           {ENGAGEMENTS.map((item) => (

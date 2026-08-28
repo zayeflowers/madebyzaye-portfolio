@@ -33,7 +33,7 @@ const WHAT_I_DO = [
 export default function WhatIDo() {
   return (
     <section className="section band-cream">
-      <SectionHeading title="What I do" meta="Six disciplines" />
+      <SectionHeading title="What I do" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[28px]">
         {WHAT_I_DO.map((item, index) => (
