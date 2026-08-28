@@ -53,11 +53,7 @@ export default function Projects() {
       </div>
 
       <section className="section band-red">
-        <SectionHeading
-          title="Case studies"
-          meta={`${CASE_STUDIES.length} studies`}
-          tone="light"
-        />
+        <SectionHeading title="Case studies" tone="light" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-[28px]">
           {CASE_STUDIES.map((project) => (

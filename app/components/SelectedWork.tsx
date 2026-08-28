@@ -34,7 +34,7 @@ const PROJECTS: WorkCardProps[] = [
 const SelectedWork: React.FC = () => {
   return (
     <section id="work" className="band-red section">
-      <SectionHeading title="Selected work" meta="Three of twelve" tone="light" />
+      <SectionHeading title="Selected work" tone="light" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-[28px]">
         {PROJECTS.map((project) => (
