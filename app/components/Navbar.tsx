@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const NAV_LINKS = [
@@ -15,6 +16,10 @@ const MOBILE_LINKS = [...NAV_LINKS, { href: '/now', label: 'Now' }];
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   return (
     <header className="w-full bg-white border-b border-[color:var(--hair)] relative z-50">
@@ -36,7 +41,12 @@ const Navbar: React.FC = () => {
             <Link
               key={link.href}
               href={link.href}
-              className="text-black transition-colors hover:text-[color:var(--red)]"
+              aria-current={isActive(link.href) ? 'page' : undefined}
+              className={`relative text-black transition-colors hover:text-[color:var(--red)] ${
+                isActive(link.href)
+                  ? 'after:absolute after:left-0 after:right-0 after:-bottom-[7px] after:h-[2px] after:bg-[color:var(--red)]'
+                  : ''
+              }`}
             >
               {link.label}
             </Link>
@@ -98,9 +108,18 @@ const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
+                  aria-current={isActive(link.href) ? 'page' : undefined}
                   className="flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 text-[13px] font-medium tracking-[0.14em] uppercase text-black transition-colors hover:text-[color:var(--red)]"
                 >
-                  {link.label}
+                  <span
+                    className={
+                      isActive(link.href)
+                        ? 'border-b-[2px] border-[color:var(--red)] pb-[3px]'
+                        : ''
+                    }
+                  >
+                    {link.label}
+                  </span>
                   <span className="text-[color:var(--red)]">→</span>
                 </Link>
               ))}
