@@ -143,6 +143,13 @@
     font-weight: 500;
   }
 
+  /* Navigation. Lighter than the display face, so it reads as wayfinding
+     rather than as a heading. */
+  .nav-type {
+    font-family: var(--font-plex), Archivo, sans-serif;
+    font-weight: 600;
+  }
+
   /* Display scale — desktop values, mobile overrides at the 640px breakpoint */
   .t-hero {
     font-size: 116px;
