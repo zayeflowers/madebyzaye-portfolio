@@ -7,7 +7,7 @@ import PageHeading from '../components/PageHeading';
 import PageLayout from '../components/PageLayout';
 import SectionHeading from '../components/SectionHeading';
 import ExperienceList from '../components/ExperienceList';
-import Marquee from '../components/Marquee';
+import BlackBar from '../components/BlackBar';
 
 interface Engagement {
   company: string;
@@ -91,7 +91,7 @@ export default function Work() {
         />
       </div>
 
-      <Marquee />
+      <BlackBar />
 
       <section className="section band-cream">
         <SectionHeading title="Work" />

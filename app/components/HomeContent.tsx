@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "./Hero";
-import Marquee from "./Marquee";
+import BlackBar from "./BlackBar";
 import SelectedWork from "./SelectedWork";
 import FeaturedCaseStudy from "./FeaturedCaseStudy";
 import ExperienceList from "./ExperienceList";
@@ -15,7 +15,7 @@ export default function HomeContent() {
   return (
     <PageLayout navbarKey="navbar-home-page">
       <Hero key="hero-home-page" />
-      <Marquee key="marquee-home-page" />
+      <BlackBar />
       <SelectedWork key="selected-work-home-page" />
       <FeaturedCaseStudy key="featured-case-study-home-page" />
       <ExperienceList key="experience-home-page" showLink />
