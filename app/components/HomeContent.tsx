@@ -7,10 +7,7 @@ import FeaturedCaseStudy from "./FeaturedCaseStudy";
 import ExperienceList from "./ExperienceList";
 import PageLayout from "./PageLayout";
 
-/**
- * The real homepage. Lives here so it can be rendered from the private
- * /preview route while `/` shows the work-in-progress holding page.
- */
+/** The homepage. */
 export default function HomeContent() {
   return (
     <PageLayout navbarKey="navbar-home-page">
