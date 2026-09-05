@@ -3,7 +3,7 @@
 import React from 'react';
 import PageHeading from '../components/PageHeading';
 import PageLayout from '../components/PageLayout';
-import Marquee from '../components/Marquee';
+import BlackBar from '../components/BlackBar';
 
 const CHANNELS = [
   {
@@ -57,7 +57,7 @@ export default function Contact() {
         />
       </div>
 
-      <Marquee />
+      <BlackBar />
 
       <section className="section band-cream grid grid-cols-1 sm:grid-cols-2 gap-[48px] sm:gap-[64px]">
         <div>

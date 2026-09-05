@@ -106,15 +106,6 @@
   }
 }
 
-@keyframes mq {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 @keyframes rise {
   from {
     opacity: 0;
@@ -599,30 +590,12 @@
   }
 
   /* --------------------------------------------------------------------------
-     Marquee
+     Black bar — a full-bleed rule between sections
      -------------------------------------------------------------------------- */
 
-  .marquee {
-    overflow: hidden;
+  .black-bar {
+    height: 40px;
     background: var(--black);
-    color: var(--white);
-    padding: 15px 0;
-    border-top: 1px solid var(--hair);
-  }
-
-  .marquee-track {
-    display: flex;
-    width: 200%;
-    animation: mq 22s linear infinite;
-    font-size: 30px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    white-space: nowrap;
-    gap: 26px;
-  }
-
-  .marquee-track .star {
-    color: var(--red);
   }
 
   /* --------------------------------------------------------------------------
@@ -719,7 +692,6 @@
     html {
       scroll-behavior: auto;
     }
-    .marquee-track,
     .dot,
     .animate-rise {
       animation: none;
@@ -759,11 +731,6 @@
 
     .rule-row {
       grid-template-columns: 120px 1fr 160px;
-    }
-
-    .marquee-track {
-      font-size: 24px;
-      animation-duration: 18s;
     }
   }
 
@@ -867,15 +834,8 @@
       font-size: 14px;
     }
 
-    .marquee {
-      padding: 11px 0;
-      border-top: 0;
-    }
-
-    .marquee-track {
-      animation-duration: 16s;
-      font-size: 20px;
-      gap: 16px;
+    .black-bar {
+      height: 28px;
     }
 
     .prose-zaye h2 {
