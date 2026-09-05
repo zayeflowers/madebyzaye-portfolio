@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const NAV_LINKS = [
@@ -15,6 +16,10 @@ const MOBILE_LINKS = [...NAV_LINKS, { href: '/now', label: 'Now' }];
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   return (
     <header className="w-full bg-white border-b border-[color:var(--hair)] relative z-50">
@@ -31,12 +36,17 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden sm:flex items-center gap-8 text-[12px] font-medium leading-none tracking-[0.1em] uppercase">
+        <nav className="hidden sm:flex items-center gap-8 display text-[11px] leading-none tracking-[0.08em] uppercase">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-black transition-colors hover:text-[color:var(--red)]"
+              aria-current={isActive(link.href) ? 'page' : undefined}
+              className={`relative text-black transition-colors hover:text-[color:var(--red)] ${
+                isActive(link.href)
+                  ? 'after:absolute after:left-0 after:right-0 after:-bottom-[7px] after:h-[2px] after:bg-[color:var(--red)]'
+                  : ''
+              }`}
             >
               {link.label}
             </Link>
@@ -53,7 +63,7 @@ const Navbar: React.FC = () => {
         <div className="flex sm:hidden items-center gap-3">
           <Link
             href="/contact"
-            className="border border-black rounded-full px-4 py-[9px] text-[10px] font-medium leading-none tracking-[0.1em] uppercase text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
+            className="border border-black rounded-full px-4 py-[9px] display text-[10px] leading-none tracking-[0.08em] uppercase text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
           >
             Contact
           </Link>
@@ -98,9 +108,18 @@ const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 text-[13px] font-medium tracking-[0.14em] uppercase text-black transition-colors hover:text-[color:var(--red)]"
+                  aria-current={isActive(link.href) ? 'page' : undefined}
+                  className="flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 display text-[13px] tracking-[0.08em] uppercase text-black transition-colors hover:text-[color:var(--red)]"
                 >
-                  {link.label}
+                  <span
+                    className={
+                      isActive(link.href)
+                        ? 'border-b-[2px] border-[color:var(--red)] pb-[3px]'
+                        : ''
+                    }
+                  >
+                    {link.label}
+                  </span>
                   <span className="text-[color:var(--red)]">→</span>
                 </Link>
               ))}
