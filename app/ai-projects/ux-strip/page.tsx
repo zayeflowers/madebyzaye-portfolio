@@ -20,8 +20,6 @@ export default function UXStrip() {
         eyebrow="Case study · Illustration"
         title="UX Strip"
         summary="A comic strip series capturing the humorous, relatable, and sometimes absurd moments of working in UX and product design."
-        backHref="/ai-projects"
-        backLabel="Back to AI projects"
         meta={[
           { label: 'Role', value: 'Creator, Writer, Illustrator' },
           { label: 'Status', value: 'Launched' },

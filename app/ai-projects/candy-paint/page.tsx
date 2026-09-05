@@ -24,8 +24,6 @@ export default function CandyPaint() {
         eyebrow="Case study · Identity"
         title="Candy Paint"
         summary="A music video experiment that blends motion, style, and identity through generative AI — generative type, motion and machine-made texture."
-        backHref="/ai-projects"
-        backLabel="Back to AI projects"
         meta={[
           { label: 'Role', value: 'Creative Director, AI Prompt Engineer' },
           { label: 'Year', value: '2024' },

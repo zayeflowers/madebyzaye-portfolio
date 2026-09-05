@@ -83,8 +83,6 @@ export default function IHGProject() {
         summary="Bookers kept telling us the same thing: they could not work out what a room actually cost. Rewriting the payment page around that one complaint lifted booking conversion 6% and now serves every IHG and Holiday Inn Express visitor."
         logoSrc="/ihg.svg"
         logoAlt="IHG"
-        backHref="/projects"
-        backLabel="Back to case studies"
         meta={[
           { label: 'Role', value: 'Senior UX Designer' },
           { label: 'Brands', value: 'IHG, Holiday Inn, Holiday Inn Express, Crowne Plaza' },

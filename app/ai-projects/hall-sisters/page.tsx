@@ -47,8 +47,6 @@ export default function HallSisters() {
         eyebrow="Case study · Documentary"
         title="The Hall Sisters"
         summary="A documentary-style exploration of identity, trauma, media narrative, and public perception through an AI-assisted research and storytelling workflow."
-        backHref="/ai-projects"
-        backLabel="Back to AI projects"
         meta={[
           { label: 'Role', value: 'Director, Researcher, Editor' },
           { label: 'Format', value: 'Long-form documentary' },

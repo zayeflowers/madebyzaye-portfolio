@@ -56,8 +56,6 @@ export default function GeicoProject() {
         summary="Transforming a phone-dependent claims process into a guided, measurable self-service experience."
         logoSrc="/geico.svg"
         logoAlt="GEICO"
-        backHref="/projects"
-        backLabel="Back to case studies"
         meta={[
           { label: 'Role', value: 'Product Design Lead' },
           { label: 'Platform', value: 'Responsive web' },

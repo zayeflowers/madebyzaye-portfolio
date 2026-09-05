@@ -21,8 +21,6 @@ export default function BrotherSignal() {
         eyebrow="Case study · Product"
         title="Quiet affirmations at scale"
         summary="BrotherSignal turned a text message into a daily ritual for Black men — consent-first, no app required."
-        backHref="/ai-projects"
-        backLabel="Back to AI projects"
         meta={[
           { label: 'Role', value: 'Founder & Systems Architect' },
           { label: 'Status', value: 'Launched' },

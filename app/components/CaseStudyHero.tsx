@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export interface MetaItem {
@@ -19,8 +18,6 @@ interface CaseStudyHeroProps {
   /** The logo is a square app icon rather than a wordmark, so it gets sized
    *  and rounded like one instead of being fitted to the wordmark box. */
   logoIsIcon?: boolean;
-  backHref?: string;
-  backLabel?: string;
 }
 
 const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
@@ -31,17 +28,10 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
   logoSrc,
   logoAlt,
   logoIsIcon = false,
-  backHref = '/work',
-  backLabel = 'Back to work',
 }) => {
   return (
     <section className="gutter pt-[40px] pb-[48px] max-sm:pt-[24px] max-sm:pb-[28px] animate-rise">
-      <Link href={backHref} className="link-red mb-[38px] max-sm:mb-[24px]">
-        <span aria-hidden="true">←</span>
-        {backLabel}
-      </Link>
-
-      <div className="mt-[38px] max-sm:mt-[24px] flex items-start justify-between gap-10">
+      <div className="flex items-start justify-between gap-10">
         <div className="flex-1">
           <div className="eyebrow eyebrow--red">
             <span className="rule" />
