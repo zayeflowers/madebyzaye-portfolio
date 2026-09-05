@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden sm:flex items-center gap-8 display text-[11px] leading-none tracking-[0.08em] uppercase">
+        <nav className="hidden sm:flex items-center gap-8 nav-type text-[12px] leading-none tracking-[0.08em] uppercase">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
         <div className="flex sm:hidden items-center gap-3">
           <Link
             href="/contact"
-            className="border border-black rounded-full px-4 py-[9px] display text-[10px] leading-none tracking-[0.08em] uppercase text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
+            className="border border-black rounded-full px-4 py-[9px] nav-type text-[11px] leading-none tracking-[0.08em] uppercase text-black transition-colors hover:bg-[color:var(--red)] hover:border-[color:var(--red)] hover:text-white"
           >
             Contact
           </Link>
@@ -109,7 +109,7 @@ const Navbar: React.FC = () => {
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
                   aria-current={isActive(link.href) ? 'page' : undefined}
-                  className="flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 display text-[13px] tracking-[0.08em] uppercase text-black transition-colors hover:text-[color:var(--red)]"
+                  className="flex items-center justify-between py-4 border-b border-[color:var(--hair)] last:border-b-0 nav-type text-[13px] tracking-[0.08em] uppercase text-black transition-colors hover:text-[color:var(--red)]"
                 >
                   <span
                     className={

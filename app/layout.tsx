@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, Archivo_Black, JetBrains_Mono } from "next/font/google";
+import { Archivo, Archivo_Black, IBM_Plex_Sans, JetBrains_Mono } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import GoogleAnalytics from "./components/GoogleAnalytics";
@@ -14,6 +14,12 @@ const archivoBlack = Archivo_Black({
   variable: "--font-archivo-black",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-plex",
+  subsets: ["latin"],
+  weight: ["600"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -76,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${archivo.variable} ${archivoBlack.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${archivo.variable} ${archivoBlack.variable} ${ibmPlexSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Suspense fallback={null}>
           <GoogleAnalytics />
