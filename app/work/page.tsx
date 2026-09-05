@@ -39,7 +39,7 @@ const ENGAGEMENTS: Engagement[] = [
     description:
       'Redesigning critical insurance workflows across mobile and desktop. I lead UX design for the Injury Intake experience, drive KPI improvements, and collaborate across design, product, and engineering to reduce friction and improve conversions at scale.',
     href: '/projects/geico',
-    linkLabel: 'View snapshot',
+    linkLabel: 'View case study',
   },
   {
     company: 'Publicis Sapient',
@@ -48,7 +48,7 @@ const ENGAGEMENTS: Engagement[] = [
     description:
       'Contributed to digital transformation work for clients like U.S. Bank, Goldman Sachs, and Comcast. Focused on small business tools and early AI features, bringing a user-first lens to highly regulated, data-driven environments.',
     href: '/projects/us-bank',
-    linkLabel: 'US Bank case study',
+    linkLabel: 'View case study',
   },
   {
     company: 'CNN',

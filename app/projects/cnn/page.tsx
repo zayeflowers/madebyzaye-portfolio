@@ -22,8 +22,6 @@ export default function CNNProject() {
         summary="The presidential election in the United States in 2020 was unlike any other in the country's history. Over 152 million Americans voted, and in the midst of a global pandemic it was critical to provide users with accurate information."
         logoSrc="/cnn.svg"
         logoAlt="CNN"
-        backHref="/projects"
-        backLabel="Back to case studies"
         meta={[
           { label: 'Role', value: 'Senior Product Designer' },
           { label: 'Timeline', value: 'Dec 2019 – Nov 2020' },
