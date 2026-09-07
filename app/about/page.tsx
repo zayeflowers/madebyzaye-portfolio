@@ -92,10 +92,10 @@ export default function About() {
         <div>
           <div className="frame">
             <Image
-              src="/IMG_6082.jpg"
+              src="/zaye-portrait.jpg"
               alt="Zaye Flowers"
-              width={600}
-              height={800}
+              width={1284}
+              height={1265}
               className="w-full h-auto block"
               priority
             />
