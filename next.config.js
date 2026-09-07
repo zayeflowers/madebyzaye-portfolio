@@ -15,6 +15,18 @@ const nextConfig = {
         destination: '/work/before-us',
         permanent: true,
       },
+      {
+        // AI projects was renamed to AI experiments. Listed after the two
+        // rules above so those keep pointing at their final destinations.
+        source: '/ai-projects',
+        destination: '/ai-experiments',
+        permanent: true,
+      },
+      {
+        source: '/ai-projects/:path*',
+        destination: '/ai-experiments/:path*',
+        permanent: true,
+      },
     ];
   },
 };

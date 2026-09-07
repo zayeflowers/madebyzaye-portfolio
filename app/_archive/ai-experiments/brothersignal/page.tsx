@@ -151,7 +151,7 @@ export default function BrotherSignal() {
         </ul>
       </Prose>
 
-      <NextProject title="Candy Paint" href="/ai-projects/candy-paint" />
+      <NextProject title="Candy Paint" href="/ai-experiments/candy-paint" />
     </PageLayout>
   );
 }

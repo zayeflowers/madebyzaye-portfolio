@@ -111,7 +111,7 @@ export default function UXStrip() {
         </a>
       </section>
 
-      <NextProject title="Hall Sisters" href="/ai-projects/hall-sisters" />
+      <NextProject title="Hall Sisters" href="/ai-experiments/hall-sisters" />
     </PageLayout>
   );
 }
