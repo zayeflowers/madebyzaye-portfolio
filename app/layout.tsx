@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: 'Made By Zaye',
     images: [
       {
-        url: 'https://madebyzaye.com/og-image.png',
+        url: 'https://madebyzaye.com/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'Made By Zaye',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Made By Zaye',
     description: 'Lead Product Designer using AI to build tools that feel',
-    images: ['https://madebyzaye.com/og-image.png'],
+    images: ['https://madebyzaye.com/og-image-v2.png'],
   },
 };
 
