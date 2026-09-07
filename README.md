@@ -37,7 +37,7 @@ The personal portfolio of Zaye Flowers — Lead Product Designer, builder, and c
 madebyzaye-portfolio/
 ├── app/                  # Next.js app directory
 │   ├── about/            # About page
-│   ├── ai-projects/      # AI projects section
+│   ├── ai-experiments/      # AI experiments section
 │   ├── components/       # Reusable React components
 │   ├── contact/          # Contact page
 │   ├── projects/         # Case studies and project pages

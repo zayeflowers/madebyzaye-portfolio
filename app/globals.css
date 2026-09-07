@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+/* Metric-matched fallback for Google Sans Flex.
+   Next builds one of these automatically for every font it knows, but it has
+   no metrics for Google Sans Flex yet ("Failed to find font override values"),
+   so the menu would reflow when the webfont replaced the fallback. These
+   values put Arial on the same footprint.
+
+   size-adjust is tuned against the uppercase, letter-spaced text `.nav-type`
+   actually sets rather than against Next's lowercase average width, which
+   overshot by 11% here: Google Sans Flex has wide lowercase but narrow caps.
+   Vertical overrides follow Next's formula — ascent 1932 and descent 572 over
+   a 2000 em, divided by the size adjust. Measured error is under 0.05% on
+   width and nil on height at all three menu sizes (11px, 12px, 13px). */
+@font-face {
+  font-family: "Google Sans Flex Fallback";
+  src: local("Arial");
+  size-adjust: 96.58%;
+  ascent-override: 100.02%;
+  descent-override: 29.61%;
+  line-gap-override: 0%;
+}
+
 /* ==========================================================================
    Made By Zaye — Design System (Concept 2b)
    White ground, hairline rules, Archivo Black display type,
@@ -146,7 +167,8 @@
   /* Navigation. Lighter than the display face, so it reads as wayfinding
      rather than as a heading. */
   .nav-type {
-    font-family: var(--font-plex), Archivo, sans-serif;
+    font-family: var(--font-google-sans-flex), "Google Sans Flex Fallback", Archivo,
+      sans-serif;
     font-weight: 600;
   }
 

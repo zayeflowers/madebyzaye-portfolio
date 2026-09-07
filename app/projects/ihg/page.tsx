@@ -537,11 +537,7 @@ export default function IHGProject() {
         </p>
       </Prose>
 
-      <NextProject
-        title="US Bank"
-        href="/projects/us-bank"
-        secondary={{ label: 'Download the PDF', href: '/ihg.pdf', external: true }}
-      />
+      <NextProject title="US Bank" href="/projects/us-bank" />
     </PageLayout>
   );
 }

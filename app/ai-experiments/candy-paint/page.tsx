@@ -116,7 +116,7 @@ export default function CandyPaint() {
         </div>
       </section>
 
-      <NextProject title="UX Strip" href="/ai-projects/ux-strip" />
+      <NextProject title="UX Strip" href="/ai-experiments/ux-strip" />
 
       <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
     </PageLayout>
