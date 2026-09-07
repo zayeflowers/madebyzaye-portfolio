@@ -7,15 +7,12 @@ interface NextProjectProps {
   label?: string;
   title: string;
   href: string;
-  /** Optional secondary link, e.g. a PDF download. */
-  secondary?: { label: string; href: string; external?: boolean };
 }
 
 const NextProject: React.FC<NextProjectProps> = ({
   label = 'Next project',
   title,
   href,
-  secondary,
 }) => {
   return (
     <section className="gutter pt-[48px] pb-[76px] max-sm:pt-[32px] max-sm:pb-[40px]">
@@ -29,22 +26,6 @@ const NextProject: React.FC<NextProjectProps> = ({
             {title} <span aria-hidden="true">→</span>
           </Link>
         </div>
-
-        {secondary &&
-          (secondary.external ? (
-            <a
-              className="pill pill--ghost max-sm:w-full"
-              href={secondary.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {secondary.label}
-            </a>
-          ) : (
-            <Link className="pill pill--ghost max-sm:w-full" href={secondary.href}>
-              {secondary.label}
-            </Link>
-          ))}
       </div>
     </section>
   );
