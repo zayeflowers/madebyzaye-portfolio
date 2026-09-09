@@ -8,7 +8,7 @@ import WorkCard, { WorkCardProps } from '../components/WorkCard';
 
 const PROJECTS: (WorkCardProps & { status?: string })[] = [
   {
-    kicker: 'Identity · 2025',
+    kicker: 'Identity · 2024',
     title: 'Candy Paint',
     description:
       'A music video experiment blending motion, style, and identity through generative AI — bold, weird, and unapologetically future-facing.',
