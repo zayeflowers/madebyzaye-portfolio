@@ -17,7 +17,8 @@ export default function GoogleAnalytics() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + searchParams.toString();
+    const query = searchParams.toString();
+    const url = pathname + (query ? `?${query}` : '');
     // Track page views
     if (typeof window.gtag !== 'undefined') {
       window.gtag('config', 'G-4CDCRPZ80D', {
@@ -41,7 +42,8 @@ export default function GoogleAnalytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-4CDCRPZ80D');
+            // The effect below sends every page view, including the first one.
+            gtag('config', 'G-4CDCRPZ80D', { send_page_view: false });
           `,
         }}
       />
