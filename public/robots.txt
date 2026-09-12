@@ -1,8 +1,8 @@
-# Search engines are welcome.
+# Block all crawlers, search engines included.
 User-agent: *
-Allow: /
+Disallow: /
 
-# AI training crawlers are not.
+# Named again for AI crawlers, so the block holds even if the rule above changes.
 User-agent: GPTBot
 Disallow: /
 
