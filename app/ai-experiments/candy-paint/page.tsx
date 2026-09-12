@@ -23,7 +23,7 @@ export default function CandyPaint() {
       <CaseStudyHero
         eyebrow="Case study · Identity"
         title="Candy Paint"
-        summary="A music video experiment that blends motion, style, and identity through generative AI — generative type, motion and machine-made texture."
+        summary="A music video experiment that blends motion, style, and identity through generative AI: generative type, motion and machine-made texture."
         meta={[
           { label: 'Role', value: 'Creative Director, AI Prompt Engineer' },
           { label: 'Year', value: '2024' },
@@ -54,11 +54,11 @@ export default function CandyPaint() {
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               className="absolute top-0 left-0 w-full h-full"
-              title="Candy Paint — Generative AI Music Visual"
+              title="Candy Paint: Generative AI Music Visual"
             />
           </div>
           <figcaption className="frame-caption">
-            Candy Paint — generative AI music visual
+            Candy Paint: generative AI music visual
           </figcaption>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function CandyPaint() {
       <Prose className="pb-[48px] max-sm:pb-[28px]">
         <h2>Project overview</h2>
         <p>
-          Candy Paint explores how AI can be used as a creative collaborator — not
+          Candy Paint explores how AI can be used as a creative collaborator, not
           just a tool. What began as a prompt experiment quickly evolved into a full
           visual narrative that blurs the line between reality and imagination. This
           project investigates digital identity, futurism, and the aesthetics of
@@ -88,7 +88,7 @@ export default function CandyPaint() {
           The result is a high-style music visual that merges narrative with
           generative art. More than an experiment, Candy Paint is a proof-of-concept
           for how emerging tools can extend the creative voice of independent
-          storytellers — blending tech and intention in unexpected ways.
+          storytellers, blending tech and intention in unexpected ways.
         </p>
       </Prose>
 

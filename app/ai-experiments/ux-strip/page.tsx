@@ -42,7 +42,7 @@ export default function UXStrip() {
       />
 
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
-        <Figure src="/uxstrip.png" alt="UX Strip" caption="UX Strip — the daily absurdities of design work" />
+        <Figure src="/uxstrip.png" alt="UX Strip" caption="UX Strip: the daily absurdities of design work" />
       </section>
 
       <Prose className="pb-[48px] max-sm:pb-[28px]">
@@ -51,7 +51,7 @@ export default function UXStrip() {
           UX Strip is a comic strip series that captures the humorous, relatable, and
           sometimes absurd moments of working in UX and product design. Created to
           document the real conversations, frustrations, and ironies that designers
-          experience daily — all through simple, satirical illustrations.
+          experience daily, all through simple, satirical illustrations.
         </p>
         <p>
           What started as a personal creative outlet has evolved into a growing
@@ -63,7 +63,7 @@ export default function UXStrip() {
         <h2>The approach</h2>
         <p>
           I wanted to create something that felt authentic to the daily experience of
-          working in UX — the good, the bad, and the hilariously frustrating. Each
+          working in UX: the good, the bad, and the hilariously frustrating. Each
           comic strip follows a minimalist style with simple characters and dialogue
           that cuts straight to the heart of design culture.
         </p>
@@ -82,7 +82,7 @@ export default function UXStrip() {
         </p>
         <p>
           The AI assists with brainstorming scenarios, refining dialogue, and sometimes
-          generating background elements — but the core humor and insights come from
+          generating background elements, but the core humor and insights come from
           real human experiences in the design world.
         </p>
 

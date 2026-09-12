@@ -66,7 +66,7 @@ export default function HallSisters() {
             />
           </div>
           <figcaption className="frame-caption">
-            The Hall Sisters — a Texas true crime story
+            The Hall Sisters: a Texas true crime story
           </figcaption>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function HallSisters() {
         <h2>Overview</h2>
         <p>
           This project was an experiment in using generative AI not as a replacement
-          for authorship, but as a structured research collaborator — helping organize
+          for authorship, but as a structured research collaborator, helping organize
           information, synthesize perspectives, and refine narrative arcs across
           complex, emotionally charged subject matter.
         </p>
@@ -171,7 +171,7 @@ export default function HallSisters() {
           it.
         </p>
         <p>
-          This project reflects my approach to technology — intentional, structured,
+          This project reflects my approach to technology: intentional, structured,
           ethical, and grounded in context.
         </p>
       </Prose>

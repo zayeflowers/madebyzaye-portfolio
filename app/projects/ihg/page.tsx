@@ -17,13 +17,13 @@ const OUTCOMES = [
     label:
       'Estimated annual incremental revenue on Holiday Inn Express, from roughly 145,000 additional bookings',
   },
-  { value: '100+', label: 'Projects split-tested in 2019 — 42% more than in 2018' },
+  { value: '100+', label: 'Projects split-tested in 2019, 42% more than in 2018' },
 ];
 
 /** The six-step loop a test moved through, from product hypothesis to full rollout. */
 const PROCESS_STEPS = [
   'Product Owners provide customer painpoints, a test idea or a hypothesis explaining why they think it could work, their goals (what success looks like), and any constraints.',
-  'The core UX team determines whether the idea is relevant to the strategic goals of Web Channel leadership — revenue and bookings.',
+  'The core UX team determines whether the idea is relevant to the strategic goals of Web Channel leadership: revenue and bookings.',
   'If yes, the UX team starts data or research insights. If it is A/B testable, we create the hypothesis and test briefs. This also entails business discovery, analysis of the test, and prioritization.',
   'Design starts. UX tickets are submitted, a designer is assigned, concepts are created and approved, and test development begins.',
   'Build starts. Coding and production development (target campaign, metrics validation and creation), dev testing, QA testing, and preparation for launch.',
@@ -37,7 +37,7 @@ const CONSTRAINTS = [
   },
   {
     title: 'Design systems',
-    body: 'There was a separate design system for each brand — delivered as PDF branding guidelines rather than anything a designer could build from directly.',
+    body: 'There was a separate design system for each brand, delivered as PDF branding guidelines rather than anything a designer could build from directly.',
   },
   {
     title: 'Stakeholder pushback',
@@ -49,7 +49,7 @@ const CONSTRAINTS = [
   },
   {
     title: 'Analytics',
-    body: 'Adobe Analytics introduced its own problems — failed tests and JavaScript issues that cost us running time.',
+    body: 'Adobe Analytics introduced its own problems: failed tests and JavaScript issues that cost us running time.',
   },
 ];
 
@@ -110,7 +110,7 @@ export default function IHGProject() {
             <div className="measure mt-[14px] flex flex-col gap-[16px]">
               <p className="body-copy">
                 Feedback collected across the booking funnel kept returning to one
-                complaint. On the payment page, a quarter of it was rate confusion —
+                complaint. On the payment page, a quarter of it was rate confusion:
                 uncertainty about the total cost and what was included. On rate
                 selection it was the top category again. People could not tell what a
                 room actually cost.
@@ -161,7 +161,7 @@ export default function IHGProject() {
         </h2>
         <p>
           I worked as a <strong>Senior UX Designer</strong> across IHG&apos;s brand
-          sites — IHG, Holiday Inn, Holiday Inn Express and Crowne Plaza. My
+          sites: IHG, Holiday Inn, Holiday Inn Express and Crowne Plaza. My
           responsibilities covered visual and product design, competitor analysis,
           conceptual ideas, split-testing, analytics, and collaborating with the product
           team. The immediate team was product managers, a project manager, a data
@@ -198,7 +198,7 @@ export default function IHGProject() {
       <Prose className="pb-[24px] max-sm:pb-[16px]">
         <h2 className="!mt-0">Tools and apps</h2>
         <p>
-          Each phase of a test had its own instrumentation — qualitative session and
+          Each phase of a test had its own instrumentation: qualitative session and
           interaction analysis going in, quantitative results analysis coming out.
         </p>
       </Prose>
@@ -206,7 +206,7 @@ export default function IHGProject() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/ihg/03-tools-and-apps.jpg"
-          alt="A matrix of tools across Plan, Design, Build and Run + Analysis — Teamwork, Clicktale, ForeSee, Adobe Target, Sketch, Quantum Metric and Adobe Analytics"
+          alt="A matrix of tools across Plan, Design, Build and Run + Analysis: Teamwork, Clicktale, ForeSee, Adobe Target, Sketch, Quantum Metric and Adobe Analytics"
           width={1800}
           height={1012}
           caption="Additional tools included Office 365, Opinionlab, Adobe Creative Cloud, Balsamiq and Ensighten"
@@ -237,7 +237,7 @@ export default function IHGProject() {
           prioritized what to act on.
         </p>
         <p>
-          On the payment page, <strong>rate confusion was 25% of all feedback</strong> —
+          On the payment page, <strong>rate confusion was 25% of all feedback</strong>,
           uncertainty about the total cost and what was included: parking, breakfast,
           deposit, tax, fees. Adding a guest or a special request accounted for 19%,
           login status 14%, hotel information and redemption 12% each, and navigation 9%.
@@ -260,7 +260,7 @@ export default function IHGProject() {
           alt="Feedback analysis of the rate selection page, with rate clarification the largest category at 28%"
           width={1800}
           height={1012}
-          caption="Rate selection told the same story — rate clarification at 28%, special rates at 21%"
+          caption="Rate selection told the same story: rate clarification at 28%, special rates at 21%"
         />
       </section>
 
@@ -270,7 +270,7 @@ export default function IHGProject() {
           largest category at 28%, followed by difficulty finding applicable special
           rates at 21%. The top three painpoints across the funnel were{' '}
           <strong>rate clarification</strong>, <strong>rates</strong> and{' '}
-          <strong>room clarification</strong> — the same problem, described three ways.
+          <strong>room clarification</strong>, the same problem, described three ways.
         </p>
 
         <h2>Empathy map</h2>
@@ -296,7 +296,7 @@ export default function IHGProject() {
         <h2 className="!mt-0">Personas</h2>
         <p>
           Two personas carried the research forward. Both list a version of the same
-          painpoint — for John the price not matching the listing, for Tiffany confusion
+          painpoint: for John the price not matching the listing, for Tiffany confusion
           about room rates.
         </p>
       </Prose>
@@ -307,7 +307,7 @@ export default function IHGProject() {
           alt="Persona for John, 37, a project manager in Charlotte, North Carolina, whose painpoints include the price not matching the listing"
           width={1800}
           height={1012}
-          caption="John — 37, project manager, travelling as a family"
+          caption="John, 37, project manager, travelling as a family"
         />
       </section>
 
@@ -317,7 +317,7 @@ export default function IHGProject() {
           alt="Persona for Tiffany, 32, a senior recruiter in Dallas, Texas, whose painpoints include being confused about room rates"
           width={1800}
           height={1012}
-          caption="Tiffany — 32, senior recruiter, travelling solo"
+          caption="Tiffany, 32, senior recruiter, travelling solo"
         />
       </section>
 
@@ -328,7 +328,7 @@ export default function IHGProject() {
           handled it. Marriott hides the full rate behind a{' '}
           <em>Summary of Charges</em> click and takes five steps to complete a booking.
           Hyatt displays the full rate details on load and takes four. Choice Hotels also
-          takes four, but does not show full rate details on load — and pre-enrolls the
+          takes four, but does not show full rate details on load, and pre-enrolls the
           user in its rewards programme, which registers an account. Only Hyatt was
           showing people what they were paying before being asked to pay it.
         </p>
@@ -340,7 +340,7 @@ export default function IHGProject() {
           alt="Marriott's checkout, where full rate details are hidden behind a Summary of Charges control"
           width={1800}
           height={1012}
-          caption="Marriott — rate details hidden behind a click, five steps to book"
+          caption="Marriott: rate details hidden behind a click, five steps to book"
         />
       </section>
 
@@ -350,7 +350,7 @@ export default function IHGProject() {
           alt="Hyatt's checkout, showing the full rate breakdown including occupancy tax, state hotel fee and sales tax on load"
           width={1800}
           height={1012}
-          caption="Hyatt — full rate details on load, four steps to book"
+          caption="Hyatt: full rate details on load, four steps to book"
         />
       </section>
 
@@ -360,7 +360,7 @@ export default function IHGProject() {
           alt="Choice Hotels' checkout, which does not show full rate details on load and pre-enrolls the user in Choice Privileges Rewards"
           width={1800}
           height={1012}
-          caption="Choice Hotels — four steps, but rate details hidden and rewards enrollment pre-checked"
+          caption="Choice Hotels: four steps, but rate details hidden and rewards enrollment pre-checked"
         />
       </section>
 
@@ -370,7 +370,7 @@ export default function IHGProject() {
           The payment page had been redesigned shortly before, to fix UX issues raised in
           user testing. The sign-in CTA moved into the form area and reservation details
           moved to the top of the page. But the layout had also become a single long
-          column — which, for bookers who were not signed in, produced a page that
+          column, which, for bookers who were not signed in, produced a page that
           required <em>more</em> scrolling than the design it replaced.
         </p>
         <p>We ran three challengers against the control.</p>
@@ -382,7 +382,7 @@ export default function IHGProject() {
           alt="Experience A, the control, annotated with questions about unused space and hidden rate details"
           width={1800}
           height={1012}
-          caption="Experience A (control) — “Why are we hiding important information?”"
+          caption="Experience A (control): “Why are we hiding important information?”"
         />
       </section>
 
@@ -392,7 +392,7 @@ export default function IHGProject() {
           alt="Experience B, streamlined with the Chase advertisement moved to the right column"
           width={1800}
           height={1012}
-          caption="Experience B — streamlined, with the Chase ad moved right"
+          caption="Experience B: streamlined, with the Chase ad moved right"
         />
       </section>
 
@@ -402,7 +402,7 @@ export default function IHGProject() {
           alt="Experience C, streamlined with the rate details section opened by default in the right column"
           width={1800}
           height={1012}
-          caption="Experience C — streamlined, with rate details open by default on large viewports"
+          caption="Experience C: streamlined, with rate details open by default on large viewports"
         />
       </section>
 
@@ -431,7 +431,7 @@ export default function IHGProject() {
           </li>
           <li>Reduced the size of the legal language</li>
           <li>
-            Opened the rate details by default in the right column — on large viewports
+            Opened the rate details by default in the right column, on large viewports
             only, since on mobile&apos;s single column that would have undercut the
             effort to reduce page length
           </li>
@@ -457,8 +457,8 @@ export default function IHGProject() {
           checkout, mobile users want the basics and a quick exit.
         </p>
         <p>
-          The winner also drove stronger bookings with both audiences — anonymous visitor
-          bookings up 5%, explicit member bookings up 3% — and is now served to all
+          The winner also drove stronger bookings with both audiences (anonymous visitor
+          bookings up 5%, explicit member bookings up 3%) and is now served to all
           traffic on the IHG and Holiday Inn Express brand sites (US and UK
           English-speaking audiences) through Adobe Target.
         </p>
@@ -477,7 +477,7 @@ export default function IHGProject() {
       <Prose className="pb-[24px] max-sm:pb-[16px]">
         <h2 className="!mt-0">The testing programme</h2>
         <p>
-          Over 100 projects were tested in 2019 — 42% more than in 2018, and an average
+          Over 100 projects were tested in 2019, 42% more than in 2018, and an average
           of eight a month. More than 75% of our A/B split-testing was successful across
           the IHG brands.
         </p>
@@ -526,7 +526,7 @@ export default function IHGProject() {
           support design-driven decisions.
         </p>
         <p>
-          A/B split-testing turned out to be a powerful way to measure success — using
+          A/B split-testing turned out to be a powerful way to measure success, using
           data research, data analysis in Quantum Metric, competitor analysis and user
           testing as the foundation for deciding where to focus testing effort.
         </p>

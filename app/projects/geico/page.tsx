@@ -75,7 +75,7 @@ export default function GeicoProject() {
               25.8% → 30.2%
             </div>
             <p className="body-copy-sm mt-[12px]">
-              Completion, after launch and continued iteration — a 4.4
+              Completion, after launch and continued iteration, a 4.4
               percentage-point improvement.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function GeicoProject() {
                 often without it, and unsure what any of it was for.
               </p>
               <p className="body-copy">
-                I led the end-to-end design of a guided self-service path — sequencing
+                I led the end-to-end design of a guided self-service path, sequencing
                 a large set of claims requirements into steps that explain themselves,
                 then building an evidence loop after launch that separated design
                 friction from technical failure. The work later expanded to no-fault
@@ -111,7 +111,7 @@ export default function GeicoProject() {
           fit="natural"
           width={1915}
           height={821}
-          caption="Before Injury Intake, reporting ran through the adjuster — a phone call on both ends"
+          caption="Before Injury Intake, reporting ran through the adjuster: a phone call on both ends"
         />
       </section>
 
@@ -189,7 +189,7 @@ export default function GeicoProject() {
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Wireframes
           title="Setting expectations before the flow begins"
-          caption="The introduction I advocated for — the one screen that names every stage up front"
+          caption="The introduction I advocated for: the one screen that names every stage up front"
           items={[
             {
               id: '1a',
@@ -256,7 +256,7 @@ export default function GeicoProject() {
 
       <section className="gutter pb-[40px] max-sm:pb-[24px]">
         <Wireframes
-          title="Injuries — grouping the question and its guidance"
+          title="Injuries: grouping the question and its guidance"
           caption="Shipped flow, the redesign, and the modal where body-part selection happens"
           items={[
             {
@@ -282,7 +282,7 @@ export default function GeicoProject() {
 
       <section className="gutter pb-[40px] max-sm:pb-[24px]">
         <Wireframes
-          title="Healthcare providers — moving effort off the customer"
+          title="Healthcare providers: moving effort off the customer"
           caption="Six remembered fields, replaced by search with manual entry as the fallback"
           items={[
             {
@@ -302,7 +302,7 @@ export default function GeicoProject() {
 
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Wireframes
-          title="Lost wages — explaining why the question is asked"
+          title="Lost wages: explaining why the question is asked"
           caption="The same question, with its rationale and room for more than one employer"
           items={[
             {
@@ -334,7 +334,7 @@ export default function GeicoProject() {
           The early results challenged the assumption that a more visual interaction
           would automatically be more usable. The Body Map initially produced greater
           abandonment than the existing dropdown, and the experience was particularly
-          difficult on mobile — the primary context for many customers. It took months of
+          difficult on mobile, the primary context for many customers. It took months of
           iteration before the Body Map outperformed the dropdown, and even then the team
           continued to question whether the added complexity produced a meaningfully
           better experience.
@@ -356,7 +356,7 @@ export default function GeicoProject() {
         <Wireframes
           title="The Body Map, and the control it had to beat"
           caption="Area selection, the front/back toggle, and the dropdown it was measured against"
-          footnote="These wireframes abstract the interaction rather than reproduce it. The figure is drawn as simplified greybox zones to show the pattern — area selection, laterality and the front/back toggle. The production interface used a detailed anatomical illustration with more than 250 selectable regions, which is where much of the engineering cost sat."
+          footnote="These wireframes abstract the interaction rather than reproduce it. The figure is drawn as simplified greybox zones to show the pattern: area selection, laterality and the front/back toggle. The production interface used a detailed anatomical illustration with more than 250 selectable regions, which is where much of the engineering cost sat."
           items={[
             {
               id: '2a',
@@ -374,7 +374,7 @@ export default function GeicoProject() {
               id: '2c',
               tag: 'Redesign',
               tone: 'solution',
-              note: 'The back view reverses left and right. Getting that legible in one line of copy — on a phone, on a small figure — was a large share of the difficulty.',
+              note: 'The back view reverses left and right. Getting that legible in one line of copy (on a phone, on a small figure) was a large share of the difficulty.',
             },
             {
               id: '2d',
@@ -400,7 +400,7 @@ export default function GeicoProject() {
           expenses they could report, including transportation, gas, housekeeping or
           in-home support. Others felt pressure to provide enough evidence to make their
           injuries credible. These findings reinforced that the experience needed to
-          communicate purpose and eligibility — not merely present more fields.
+          communicate purpose and eligibility, not merely present more fields.
         </p>
       </Prose>
 
@@ -464,7 +464,7 @@ export default function GeicoProject() {
               id: '1i',
               tag: 'Redesign',
               tone: 'solution',
-              note: 'Next steps are generated from what the customer actually reported — the documents prompt is highlighted because they entered lost wages and expenses.',
+              note: 'Next steps are generated from what the customer actually reported. The documents prompt is highlighted because they entered lost wages and expenses.',
             },
             {
               id: '1j',
@@ -479,7 +479,7 @@ export default function GeicoProject() {
         <h2>Outcomes</h2>
         <p>
           Following launch and continued iteration, completion increased from
-          approximately 25.8% to 30.2% — a 4.4 percentage-point improvement. The digital
+          approximately 25.8% to 30.2%, a 4.4 percentage-point improvement. The digital
           experience also reduced the amount of injury-intake correspondence that had to
           occur directly between customers and adjusters, while giving the organization a
           reusable foundation for additional injury-related capabilities.
@@ -547,7 +547,7 @@ export default function GeicoProject() {
           </p>
           <p className="body-copy text-[color:var(--paper-60)]">
             My contribution was helping the team move beyond a set of digital forms
-            toward a measurable product capability — one that could respond to customer
+            toward a measurable product capability, one that could respond to customer
             behavior, expose technical failures and evolve as claims and regulatory
             requirements changed.
           </p>

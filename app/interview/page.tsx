@@ -45,13 +45,13 @@ const INTERVIEW: QA[] = [
   {
     question: 'What kinds of decisions do you make?',
     answer: [
-      'What’s the best way to tell this data visualization story to my team with all of the requirements? I usually will spend a day or two coming up with concepts and share with my UX design colleagues before presenting them to the larger team. We’re in charge of the design, of course, but how it’s presented is the harder issue. What exactly should be our primary focus on the page — content placement, modules, CRMs, data visualizations, and ads? It’s fun but overwhelming when you have so many elements to consider.',
+      'What’s the best way to tell this data visualization story to my team with all of the requirements? I usually will spend a day or two coming up with concepts and share with my UX design colleagues before presenting them to the larger team. We’re in charge of the design, of course, but how it’s presented is the harder issue. What exactly should be our primary focus on the page: content placement, modules, CRMs, data visualizations, and ads? It’s fun but overwhelming when you have so many elements to consider.',
     ],
   },
   {
     question: 'How did you begin your career?',
     answer: [
-      'My career started in Fort Lauderdale, Florida, with a small design agency in 2004. My job title at the time was Web Designer. It’s interesting looking back at how I was doing a lot of what I do today, but it wasn’t called user experience — just web design. I recall doing site maps, user journeys, inserting Google Analytics for clients, and a lot of front-end development.',
+      'My career started in Fort Lauderdale, Florida, with a small design agency in 2004. My job title at the time was Web Designer. It’s interesting looking back at how I was doing a lot of what I do today, but it wasn’t called user experience, just web design. I recall doing site maps, user journeys, inserting Google Analytics for clients, and a lot of front-end development.',
     ],
   },
   {

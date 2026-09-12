@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
 
         <p className="lede mt-[36px] max-sm:mt-[20px]">
           Product Design Lead using AI to create meaningful experiences. Twelve
-          years shaping UX at Geico, CNN and Publicis Sapient — complex systems,
+          years shaping UX at Geico, CNN and Publicis Sapient: complex systems,
           aligned teams, products that feel personal.
         </p>
 

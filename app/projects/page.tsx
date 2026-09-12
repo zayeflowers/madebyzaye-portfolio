@@ -6,7 +6,7 @@ import WorkCard, { WorkCardProps } from '../components/WorkCard';
 
 const CASE_STUDIES: WorkCardProps[] = [
   {
-    kicker: 'Enterprise UX · 2021—2023',
+    kicker: 'Enterprise UX · 2021–2023',
     title: 'US Bank',
     description: 'One system across a fragmented product estate.',
     href: '/projects/us-bank',
@@ -22,7 +22,7 @@ const CASE_STUDIES: WorkCardProps[] = [
     imageAlt: 'CNN case study',
   },
   {
-    kicker: 'Insurance · 2024—2026',
+    kicker: 'Insurance · 2024–2026',
     title: 'GEICO Injury Intake',
     description:
       'Turning a phone-dependent claims process into guided self-service.',
@@ -48,7 +48,7 @@ export default function Projects() {
           eyebrow="Case studies"
           title="The work behind the work"
           redPeriod
-          lede="Featured case studies from engagements with major brands — the research, the constraints, and what actually shipped."
+          lede="Featured case studies from engagements with major brands: the research, the constraints, and what actually shipped."
         />
       </div>
 

@@ -23,7 +23,7 @@ export default function USBankProject() {
       <CaseStudyHero
         eyebrow="Case study · Enterprise UX"
         title="Redefining Banking Essentials with US Bank"
-        summary="A new digital and human experience for Business Banking — one snapshot view of the money, clear navigation to the tools, and outside apps brought into a single interface."
+        summary="A new digital and human experience for Business Banking: one snapshot view of the money, clear navigation to the tools, and outside apps brought into a single interface."
         logoSrc="/usbank.svg"
         logoAlt="US Bank"
         meta={[
@@ -49,7 +49,7 @@ export default function USBankProject() {
             <div className="measure mt-[14px] flex flex-col gap-[16px]">
               <p className="body-copy">
                 Small business owners use banks for transactions but run the business
-                somewhere else — QuickBooks, Square, an accountant they trust. They do not
+                somewhere else: QuickBooks, Square, an accountant they trust. They do not
                 expect their bank to offer relevant advice.
               </p>
               <p className="body-copy">
@@ -100,7 +100,7 @@ export default function USBankProject() {
         <p>
           Small business owners use banks for transactions, yet they run their business
           through services like QuickBooks and Square. Business owners do not expect their
-          bank to offer relevant advice — preferring guidance from their network and
+          bank to offer relevant advice, preferring guidance from their network and
           trusted partners like an accountant or lawyer who understands what is unique
           about their business or industry.
         </p>
@@ -109,7 +109,7 @@ export default function USBankProject() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/usbank/01-business-essentials-framework.png"
-          alt="The U.S. Bank Business Essentials framework — Pay & Receive, View & Manage, and Plan & Grow — beside a matrix placing Bank of America, Chase, TD Bank, Revolut, Gusto, Xero and QuickBooks across digital-only and digital-plus-in-person offerings"
+          alt="The U.S. Bank Business Essentials framework (Pay & Receive, View & Manage, and Plan & Grow) beside a matrix placing Bank of America, Chase, TD Bank, Revolut, Gusto, Xero and QuickBooks across digital-only and digital-plus-in-person offerings"
           width={1800}
           height={606}
         />
@@ -121,7 +121,7 @@ export default function USBankProject() {
         <div className="mt-[46px] max-sm:mt-[28px] grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-[40px] lg:gap-[64px] items-start">
           <Figure
             src="/usbank/02-process-diagram.png"
-            alt="A five-step process — Empathize, Research, Ideate, Prototype, Test — with a marker showing the team started at Research"
+            alt="A five-step process (Empathize, Research, Ideate, Prototype, Test) with a marker showing the team started at Research"
             width={1705}
             height={670}
             className="!border-0 !bg-transparent"
@@ -232,7 +232,7 @@ export default function USBankProject() {
 
           <Figure
             src="/usbank/05-failing-forward-wireframes.png"
-            alt="Three overlapping first-phase wireframes — the Invoicing list, a Good morning dashboard with to-dos and charts, and the Apps product page"
+            alt="Three overlapping first-phase wireframes: the Invoicing list, a Good morning dashboard with to-dos and charts, and the Apps product page"
             width={1493}
             height={816}
             className="!border-0 !bg-transparent"
@@ -251,7 +251,7 @@ export default function USBankProject() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/usbank/06-concept-testing-participants.png"
-          alt="Nine research participants grouped into Micro, Tier 1 and Tier 2 segments, alongside the banks and apps they use — Chase, Security Bank, US Bank, Bank of America, QuickBooks, Square, Shopify, Zelle, Venmo and PayPal"
+          alt="Nine research participants grouped into Micro, Tier 1 and Tier 2 segments, alongside the banks and apps they use: Chase, Security Bank, US Bank, Bank of America, QuickBooks, Square, Shopify, Zelle, Venmo and PayPal"
           width={1800}
           height={691}
         />
@@ -264,7 +264,7 @@ export default function USBankProject() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/usbank/07-testing-objectives.png"
-          alt="Four testing objectives — navigation, usefulness of dashboard concepts, vision concept validation, and uncovering experience gaps — each with its research questions"
+          alt="Four testing objectives (navigation, usefulness of dashboard concepts, vision concept validation, and uncovering experience gaps), each with its research questions"
           width={1800}
           height={796}
         />
@@ -282,7 +282,7 @@ export default function USBankProject() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/usbank/08-key-findings.png"
-          alt="Two columns of findings — what worked well, and what to address in next steps including vague navigation categories and cashflow clarification"
+          alt="Two columns of findings: what worked well, and what to address in next steps including vague navigation categories and cashflow clarification"
           width={1800}
           height={506}
         />

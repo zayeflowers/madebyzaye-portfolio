@@ -32,7 +32,7 @@ export default function Error({
         </h1>
 
         <p className="lede mt-[36px] max-sm:mt-[20px]">
-          An unexpected error occurred. Try again — and if it keeps happening, let me
+          An unexpected error occurred. Try again, and if it keeps happening, let me
           know.
         </p>
 
