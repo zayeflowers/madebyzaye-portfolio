@@ -37,7 +37,7 @@ const FEATURES = [
   {
     title: 'Collections',
     description:
-      'Voices across time, grouped by what they speak to — Justice, Grief, Belonging, Truth-Telling, and more.',
+      'Voices across time, grouped by what they speak to: Justice, Grief, Belonging, Truth-Telling, and more.',
   },
   {
     title: 'Know the voice',
@@ -52,7 +52,7 @@ const FEATURES = [
   {
     title: 'Two moods',
     description:
-      'A warm tan light theme and a deep dark brown — whichever suits the moment.',
+      'A warm tan light theme and a deep dark brown, whichever suits the moment.',
   },
   {
     title: 'A gentle nudge',
@@ -75,7 +75,7 @@ export default function BeforeUs() {
       <CaseStudyHero
         eyebrow="Case study · Product"
         title="Before Us"
-        summary="Turning a familiar quote app into a culturally focused experience for Black wisdom — and my first app in the App Store."
+        summary="Turning a familiar quote app into a culturally focused experience for Black wisdom, and my first app in the App Store."
         logoSrc="/beforeus/app-icon.svg"
         logoAlt="Before Us app icon"
         logoIsIcon
@@ -122,7 +122,7 @@ export default function BeforeUs() {
           alt="The Before Us daily quote screen, showing a quote from Oprah Winfrey"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="One quote a day — no feed, no ads, nothing to scroll past"
+          caption="One quote a day: no feed, no ads, nothing to scroll past"
         />
       </section>
 
@@ -136,7 +136,7 @@ export default function BeforeUs() {
         </p>
         <p>
           What started as a generalized motivational product called Daily Uplift
-          eventually became something more focused — a mobile experience centered on the
+          eventually became something more focused: a mobile experience centered on the
           words, wisdom, and lived experiences of Black historical and cultural figures.
         </p>
         <p>
@@ -187,7 +187,7 @@ export default function BeforeUs() {
         <p>
           I started talking with ChatGPT about product ideas that would let me explore
           generative AI while making something meaningful. One suggestion was a quote
-          app. I have always loved quote apps, so the idea felt approachable — familiar
+          app. I have always loved quote apps, so the idea felt approachable: familiar
           enough that I understood the experience, flexible enough for me to add my own
           perspective.
         </p>
@@ -220,14 +220,14 @@ export default function BeforeUs() {
           alt="The Daily Uplift home screen: a greeting, a quote of the day from Martin Luther King, a How are you feeling today mood selector, and theme cards for Mental Health Awareness Month and Gay Pride Month"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="Phase one — Daily Uplift, with the quote, the mood selector, and the themes all on one screen"
+          caption="Phase one: Daily Uplift, with the quote, the mood selector, and the themes all on one screen"
         />
         <Figure
           src="/beforeus/02-daily-uplift-profile.png"
-          alt="The Daily Uplift profile screen showing Your Stats — mood selections, daily moods, and favorite quotes — above links to mood analytics, history, and favorites"
+          alt="The Daily Uplift profile screen showing Your Stats (mood selections, daily moods, and favorite quotes) above links to mood analytics, history, and favorites"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="The mood data the app was collecting — analytics, history, favorites"
+          caption="The mood data the app was collecting: analytics, history, favorites"
         />
       </section>
 
@@ -272,7 +272,7 @@ export default function BeforeUs() {
           alt="A Claude Code session in the Before Us repository, writing a project README from the actual source tree and opening a pull request"
           width={3824}
           height={2484}
-          caption="Directing the build — a session in the app repo, from prompt to merged pull request"
+          caption="Directing the build: a session in the app repo, from prompt to merged pull request"
         />
       </section>
 
@@ -304,7 +304,7 @@ export default function BeforeUs() {
           alt="A Notion page dated May 10, 2025 in the Daily Uplift updates database, summarizing the sign-up screen, navigation, Firebase authentication, and styling work from that session"
           width={3824}
           height={2484}
-          caption="The development journal — one entry per session, so the next one could pick up the thread"
+          caption="The development journal: one entry per session, so the next one could pick up the thread"
         />
       </section>
 
@@ -321,7 +321,7 @@ export default function BeforeUs() {
           premium content, but I kept thinking: <em>these are just quotes. Who am I to
           put a price on words I did not create?</em> That question showed me I was
           thinking too narrowly. People wouldn&apos;t be paying for individual
-          quotations — they would be paying for the experience, the curation, and the
+          quotations. They would be paying for the experience, the curation, and the
           personalization around them.
         </p>
         <p>
@@ -342,7 +342,7 @@ export default function BeforeUs() {
         <p>
           The pivot didn&apos;t require throwing out what I had built. Quotes had always
           been the heart of the experience. The most important change wasn&apos;t
-          structural — it was conceptual. I moved from a general inspiration app
+          structural. It was conceptual. I moved from a general inspiration app
           containing a Black Excellence category to a culturally focused product built
           around Black voices, experiences, and wisdom.
         </p>
@@ -369,7 +369,7 @@ export default function BeforeUs() {
           alt="Daily Uplift and Before Us side by side: the same quote screen before and after the pivot, the second one attributing Serena Williams with her role and a Black Voices tag"
           width={1638}
           height={1600}
-          caption="The same interaction before and after — the quote survives, the person arrives with it"
+          caption="The same interaction before and after: the quote survives, the person arrives with it"
         />
       </section>
 
@@ -378,7 +378,7 @@ export default function BeforeUs() {
         <p>
           The name Daily Uplift no longer fit. It was generic, already claimed in the App
           Store, and disconnected from the app&apos;s cultural purpose. I explored
-          alternatives — Kindred Words, Kin Voice, Front Porch, Passed Down, Root Notes —
+          alternatives (Kindred Words, Kin Voice, Front Porch, Passed Down, Root Notes)
           and many of the strongest options were already registered or otherwise
           unavailable.
         </p>
@@ -399,10 +399,10 @@ export default function BeforeUs() {
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Figure
           src="/beforeus/06-naming-exploration.png"
-          alt="A ChatGPT conversation exploring names for the app — invented words such as Rootwell, EchoKin, and Kinward, then a shift to metaphors: a porch, a barbershop, a kitchen table, a relay baton"
+          alt="A ChatGPT conversation exploring names for the app, starting with invented words such as Rootwell, EchoKin, and Kinward, then a shift to metaphors: a porch, a barbershop, a kitchen table, a relay baton"
           width={3824}
           height={2484}
-          caption="Working the name — from invented words toward a metaphor with something behind it"
+          caption="Working the name: from invented words toward a metaphor with something behind it"
         />
       </section>
 
@@ -417,7 +417,7 @@ export default function BeforeUs() {
         <p>
           The final portal-inspired logo stands for ancestry and continuity. It suggests
           entering a space where knowledge can be retrieved, experienced, and passed
-          forward — which felt more aligned with the app&apos;s purpose than the other
+          forward, which felt more aligned with the app&apos;s purpose than the other
           concepts.
         </p>
         <p>
@@ -430,10 +430,10 @@ export default function BeforeUs() {
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
         <Figure
           src="/beforeus/07-icon-exploration.png"
-          alt="An app icon exploration board with three directions — The Echo, a voice radiating forward; The Thread, a continuous line of wisdom; and The Portal, a passage between generations — each shown in four colorways and at small sizes"
+          alt="An app icon exploration board with three directions (The Echo, a voice radiating forward; The Thread, a continuous line of wisdom; and The Portal, a passage between generations), each shown in four colorways and at small sizes"
           width={1254}
           height={1254}
-          caption="Three directions — The Echo, The Thread, The Portal — each tested down to icon size"
+          caption="Three directions (The Echo, The Thread, The Portal), each tested down to icon size"
         />
       </section>
 
@@ -443,7 +443,7 @@ export default function BeforeUs() {
           alt="The final Before Us mark: nested gold arches forming a portal around a small figure, shown on a black square and as a transparent icon"
           width={1906}
           height={1034}
-          caption="The portal that shipped — a passage between generations, with someone standing in it"
+          caption="The portal that shipped: a passage between generations, with someone standing in it"
         />
       </section>
 
@@ -468,7 +468,7 @@ export default function BeforeUs() {
           app, not Facebook. Playfair Display gives the quotations an editorial,
           reflective quality, while DM Sans Light keeps the rest of the interface clean
           and contemporary. There is little imagery in the first release, and that
-          restraint was intentional — later versions may add visuals where they carry
+          restraint was intentional. Later versions may add visuals where they carry
           meaning rather than decoration.
         </p>
       </Prose>
@@ -479,14 +479,14 @@ export default function BeforeUs() {
           alt="The Before Us quote screen in the light theme: a Frederick Douglass quote set in a serif face, his name and role beneath it, a Black Voices tag, and a rail of share, save, context, and link actions"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="The light theme — warm tan, wide margins, the words carrying the screen"
+          caption="The light theme: warm tan, wide margins, the words carrying the screen"
         />
         <Figure
           src="/beforeus/10-quote-screen-dark.png"
           alt="The same Frederick Douglass quote screen in the dark theme, set in cream and gold on deep brown"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="The dark theme — the same page, read at a different hour"
+          caption="The dark theme: the same page, read at a different hour"
         />
       </section>
 
@@ -496,14 +496,14 @@ export default function BeforeUs() {
           alt="The Collections screen, showing voices grouped by theme"
           fit="contain"
           height_="h-[480px] max-sm:h-[300px]"
-          caption="Collections — voices across time, grouped by what they speak to"
+          caption="Collections: voices across time, grouped by what they speak to"
         />
         <Figure
           src="/beforeus/context.png"
           alt="A context screen with a biography of Oprah Winfrey and her quote"
           fit="contain"
           height_="h-[480px] max-sm:h-[300px]"
-          caption="Know the voice — a bio and the context behind every quote"
+          caption="Know the voice: a bio and the context behind every quote"
         />
       </section>
 
@@ -527,7 +527,7 @@ export default function BeforeUs() {
         <div className="mt-[40px] max-sm:mt-[28px] border-t border-[color:var(--hair-strong)] pt-[24px]">
           <div className="micro-label">Deliberately deferred</div>
           <p className="body-copy-sm measure mt-[14px]">
-            {DEFERRED.join(' · ')} — all viable ideas, none of them necessary to
+            {DEFERRED.join(' · ')}. All viable ideas, none of them necessary to
             establish the core value of the first release.
           </p>
         </div>
@@ -553,7 +553,7 @@ export default function BeforeUs() {
           generate additional context around individual quotes, and I deferred that from
           the first release while I consider a more reliable approach to accuracy and
           sourcing. In the future I may let people flag questionable quotations or submit
-          corrections — reports would enter an editorial review rather than changing the
+          corrections. Reports would enter an editorial review rather than changing the
           content automatically.
         </p>
       </Prose>
@@ -561,10 +561,10 @@ export default function BeforeUs() {
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Figure
           src="/beforeus/11-quote-library.png"
-          alt="The quote library open in a spreadsheet, with columns for name, quote, context, and category — rows for Alicia Garza, Amanda Gorman, Angela Davis, Arthur Ashe, and Audre Lorde, and a second tab organized by category"
+          alt="The quote library open in a spreadsheet, with columns for name, quote, context, and category, showing rows for Alicia Garza, Amanda Gorman, Angela Davis, Arthur Ashe, and Audre Lorde, and a second tab organized by category"
           width={3824}
           height={2484}
-          caption="The whole library in one view — where the duplicates, misquotes, and gaps become visible"
+          caption="The whole library in one view, where the duplicates, misquotes, and gaps become visible"
         />
       </section>
 
@@ -609,7 +609,7 @@ export default function BeforeUs() {
           alt="A Toni Morrison quote screen with a More Voices Below label and a downward chevron near the bottom of the page"
           fit="contain"
           height_="h-[520px] max-sm:h-[320px]"
-          caption="More voices below — the cue that the library keeps going"
+          caption="More voices below: the cue that the library keeps going"
         />
       </section>
 
@@ -621,7 +621,7 @@ export default function BeforeUs() {
           Claude to evaluate its readiness and name what was left before I could submit.
         </p>
         <p>
-          Testing and configuring the supporting infrastructure — Firebase in particular —
+          Testing and configuring the supporting infrastructure, Firebase in particular,
           were among the hardest parts. Designing an interface was familiar territory.
           Preparing a dependable product made me think harder about authentication, data,
           failure states, and technical behavior.
@@ -653,10 +653,10 @@ export default function BeforeUs() {
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
         <Figure
           src="/beforeus/14-app-store-rejection.png"
-          alt="App Store Connect showing Apple's review message, Guideline 2.1 — Information Needed, asking for a screen recording of the app on a physical device covering registration, login, and account deletion"
+          alt="App Store Connect showing Apple's review message, Guideline 2.1: Information Needed, asking for a screen recording of the app on a physical device covering registration, login, and account deletion"
           width={3824}
           height={2484}
-          caption="The rejection — Apple asking for a recording of the app running on a real device"
+          caption="The rejection: Apple asking for a recording of the app running on a real device"
         />
       </section>
 
@@ -686,7 +686,7 @@ export default function BeforeUs() {
           If I started again, I would spend more time sketching and wireframing before
           producing polished screens. AI makes it tempting to jump straight to
           high-fidelity output, but speed can hide structural problems. Just because I can
-          produce full screens quickly does not mean I should — establishing the structure
+          produce full screens quickly does not mean I should. Establishing the structure
           and interaction model earlier would have prevented real rework later.
         </p>
 
@@ -697,7 +697,7 @@ export default function BeforeUs() {
         </p>
         <p>
           I am also exploring ways to visualize connections among people, ideas, themes,
-          eras, and movements — not visualization as decoration, but as a way to help
+          eras, and movements, not visualization as decoration, but as a way to help
           people see relationships within Black history and thought that are hard to catch
           through a single quote. Any future feature has to strengthen the core
           experience without giving up the restraint that made the product clearer.
@@ -710,7 +710,7 @@ export default function BeforeUs() {
           Before Us shows that I can recognize when a concept lacks focus, refine its
           purpose, and simplify an experience around its most meaningful interaction. It
           reflects attention to typography, spacing, hierarchy, balance, and the emotional
-          effect of design — and, more importantly, it shows the difference between adding
+          effect of design. More importantly, it shows the difference between adding
           features and building a product people understand immediately.
         </p>
         <p>

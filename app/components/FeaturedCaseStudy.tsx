@@ -18,7 +18,7 @@ const FeaturedCaseStudy: React.FC = () => {
         </h3>
 
         <p className="body-copy measure-tight mt-[22px] max-sm:mt-[16px]">
-          How Before Us turns a daily quote into an inheritance — Black voices,
+          How Before Us turns a daily quote into an inheritance: Black voices,
           credited and contextualized, with nothing to scroll past.
         </p>
 
@@ -33,7 +33,7 @@ const FeaturedCaseStudy: React.FC = () => {
       <div className="relative h-[340px] max-sm:h-[200px] max-sm:order-2 rounded-[14px] border border-black overflow-hidden bg-[#1B1109]">
         <Image
           src="/beforeus/og.png"
-          alt="Before Us — a voice a day, from those who came before"
+          alt="Before Us: a voice a day, from those who came before"
           fill
           sizes="(max-width: 1023px) 100vw, 50vw"
           className="object-cover"

@@ -11,7 +11,7 @@ const PROJECTS: (WorkCardProps & { status?: string })[] = [
     kicker: 'Identity · 2024',
     title: 'Candy Paint',
     description:
-      'A music video experiment blending motion, style, and identity through generative AI — bold, weird, and unapologetically future-facing.',
+      'A music video experiment blending motion, style, and identity through generative AI: bold, weird, and unapologetically future-facing.',
     href: '/ai-experiments/candy-paint',
     imageSrc: '/candypaint 1.png',
     imageAlt: 'Candy Paint',
@@ -44,7 +44,7 @@ export default function AIExperiments() {
           eyebrow="AI Experiments"
           title="Playing with the new tools"
           redPeriod
-          lede="Self-directed work made with generative AI — a music video, a comic strip, a documentary. No client, no brief, just finding out what the tools can do."
+          lede="Self-directed work made with generative AI: a music video, a comic strip, a documentary. No client, no brief, just finding out what the tools can do."
         />
       </div>
 

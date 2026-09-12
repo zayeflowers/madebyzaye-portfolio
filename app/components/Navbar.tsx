@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="w-full bg-white border-b border-[color:var(--hair)] relative z-50">
       <div className="gutter flex items-center justify-between py-6 max-sm:py-4">
-        <Link href="/" aria-label="Made By Zaye — home" className="block">
+        <Link href="/" aria-label="Made By Zaye home" className="block">
           <Image
             src="/madebyzaye-logo.svg"
             alt="Made By Zaye"

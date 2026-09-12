@@ -15,7 +15,7 @@ const BLOCKS: NowBlock[] = [
     label: 'Building',
     items: [
       <>
-        <strong>Before Us</strong> is out — shipped to the App Store, now watching how
+        <strong>Before Us</strong> is out, shipped to the App Store, now watching how
         people actually use it
       </>,
       <>

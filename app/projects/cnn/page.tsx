@@ -18,7 +18,7 @@ export default function CNNProject() {
     <PageLayout navbarKey="navbar-cnn">
       <CaseStudyHero
         eyebrow="Case study · Media"
-        title="CNN Election Center — Storytelling with data"
+        title="CNN Election Center: Storytelling with data"
         summary="The presidential election in the United States in 2020 was unlike any other in the country's history. Over 152 million Americans voted, and in the midst of a global pandemic it was critical to provide users with accurate information."
         logoSrc="/cnn.svg"
         logoAlt="CNN"
@@ -35,7 +35,7 @@ export default function CNNProject() {
             <div className="fact-k">Outcome</div>
             <div className="display t-md mt-[14px] whitespace-nowrap">215M</div>
             <p className="body-copy-sm mt-[12px]">
-              Monthly average unique visitors globally in 2020 — CNN&apos;s largest
+              Monthly average unique visitors globally in 2020, CNN&apos;s largest
               digital audience in its history.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function CNNProject() {
             <div className="measure mt-[14px] flex flex-col gap-[16px]">
               <p className="body-copy">
                 The 2020 presidential election was unlike any other in the
-                country&apos;s history — 152 million voters, a global pandemic and a
+                country&apos;s history: 152 million voters, a global pandemic and a
                 divided electorate. CNN&apos;s Election Center had to help people make
                 sense of it without telling them what to think.
               </p>
@@ -53,7 +53,7 @@ export default function CNNProject() {
                 I worked as a Senior Product Designer on the Election Center team,
                 covering data visualization, product and visual design, competitor
                 analysis, analytics and content strategy. I designed and iterated the
-                state pages, Polling Center and the Who&apos;s Winning tracker —
+                state pages, Polling Center and the Who&apos;s Winning tracker,
                 contrasting the candidates, surfacing shifting demographics and cutting
                 each chart down to something a reader could grasp at a glance. Much of
                 the work meant trading ambition for what legacy APIs and an immovable
@@ -256,7 +256,7 @@ export default function CNNProject() {
             Blitzer, etc).
           </li>
           <li>
-            We break off — Design focuses on the structure with wireframes, mood boards,
+            We break off. Design focuses on the structure with wireframes, mood boards,
             ideas, visual competitor analysis, feedback from other designers, concepts,
             etc. During this stage, we may have brainstorming sessions with our Product
             Manager / Tech Directors to make sure our ideas are even workable. (side-note:
@@ -401,11 +401,11 @@ export default function CNNProject() {
           </a>{' '}
           is one of my favorite tools that I&apos;ve always enjoyed using. I encountered
           the IHG tool on the UX team and it was very important for our studies. I
-          proposed using the CNN tool, but learned they used a similar service—
+          proposed using the CNN tool, but learned they used a similar service,{' '}
           <a href="https://www.fullstory.com" target="_blank" rel="noopener noreferrer">
             Fullstory
           </a>
-          —but it was not implemented in our product Election Center.
+          , but it was not implemented in our product Election Center.
         </p>
       </Prose>
 
@@ -444,7 +444,8 @@ export default function CNNProject() {
           since we know factually how most will play out.
         </p>
         <blockquote className="pl-[22px] border-l-2 border-[color:var(--red)]">
-          &ldquo;This will take a huge amount of resources to display on our pages&rdquo; —{' '}
+          &ldquo;This will take a huge amount of resources to display on our pages&rdquo;
+          <br />
           <strong>CNN Dev/Tech Director</strong>
         </blockquote>
       </Prose>

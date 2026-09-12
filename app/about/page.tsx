@@ -35,7 +35,7 @@ export default function About() {
           eyebrow="About"
           title="Create what I wish existed"
           redPeriod
-          lede="I'm Zaye Flowers — a Product Design Lead and creative technologist building tech-powered tools that inspire and empower people."
+          lede="I'm Zaye Flowers, a Product Design Lead and creative technologist building tech-powered tools that inspire and empower people."
           actions={
             <>
               <Link className="pill pill--dark" href="/contact">
@@ -55,7 +55,7 @@ export default function About() {
           <p>
             My journey in design and technology has been driven by a simple philosophy:
             create what I wish existed. Over twelve years I&apos;ve shaped UX at brands
-            like CNN, GEICO, IHG, and US Bank — learning how to make digital experiences
+            like CNN, GEICO, IHG, and US Bank, learning how to make digital experiences
             that resonate with people and move the business at the same time.
           </p>
           <p>
@@ -65,7 +65,7 @@ export default function About() {
             for technology with a commitment to tools that make a positive impact.
           </p>
           <p>
-            I&apos;m driven by curiosity — always exploring how design, technology, and
+            I&apos;m driven by curiosity, always exploring how design, technology, and
             storytelling can create real connection. I&apos;m also a huge R&amp;B fan with
             a side project brewing around music and storytelling.
           </p>
@@ -123,7 +123,7 @@ export default function About() {
         <SectionHeading title="Now" meta="What I'm up to" tone="light" />
         <p className="body-copy measure text-[color:var(--paper-70)]">
           Before Us is live on the App Store, so now it&apos;s listening to what people
-          do with it — plus the next run of UX Strip, and writing about designing with AI.
+          do with it, plus the next run of UX Strip, and writing about designing with AI.
         </p>
         <Link href="/now" className="link-red link-red--light mt-[30px]">
           Read the now page

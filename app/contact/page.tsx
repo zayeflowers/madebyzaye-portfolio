@@ -94,7 +94,7 @@ export default function Contact() {
 
           <p className="body-copy measure-tight mt-[22px] max-sm:mt-[16px]">
             Interested in working together? Share a few details about the problem,
-            the timeline, and who&apos;s involved — I&apos;ll come back with how I&apos;d
+            the timeline, and who&apos;s involved, and I&apos;ll come back with how I&apos;d
             approach it.
           </p>
 

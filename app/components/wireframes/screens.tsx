@@ -294,7 +294,7 @@ const ProvidersSolution: React.FC = () => (
             active: true,
           },
           {
-            name: 'Riverside Orthopedic — North Clinic',
+            name: 'Riverside Orthopedic, North Clinic',
             addr: '88 Concord Pike, Wilmington, DE 19803',
           },
           {
@@ -759,8 +759,8 @@ const DropdownAlternative: React.FC = () => (
         {[
           'Head',
           'Neck',
-          'Shoulder — right',
-          'Shoulder — left',
+          'Shoulder, right',
+          'Shoulder, left',
           'Upper back',
           'More areas…',
         ].map((item, index, all) => (
@@ -816,8 +816,8 @@ export const SCREENS: Record<ScreenId, { label: string; Screen: React.FC }> = {
   '1h': { label: 'Lost wages', Screen: WagesSolution },
   '1i': { label: 'Confirmation and next steps', Screen: Confirmation },
   '1j': { label: 'Document upload', Screen: DocumentUpload },
-  '2a': { label: 'Body Map — front', Screen: BodyMapFront },
-  '2b': { label: 'Body Map — areas selected', Screen: BodyMapSelected },
-  '2c': { label: 'Body Map — back', Screen: BodyMapBack },
+  '2a': { label: 'Body Map: front', Screen: BodyMapFront },
+  '2b': { label: 'Body Map: areas selected', Screen: BodyMapSelected },
+  '2c': { label: 'Body Map: back', Screen: BodyMapBack },
   '2d': { label: 'Dropdown alternative', Screen: DropdownAlternative },
 };
