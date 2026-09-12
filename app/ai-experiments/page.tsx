@@ -14,7 +14,6 @@ const PROJECTS: (WorkCardProps & { status?: string })[] = [
       'A music video experiment blending motion, style, and identity through generative AI: bold, weird, and unapologetically future-facing.',
     href: '/ai-experiments/candy-paint',
     imageSrc: '/candypaint 1.png',
-    imageAlt: 'Candy Paint',
   },
   {
     kicker: 'Illustration · Launched',
@@ -23,7 +22,6 @@ const PROJECTS: (WorkCardProps & { status?: string })[] = [
       'A comic strip series capturing the humorous, relatable, and sometimes absurd moments of working in UX and product design.',
     href: '/ai-experiments/ux-strip',
     imageSrc: '/uxstrip.png',
-    imageAlt: 'UX Strip',
   },
   {
     kicker: 'Documentary · Research',
@@ -32,7 +30,6 @@ const PROJECTS: (WorkCardProps & { status?: string })[] = [
       'A documentary-style exploration of identity, trauma, and public narrative through an AI-assisted research and storytelling workflow.',
     href: '/ai-experiments/hall-sisters',
     imageSrc: '/hallsisters.jpg',
-    imageAlt: 'Hall Sisters',
   },
 ];
 

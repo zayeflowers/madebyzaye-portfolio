@@ -55,7 +55,6 @@ export default function GeicoProject() {
         title="Simplifying Injury Reporting"
         summary="Transforming a phone-dependent claims process into a guided, measurable self-service experience."
         logoSrc="/geico.svg"
-        logoAlt="GEICO"
         meta={[
           { label: 'Role', value: 'Product Design Lead' },
           { label: 'Platform', value: 'Responsive web' },

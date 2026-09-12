@@ -25,7 +25,6 @@ export default function USBankProject() {
         title="Redefining Banking Essentials with US Bank"
         summary="A new digital and human experience for Business Banking: one snapshot view of the money, clear navigation to the tools, and outside apps brought into a single interface."
         logoSrc="/usbank.svg"
-        logoAlt="US Bank"
         meta={[
           { label: 'Role', value: 'Senior UX Designer' },
           { label: 'Client', value: 'US Bank × Publicis Sapient' },

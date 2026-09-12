@@ -11,7 +11,6 @@ export interface WorkCardProps {
   description: string;
   href: string;
   imageSrc?: string;
-  imageAlt?: string;
   /** Filename label shown in the striped slot when imagery is still missing. */
   placeholder?: string;
   /** Image slot height. `tall` matches the 230px homepage grid. */
@@ -27,7 +26,6 @@ const WorkCard: React.FC<WorkCardProps> = ({
   description,
   href,
   imageSrc,
-  imageAlt,
   placeholder,
   imageHeight = 'tall',
   contain = false,
@@ -44,9 +42,11 @@ const WorkCard: React.FC<WorkCardProps> = ({
         contain ? 'bg-[color:var(--cream)] p-6' : 'bg-[color:var(--cream)]'
       }`}
     >
+      {/* Decorative: the card title, inside the same link, already names it.
+          Alt text here would have screen readers announce the name twice. */}
       <Image
         src={imageSrc}
-        alt={imageAlt ?? title}
+        alt=""
         fill
         sizes="(max-width: 640px) 100vw, 33vw"
         className={contain ? 'object-contain' : 'object-cover'}

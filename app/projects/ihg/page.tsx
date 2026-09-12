@@ -82,7 +82,6 @@ export default function IHGProject() {
         title="Optimizing the Hotel Online User Experience"
         summary="Bookers kept telling us the same thing: they could not work out what a room actually cost. Rewriting the payment page around that one complaint lifted booking conversion 6% and now serves every IHG and Holiday Inn Express visitor."
         logoSrc="/ihg.svg"
-        logoAlt="IHG"
         meta={[
           { label: 'Role', value: 'Senior UX Designer' },
           { label: 'Brands', value: 'IHG, Holiday Inn, Holiday Inn Express, Crowne Plaza' },
