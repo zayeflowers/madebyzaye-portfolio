@@ -11,7 +11,6 @@ const CASE_STUDIES: WorkCardProps[] = [
     description: 'One system across a fragmented product estate.',
     href: '/projects/us-bank',
     imageSrc: '/casestudy1.jpg',
-    imageAlt: 'US Bank case study',
   },
   {
     kicker: 'Media · 2020',
@@ -19,7 +18,6 @@ const CASE_STUDIES: WorkCardProps[] = [
     description: 'Storytelling with data at national scale.',
     href: '/projects/cnn',
     imageSrc: '/casestudy2.jpg',
-    imageAlt: 'CNN case study',
   },
   {
     kicker: 'Insurance · 2024–2026',
@@ -28,7 +26,6 @@ const CASE_STUDIES: WorkCardProps[] = [
       'Turning a phone-dependent claims process into guided self-service.',
     href: '/projects/geico',
     imageSrc: '/geico.webp',
-    imageAlt: 'GEICO Injury Intake',
   },
   {
     kicker: 'Hospitality · 2019',
@@ -36,7 +33,6 @@ const CASE_STUDIES: WorkCardProps[] = [
     description: 'Optimizing the online booking experience across brands.',
     href: '/projects/ihg',
     imageSrc: '/casestudy3.jpg',
-    imageAlt: 'IHG Hotels',
   },
 ];
 

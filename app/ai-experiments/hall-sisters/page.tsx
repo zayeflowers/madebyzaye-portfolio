@@ -87,7 +87,7 @@ export default function HallSisters() {
       </Prose>
 
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
-        <Figure src="/vlcsnap1.jpg" alt="Hall Sisters documentary still" />
+        <Figure src="/vlcsnap1.jpg" alt="An animated woman frowning at her phone, her face lit blue in a dark room" />
       </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
@@ -110,7 +110,7 @@ export default function HallSisters() {
       </Prose>
 
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
-        <Figure src="/vlcsnap2.jpg" alt="Hall Sisters documentary still" />
+        <Figure src="/vlcsnap2.jpg" alt="A news anchor on an old television set, sitting on the counter of a dim, grimy kitchen" />
       </section>
 
       <Prose className="pb-[40px] max-sm:pb-[24px]">
@@ -128,7 +128,7 @@ export default function HallSisters() {
       </Prose>
 
       <section className="gutter pb-[48px] max-sm:pb-[28px]">
-        <Figure src="/vlcsnap3.jpg" alt="Hall Sisters documentary still" />
+        <Figure src="/vlcsnap3.jpg" alt="An apartment complex at night under streetlights, captioned Dallas, Texas" />
       </section>
 
       <section className="section band-cream">

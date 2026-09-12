@@ -14,7 +14,6 @@ interface CaseStudyHeroProps {
   summary?: string;
   meta?: MetaItem[];
   logoSrc?: string;
-  logoAlt?: string;
   /** The logo is a square app icon rather than a wordmark, so it gets sized
    *  and rounded like one instead of being fitted to the wordmark box. */
   logoIsIcon?: boolean;
@@ -26,7 +25,6 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
   summary,
   meta,
   logoSrc,
-  logoAlt,
   logoIsIcon = false,
 }) => {
   return (
@@ -47,9 +45,10 @@ const CaseStudyHero: React.FC<CaseStudyHeroProps> = ({
 
         {logoSrc && (
           <div className="hidden sm:flex items-center justify-center h-[80px] w-[200px] shrink-0">
+            {/* Decorative: the h1 beside it already names the company. */}
             <Image
               src={logoSrc}
-              alt={logoAlt ?? ''}
+              alt=""
               width={logoIsIcon ? 160 : 300}
               height={logoIsIcon ? 160 : 80}
               className={

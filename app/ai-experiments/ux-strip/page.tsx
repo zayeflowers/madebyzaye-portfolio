@@ -42,7 +42,7 @@ export default function UXStrip() {
       />
 
       <section className="gutter pb-[56px] max-sm:pb-[32px]">
-        <Figure src="/uxstrip.png" alt="UX Strip" caption="UX Strip: the daily absurdities of design work" />
+        <Figure src="/uxstrip.png" alt="The UX Strip title art: two cartoon designers peeking over the sign" caption="UX Strip: the daily absurdities of design work" />
       </section>
 
       <Prose className="pb-[48px] max-sm:pb-[28px]">

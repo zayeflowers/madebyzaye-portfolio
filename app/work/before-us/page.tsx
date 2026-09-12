@@ -77,7 +77,6 @@ export default function BeforeUs() {
         title="Before Us"
         summary="Turning a familiar quote app into a culturally focused experience for Black wisdom, and my first app in the App Store."
         logoSrc="/beforeus/app-icon.svg"
-        logoAlt="Before Us app icon"
         logoIsIcon
         meta={[
           { label: 'Role', value: 'Owner, Creative Technologist' },

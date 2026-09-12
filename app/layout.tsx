@@ -32,8 +32,14 @@ export const metadata: Metadata = {
   title: "Made By Zaye",
   description: "Lead Product Designer using AI to build tools that feel",
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
   },
   icons: {
     icon: [

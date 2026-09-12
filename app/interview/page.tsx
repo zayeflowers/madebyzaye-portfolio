@@ -33,7 +33,7 @@ const INTERVIEW: QA[] = [
       'How collaborative it is. I like that I’m able to bounce ideas with my colleagues. Before CNN, oftentimes, I was the UX advocate and leader and drove the design from start to finish. I’m a decisive designer; however, it’s important to get feedback from your peers. You never know what your colleagues have come across that may inspire you based on their experiences.',
       'Also, I like how we are empowering users with information. I love seeing how it all comes together from concept to development. I am still amazed that over 120 million people saw our work on Election Night and the days after. It was our Super Bowl night as a team. All the hard work was worth every bit of it.',
     ],
-    image: { src: '/thinkful1.png', alt: 'Thinkful interview' },
+    image: { src: '/thinkful1.png', alt: '' },
   },
   {
     question: 'What kinds of problems do you deal with?',
@@ -60,7 +60,7 @@ const INTERVIEW: QA[] = [
       'Absorb as much as you can, but be patient with yourself. It’s a lot to learn and understand: articles, books, tutorials, case studies, videos. Since you’re in a UX bootcamp, it’s a great solid foundation to start with. Afterward, don’t rest on it. Continue to learn and seek out those who are where you would like to be. Also, start writing. Keep a journal of your experiences and where you would like to be in 6 months to a year.',
       'Don’t be afraid to send a LinkedIn note to people you admire asking for career advice. Get different perspectives. I probably would have saved myself some time if I had reached out to my network rather than feeling like I had to do it alone. You will be surprised at how many people are willing to help you in your career.',
     ],
-    image: { src: '/thinkful2.png', alt: 'Thinkful interview' },
+    image: { src: '/thinkful2.png', alt: 'The entrance to CNN headquarters, with the red CNN letters out front' },
   },
   {
     question:
@@ -109,7 +109,7 @@ const INTERVIEW: QA[] = [
     answer: [
       'Great question. When I look back on my path, it’s been a fun and hard ride. Early on, I always felt I was never learning enough, and then I realized the industry forces you to be adaptable. There’s always a new skill or process to learn. I’m proud of the path I’ve taken. If I had to talk to my younger self, I would tell him to be a little more fearless; things have a way of working out. Even if they don’t, there’s nothing wrong with taking a step back and trying again.',
     ],
-    image: { src: '/thinkful3.png', alt: 'Thinkful interview' },
+    image: { src: '/thinkful3.png', alt: 'An office wall at CNN decorated for the holidays, with stockings and painted windows around a lit CNN logo' },
   },
 ];
 
