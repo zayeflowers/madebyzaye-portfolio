@@ -8,7 +8,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const NAV_LINKS = [
   { href: '/work', label: 'Work' },
-  { href: '/ai-experiments', label: 'AI Experiments' },
+  // Temporarily hidden from the menu; the pages under /ai-experiments still work.
+  // { href: '/ai-experiments', label: 'AI Experiments' },
   { href: '/about', label: 'About' },
 ];
 
