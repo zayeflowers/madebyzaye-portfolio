@@ -18,12 +18,7 @@ const Hero: React.FC = () => {
   return (
     <section className="gutter pt-[88px] pb-[72px] max-sm:pt-[34px] max-sm:pb-[30px] grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-[26px] lg:gap-[72px] items-end animate-rise">
       <div>
-        <div className="eyebrow">
-          <span className="rule" />
-          Creative Technologist
-        </div>
-
-        <h1 className="display t-hero mt-[22px] max-sm:mt-[16px]">
+        <h1 className="display t-hero">
           Creating what I wish existed<span className="red-period">.</span>
         </h1>
 
