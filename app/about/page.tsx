@@ -10,7 +10,7 @@ import ExperienceList from '../components/ExperienceList';
 import SectionHeading from '../components/SectionHeading';
 
 const DETAILS = [
-  { label: 'Location', value: 'Baltimore / D.C.' },
+  { label: 'Location', value: 'Laurel, Maryland' },
   { label: 'Interests', value: 'AI, music production, photography, travel' },
   { label: 'Currently building', value: 'Before Us, UX Strip' },
   { label: 'Favorite tools', value: 'Figma, Cursor, Claude, Midjourney, Notion' },
