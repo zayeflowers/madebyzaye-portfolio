@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import PageHeading from '../components/PageHeading';
 import PageLayout from '../components/PageLayout';
@@ -90,18 +89,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="frame">
-            <Image
-              src="/zaye-portrait.jpg"
-              alt="Zaye Flowers"
-              width={1284}
-              height={1265}
-              className="w-full h-auto block"
-              priority
-            />
-          </div>
-
-          <dl className="mt-[28px]">
+          <dl>
             {DETAILS.map((detail) => (
               <div
                 key={detail.label}
