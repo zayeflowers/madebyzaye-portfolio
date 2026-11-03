@@ -43,6 +43,14 @@ export default function About() {
               <Link className="pill pill--ghost" href="/work">
                 See the work
               </Link>
+              <a
+                className="pill pill--ghost"
+                href="/zaye-flowers-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </>
           }
         />
